@@ -12,6 +12,10 @@ Whisper: [Robust Speech Recognition via Large-Scale Weak Supervision](https://cd
 
 [WeNet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://arxiv.org/pdf/2102.01547.pdf)
 
+[FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
+
+* https://github.com/alibaba-damo-academy/FunASR
+
 [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
 
 [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
@@ -22,6 +26,8 @@ Whisper: [Robust Speech Recognition via Large-Scale Weak Supervision](https://cd
 [Speech Brain：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
 
 [Kaldi 2：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
+
+[阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
 
 [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
 
@@ -45,6 +51,8 @@ https://www.twman.org/AI/ASR/SpeakerRecognition
 [Wespeaker v1.2.0 發布：新增SSL Recipe，NIST SRE 數據集支持, PLDA 及自適應代碼等](https://zhuanlan.zhihu.com/p/645726183)
 
 [ASV-Subtools聲紋識別實戰](https://speech.xmu.edu.cn/2022/1124/c18207a465302/page.htm)
+
+[ICASSP 2023說話人識別方向論文合集（一）](https://zhuanlan.zhihu.com/p/645560614)
 
 [聲紋識別原理](https://www.zhihu.com/question/30141460)
 
