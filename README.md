@@ -6,16 +6,16 @@ https://huggingface.co/DeepLearning101
 
 [那些語音處理 (Speech Processing) 踩的坑](https://blog.twman.org/2021/04/ASR.html)
 
+[音視頻開發基礎入門｜聲音的採集與量化、音頻數字信號質量、音頻碼率](https://zhuanlan.zhihu.com/p/577850804)
+
+[語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
+
 ### **相關論文**
 
 * Whisper: [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
-
 * [WeNet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://arxiv.org/pdf/2102.01547.pdf)
-
 * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
-
 * [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
-
 * [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
 
 ### **相關連結**
@@ -23,7 +23,10 @@ https://huggingface.co/DeepLearning101
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
+    * [使用🤗 Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [自動語音識別與翻譯大模型微調實踐：Whisper微調及推理加速](https://mp.weixin.qq.com/s/86e0eeNhCF-7PmHg_Fw-jQ)
+    * [WhisperX](https://github.com/m-bain/whisperX)
+
 
 </br>
 
@@ -35,11 +38,12 @@ https://huggingface.co/DeepLearning101
 
 </br>
 
+* WeNet：[58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
 * [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
-
 * [Speech Brain：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
-
 * [Kaldi 2：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
+    * [Next-gen-Kaldi 近期進展](https://zhuanlan.zhihu.com/p/617877445)
+
 
 ### **開發心得：**
 語音辨識（speech recognition）技術，也被稱為自動語音辨識（英語：Automatic Speech Recognition, ASR）、電腦語音識別（英語：Computer Speech Recognition）或是語音轉文字識別（英語：Speech To Text, STT），其目標是以電腦自動將人類的語音內容轉換為相應的文字；跟小夥伴們一起嘗試過NEMO還有Kaldi、MASR、VOSK，wav2vec以及Google、Azure等API，更別說後來陸續又出現SpeechBrain、出門問問的WeNet跟騰訊PIKA等。目前已知可訓練聲學模型(AM)中文語音(中國發音/用語，可惜還沒臺灣較靠譜的)公開數據如：Magic-Data_Mandarin-Chinese-Read-Speech-Corpus、aidatatang、aishell-1 、aishell-2等約2000多小時(aishell目前已到4，但想商用至少得破萬小時較靠譜)；再搭配語言模型(LM)，然後基於各種演算法架構優化各有優缺點，效果也各有優劣。與說話人辨識及說話人確認不同，後者嘗試辨識或確認發出語音的說話人而非其中所包含的詞彙內容。 語音辨識技術的應用包括語音撥號、語音導航、室內裝置控制、語音文件檢索、簡單的聽寫資料錄入等。語音辨識技術與其他自然語言處理技術如機器翻譯及語音合成技術相結合，可以構建出更加複雜的應用，例如語音到語音的翻譯。語音辨識技術所涉及的領域包括：訊號處理、圖型識別、概率論和資訊理論、發聲機理和聽覺機理、人工智慧等等。
@@ -54,24 +58,16 @@ https://www.twman.org/AI/ASR/SpeakerRecognition
 
 ### **相關論文**
 * [Wespeaker: A Research and Production oriented Speaker Embedding Learning Toolkit](https://arxiv.org/pdf/2210.17016.pdf)
-
 * [SincNet：Speaker Recognition from Raw Waveform with SincNet](https://arxiv.org/abs/1808.00158)
 
 ### **相關連結**
 * [Wespeaker v1.2.0 發布：新增SSL Recipe，NIST SRE 數據集支持, PLDA 及自適應代碼等](https://zhuanlan.zhihu.com/p/645726183)
-
 * [ASV-Subtools聲紋識別實戰](https://speech.xmu.edu.cn/2022/1124/c18207a465302/page.htm)
-
 * [ICASSP 2023說話人識別方向論文合集（一）](https://zhuanlan.zhihu.com/p/645560614)
-
 * [聲紋識別原理](https://www.zhihu.com/question/30141460)
-
 * [深度學習在聲紋識別中的應用](https://yutouwd.github.io/posts/600d0d5d/)
-
 * [相關聲紋識別介紹匯整](http://xinguiz.com/category/#/声纹识别)
-
 * [提高聲紋辨識正確率 更添防疫新利器](https://www.nchc.org.tw/Message/MessageView/3731?mid=43)
-
 * [CN-Celeb-AV: 多場景視聽多模態數據集發布](https://zhuanlan.zhihu.com/p/647786644)
 
 ### **開發心得：**
@@ -132,19 +128,18 @@ https://www.twman.org/AI/ASR/SpeechSeparation
     
     * https://github.com/etzinis/sudo_rm_rf
     
-[Dual-Path Transformer Network: Direct Context-Aware Modeling for End-to-End Monaural Speech Separation](https://arxiv.org/pdf/2007.13975v3.pdf)
+* [Dual-Path Transformer Network: Direct Context-Aware Modeling for End-to-End Monaural Speech Separation](https://arxiv.org/pdf/2007.13975v3.pdf)
 
-[Dual-path RNN: efficient long sequence modeling for time-domain single-channel speech separation](https://arxiv.org/pdf/1910.06379.pdf)
+* [Dual-path RNN: efficient long sequence modeling for time-domain single-channel speech separation](https://arxiv.org/pdf/1910.06379.pdf)
 
-* https://github.com/JusperLee/Dual-path-RNN-Pytorch
+    * https://github.com/JusperLee/Dual-path-RNN-Pytorch
 
-* [閱讀筆記”Dual-path RNN for Speech Separation“
-](https://zhuanlan.zhihu.com/p/104606356)
+    * [閱讀筆記”Dual-path RNN for Speech Separation“](https://zhuanlan.zhihu.com/p/104606356)
 
 
 ### **相關連結**
 
-
+* [ICASSP 2023論文模型開源｜語音分離Mossformer](https://zhuanlan.zhihu.com/p/609728122)
 
 ### **開發心得：**
 
@@ -152,3 +147,17 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 中間也意外發現了Google brain 的 wavesplit，在有噪音及兩個人同時講話情形下，感覺效果還不差，但沒找到相關的code，未能進一步驗證或是嘗試更改數據集。還有又是那位有一起用餐之緣的深度學習大神 Yann LeCun繼發文介紹 完去噪後，又發文介紹了語音分離；後來還有像是最早應用在NLP的Transformer等Dual-path RNN (DP-RNN) 或 DPT-NET (Dual-path transformer) 等應用在語音增強/分割，另外VoiceFilter、TasNet 跟 Conv-TasNet還有sudo-rm等等也是語音分割相關，當然更不能錯過臺大電機李宏毅老師一篇SSL-pretraining-separation的論文 (務必看完臺大電機李宏毅老師的影片)，最後也是多虧李老師及第一作者黃同學的解惑，然後小夥伴們才又更深入的確認並且解決問題。
 這裡做數據時相對簡單一點，直接打散混合，再從中隨機挑選兩個人，然後分別挑出語音做混合，若長度不同，選擇短者為參考，將長者切到與短者相同，兩兩完全重疊或者兩兩互不完全重疊等都對效果有不小的影響；同時也研究了Data Parallel 跟 Distributed Data Parallel 的差異，但是如何才能在 CPU 上跑得又快又準才是落地的關鍵
+
+#
+# 中文語音合成 Chinese Speech Synthesis
+
+### **相關論文**
+
+
+### **相關連結**
+
+* [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
+* [VALL-E：微軟全新語音合成模型可以在3秒內復制任何人的聲音](https://zhuanlan.zhihu.com/p/598473227)
+* [BLSTM-RNN、Deep Voice、Tacotron…你都掌握了吗？一文总结语音合成必备经典模型（一）](https://new.qq.com/rain/a/20221204A02GIT00)
+* [Tacotron2、GST、Glow-TTS、Flow-TTS…你都掌握了吗？一文总结语音合成必备经典模型（二）](https://cloud.tencent.com/developer/article/2250062)
+* [最強文本轉語音工具：Bark，本地安裝+雲端部署+在線體驗詳細教程](https://zhuanlan.zhihu.com/p/630900585)
