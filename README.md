@@ -8,28 +8,38 @@ https://huggingface.co/DeepLearning101
 
 ### **相關論文**
 
-Whisper: [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
+* Whisper: [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
 
-[WeNet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://arxiv.org/pdf/2102.01547.pdf)
+* [WeNet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://arxiv.org/pdf/2102.01547.pdf)
 
-[FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
+* [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
 
-* https://github.com/alibaba-damo-academy/FunASR
+* [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
 
-[QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
-
-[Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
+* [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
 
 ### **相關連結**
-[Introducing Whisper](https://openai.com/research/whisper)
+* Whisper
+    * [Introducing Whisper](https://openai.com/research/whisper)
+    * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
+    * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
+    * [自動語音識別與翻譯大模型微調實踐：Whisper微調及推理加速](https://mp.weixin.qq.com/s/86e0eeNhCF-7PmHg_Fw-jQ)
 
-[Speech Brain：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
+</br>
 
-[Kaldi 2：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
+* FunASR
 
-[阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
+    * https://github.com/alibaba-damo-academy/FunASR
+    * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
+    * [達摩院FunASR離線文件轉寫SDK發布](https://zhuanlan.zhihu.com/p/642807244)
 
-[PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
+</br>
+
+* [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
+
+* [Speech Brain：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
+
+* [Kaldi 2：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
 
 ### **開發心得：**
 語音辨識（speech recognition）技術，也被稱為自動語音辨識（英語：Automatic Speech Recognition, ASR）、電腦語音識別（英語：Computer Speech Recognition）或是語音轉文字識別（英語：Speech To Text, STT），其目標是以電腦自動將人類的語音內容轉換為相應的文字；跟小夥伴們一起嘗試過NEMO還有Kaldi、MASR、VOSK，wav2vec以及Google、Azure等API，更別說後來陸續又出現SpeechBrain、出門問問的WeNet跟騰訊PIKA等。目前已知可訓練聲學模型(AM)中文語音(中國發音/用語，可惜還沒臺灣較靠譜的)公開數據如：Magic-Data_Mandarin-Chinese-Read-Speech-Corpus、aidatatang、aishell-1 、aishell-2等約2000多小時(aishell目前已到4，但想商用至少得破萬小時較靠譜)；再搭配語言模型(LM)，然後基於各種演算法架構優化各有優缺點，效果也各有優劣。與說話人辨識及說話人確認不同，後者嘗試辨識或確認發出語音的說話人而非其中所包含的詞彙內容。 語音辨識技術的應用包括語音撥號、語音導航、室內裝置控制、語音文件檢索、簡單的聽寫資料錄入等。語音辨識技術與其他自然語言處理技術如機器翻譯及語音合成技術相結合，可以構建出更加複雜的應用，例如語音到語音的翻譯。語音辨識技術所涉及的領域包括：訊號處理、圖型識別、概率論和資訊理論、發聲機理和聽覺機理、人工智慧等等。
@@ -43,24 +53,26 @@ https://www.twman.org/AI/ASR/SpeakerRecognition
 找到描述特定對象的聲紋特徵，通過聲音判別說話人身份的技術；借助不同人的聲音，在語譜圖的分佈情況不同這一特徵，去對比兩個人的聲音，來判斷是否同人。
 
 ### **相關論文**
-[Wespeaker: A Research and Production oriented Speaker Embedding Learning Toolkit](https://arxiv.org/pdf/2210.17016.pdf)
+* [Wespeaker: A Research and Production oriented Speaker Embedding Learning Toolkit](https://arxiv.org/pdf/2210.17016.pdf)
 
-[SincNet：Speaker Recognition from Raw Waveform with SincNet](https://arxiv.org/abs/1808.00158)
+* [SincNet：Speaker Recognition from Raw Waveform with SincNet](https://arxiv.org/abs/1808.00158)
 
 ### **相關連結**
-[Wespeaker v1.2.0 發布：新增SSL Recipe，NIST SRE 數據集支持, PLDA 及自適應代碼等](https://zhuanlan.zhihu.com/p/645726183)
+* [Wespeaker v1.2.0 發布：新增SSL Recipe，NIST SRE 數據集支持, PLDA 及自適應代碼等](https://zhuanlan.zhihu.com/p/645726183)
 
-[ASV-Subtools聲紋識別實戰](https://speech.xmu.edu.cn/2022/1124/c18207a465302/page.htm)
+* [ASV-Subtools聲紋識別實戰](https://speech.xmu.edu.cn/2022/1124/c18207a465302/page.htm)
 
-[ICASSP 2023說話人識別方向論文合集（一）](https://zhuanlan.zhihu.com/p/645560614)
+* [ICASSP 2023說話人識別方向論文合集（一）](https://zhuanlan.zhihu.com/p/645560614)
 
-[聲紋識別原理](https://www.zhihu.com/question/30141460)
+* [聲紋識別原理](https://www.zhihu.com/question/30141460)
 
-[深度學習在聲紋識別中的應用](https://yutouwd.github.io/posts/600d0d5d/)
+* [深度學習在聲紋識別中的應用](https://yutouwd.github.io/posts/600d0d5d/)
 
-[相關聲紋識別介紹匯整](http://xinguiz.com/category/#/声纹识别)
+* [相關聲紋識別介紹匯整](http://xinguiz.com/category/#/声纹识别)
 
-[提高聲紋辨識正確率 更添防疫新利器](https://www.nchc.org.tw/Message/MessageView/3731?mid=43)
+* [提高聲紋辨識正確率 更添防疫新利器](https://www.nchc.org.tw/Message/MessageView/3731?mid=43)
+
+* [CN-Celeb-AV: 多場景視聽多模態數據集發布](https://zhuanlan.zhihu.com/p/647786644)
 
 ### **開發心得：**
 (2020/03/08-2020/08/29) 投入約150天。通常我們是怎樣開始項目的研究與開發？首先會先盡可能的把3年內的學術論文或比賽等SOTA都查到，然後分工閱讀找到相關的數據集和論文及相關實作；同時會找到目前已有相關產品的公司(含新創)及他們提交的專利，這部份通常再花約30天的時間；通常就是透過 Google patens、paper with codes、arxiv等等。
@@ -86,12 +98,12 @@ https://www.twman.org/AI/ASR/SpeechEnhancement
 找到描述特定聲音特徵，並將其去除以提高質量；從含雜訊的語音信號中提取出純淨語音的過程
 
 ### **相關論文**
-[Real Time Speech Enhancement in the Waveform Domain](https://arxiv.org/pdf/2006.12847.pdf)
+* [Real Time Speech Enhancement in the Waveform Domain](https://arxiv.org/pdf/2006.12847.pdf)
 
 ### **相關連結**
-https://github.com/facebookresearch/denoiser
+* https://github.com/facebookresearch/denoiser
 
-https://www.youtube.com/watch?v=77cm_MVtLfk
+* https://www.youtube.com/watch?v=77cm_MVtLfk
 
 ### **開發心得：**
 (2020/08/30-2021/01/25) 分組投入約150天；說到會做語音增強(去噪音)，這一切真的只是因為那有一面之緣的圖靈獎大神在FB發文介紹FAIR的最新成果；而噪音去除你可以跟另外一個聲音分離做聯想，基本概念其實差不多，只是噪音去除是把非人聲給去除 (記得注意一下是不是多通道)；而做這個項目時，一樣也是匯整準備了相當多的學術論文和實驗結果 (如下所附) ；做語音感覺上數據也是很重要，但噪音去除相對的數據集就比較好處理，網路上都可以找到，只要進行前後調整合併，就可以產出數量頗大的數據集，唯一需要考量的就是你的 GPU 夠不夠大整個吃下了，還有你這些數據集裡的人聲是不是一樣是英文，或者是你想要中文的效果？順道一提最後我們的模型大小是經過優化的9 MB，而 RTF 是 0.08。
@@ -106,19 +118,19 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關論文**
 
-[Stabilizing Label Assignment for Speech Separation by Self-supervised Pre-training](https://arxiv.org/abs/2010.15366)
+* [Stabilizing Label Assignment for Speech Separation by Self-supervised Pre-training](https://arxiv.org/abs/2010.15366)
 
-* https://github.com/SungFeng-Huang/SSL-pretraining-separation
+    * https://github.com/SungFeng-Huang/SSL-pretraining-separation
 
-[Self-supervised Pre-training Reduces Label Permutation Instability of Speech Separation](https://arxiv.org/pdf/2010.15366v1.pdf)
+* [Self-supervised Pre-training Reduces Label Permutation Instability of Speech Separation](https://arxiv.org/pdf/2010.15366v1.pdf)
 
-* https://github.com/SungFeng-Huang/SSL-pretraining-separation
+    * https://github.com/SungFeng-Huang/SSL-pretraining-separation
 
-[Sudo rm -rf: Efficient Networks for Universal Audio Source Separation](https://arxiv.org/abs/2007.06833)
+* [Sudo rm -rf: Efficient Networks for Universal Audio Source Separation](https://arxiv.org/abs/2007.06833)
 
-* https://github.com/asteroid-team/asteroid/blob/master/asteroid/models/sudormrf.py
+    * https://github.com/asteroid-team/asteroid/blob/master/asteroid/models/sudormrf.py
     
-* https://github.com/etzinis/sudo_rm_rf
+    * https://github.com/etzinis/sudo_rm_rf
     
 [Dual-Path Transformer Network: Direct Context-Aware Modeling for End-to-End Monaural Speech Separation](https://arxiv.org/pdf/2007.13975v3.pdf)
 
