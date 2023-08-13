@@ -26,18 +26,10 @@ https://huggingface.co/DeepLearning101
     * [使用🤗 Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [自動語音識別與翻譯大模型微調實踐：Whisper微調及推理加速](https://mp.weixin.qq.com/s/86e0eeNhCF-7PmHg_Fw-jQ)
     * [WhisperX](https://github.com/m-bain/whisperX)
-
-
-</br>
-
 * FunASR
-
     * https://github.com/alibaba-damo-academy/FunASR
     * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
     * [達摩院FunASR離線文件轉寫SDK發布](https://zhuanlan.zhihu.com/p/642807244)
-
-</br>
-
 * WeNet：[58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
 * [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
 * [Speech Brain：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
@@ -114,28 +106,17 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關論文**
 
-* [Stabilizing Label Assignment for Speech Separation by Self-supervised Pre-training](https://arxiv.org/abs/2010.15366)
-
+* Stabilizing Label Assignment for Speech Separation by Self-supervised Pre-training：https://arxiv.org/abs/2010.15366
     * https://github.com/SungFeng-Huang/SSL-pretraining-separation
-
-* [Self-supervised Pre-training Reduces Label Permutation Instability of Speech Separation](https://arxiv.org/pdf/2010.15366v1.pdf)
-
+* Self-supervised Pre-training Reduces Label Permutation Instability of Speech Separation：https://arxiv.org/pdf/2010.15366v1.pdf
     * https://github.com/SungFeng-Huang/SSL-pretraining-separation
-
-* [Sudo rm -rf: Efficient Networks for Universal Audio Source Separation](https://arxiv.org/abs/2007.06833)
-
-    * https://github.com/asteroid-team/asteroid/blob/master/asteroid/models/sudormrf.py
-    
-    * https://github.com/etzinis/sudo_rm_rf
-    
-* [Dual-Path Transformer Network: Direct Context-Aware Modeling for End-to-End Monaural Speech Separation](https://arxiv.org/pdf/2007.13975v3.pdf)
-
-* [Dual-path RNN: efficient long sequence modeling for time-domain single-channel speech separation](https://arxiv.org/pdf/1910.06379.pdf)
-
+* Sudo rm -rf: Efficient Networks for Universal Audio Source Separation：https://arxiv.org/abs/2007.06833
+    * https://github.com/asteroid-team/asteroid/blob/master/asteroid/models/sudormrf.py 
+    * https://github.com/etzinis/sudo_rm_rf   
+* Dual-Path Transformer Network: Direct Context-Aware Modeling for End-to-End Monaural Speech Separation：https://arxiv.org/pdf/2007.13975v3.pdf
+* Dual-path RNN: efficient long sequence modeling for time-domain single-channel speech separation：https://arxiv.org/pdf/1910.06379.pdf
     * https://github.com/JusperLee/Dual-path-RNN-Pytorch
-
     * [閱讀筆記”Dual-path RNN for Speech Separation“](https://zhuanlan.zhihu.com/p/104606356)
-
 
 ### **相關連結**
 
