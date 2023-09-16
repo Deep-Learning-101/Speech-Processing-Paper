@@ -120,6 +120,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
+* [ICASSP2023論文代碼開源｜TOLD能對混疊語音建模的說話人日誌框架](https://zhuanlan.zhihu.com/p/650346578)
 * [ICASSP 2023論文模型開源｜語音分離Mossformer](https://zhuanlan.zhihu.com/p/609728122)
 
 ### **開發心得：**
@@ -137,6 +138,8 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
+* [清華大學LightGrad-TTS，且流式實現](https://zhuanlan.zhihu.com/p/656012430)
+    * https://github.com/thuhcsi/LightGrad
 * [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
 * [VALL-E：微軟全新語音合成模型可以在3秒內復制任何人的聲音](https://zhuanlan.zhihu.com/p/598473227)
 * [BLSTM-RNN、Deep Voice、Tacotron…你都掌握了吗？一文总结语音合成必备经典模型（一）](https://new.qq.com/rain/a/20221204A02GIT00)
