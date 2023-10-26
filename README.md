@@ -10,6 +10,8 @@ https://huggingface.co/DeepLearning101
 
 [語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
 
+[Mozilla Common Voice - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
+
 ### **相關論文**
 
 * Whisper: [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
