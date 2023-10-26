@@ -10,7 +10,7 @@ https://huggingface.co/DeepLearning101
 
 [語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
 
-[Mozilla Common Voice - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
+[Mozilla Common Voice Datasets - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
 
 ### **相關論文**
 
@@ -21,20 +21,20 @@ https://huggingface.co/DeepLearning101
 * [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
 
 ### **相關連結**
-* Whisper
+* **Whisper**
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [使用🤗 Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [WhisperX](https://github.com/m-bain/whisperX)
-* FunASR
+* **FunASR**
     * https://github.com/alibaba-damo-academy/FunASR
     * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
     * [達摩院FunASR離線文件轉寫SDK發布](https://zhuanlan.zhihu.com/p/642807244)
-* WeNet：[58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
-* [PaddleSpeech](https://github.com/PaddlePaddle/PaddleSpeech)
-* [Speech Brain：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
-* [Kaldi 2：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
+* **WeNet**：[58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
+* [**PaddleSpeech**](https://github.com/PaddlePaddle/PaddleSpeech)
+* [**Speech Brain**：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
+* [**Kaldi 2**：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
     * [Next-gen-Kaldi 近期進展](https://zhuanlan.zhihu.com/p/617877445)
 
 
