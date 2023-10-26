@@ -24,7 +24,6 @@ https://huggingface.co/DeepLearning101
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [使用🤗 Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
-    * [自動語音識別與翻譯大模型微調實踐：Whisper微調及推理加速](https://mp.weixin.qq.com/s/86e0eeNhCF-7PmHg_Fw-jQ)
     * [WhisperX](https://github.com/m-bain/whisperX)
 * FunASR
     * https://github.com/alibaba-damo-academy/FunASR
