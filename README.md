@@ -23,6 +23,7 @@ https://huggingface.co/DeepLearning101
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)：[微調Whisper模型與加速推理](https://yeyupiaoling.blog.csdn.net/article/details/130332404)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
+    * [在消費級顯示卡上微調OpenAI開源的自動語言辨識模型Whisper：8GB記憶體即可針對自己的資料建立ASR模型](https://www.datalearner.com/blog/1051684336082480)
     * [WhisperX](https://github.com/m-bain/whisperX)
 * **FunASR**
     * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
