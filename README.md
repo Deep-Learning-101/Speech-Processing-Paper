@@ -20,12 +20,17 @@ https://huggingface.co/DeepLearning101
 * **Whisper**
     * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
-    * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)：[微調Whisper模型與加速推理](https://yeyupiaoling.blog.csdn.net/article/details/130332404)
-    * [【語音辨識】OpenAI語音力作Whisper](https://zhuanlan.zhihu.com/p/664595535)
+    * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
+    * [OpenAI大動作：Whisper large-v3重塑語音辨識技術](https://zhuanlan.zhihu.com/p/665560972)
+    * [語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
+    * [Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)：https://github.com/Vaibhavs10/insanely-fast-whisper
+    * [微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
+    * [OpenAI語音力作Whisper](https://zhuanlan.zhihu.com/p/664595535)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [在消費級顯示卡上微調OpenAI開源的自動語言辨識模型Whisper：8GB記憶體即可針對自己的資料建立ASR模型](https://www.datalearner.com/blog/1051684336082480)
     * [WhisperX](https://github.com/m-bain/whisperX)
+    * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
 * **FunASR**
     * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
     * https://github.com/alibaba-damo-academy/FunASR
@@ -38,7 +43,8 @@ https://huggingface.co/DeepLearning101
 * [**Kaldi 2**：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
     * [Next-gen-Kaldi 近期進展](https://zhuanlan.zhihu.com/p/617877445)
 * [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
-* [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)    
+* [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
+* [Meta Massively Multilingual Speech, MMS](https://github.com/facebookresearch/fairseq)：https://huggingface.co/facebook/mms-tts-eng
 
 
 ### **2020/03-2021/01 開發心得：**
@@ -141,18 +147,27 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
-  - [**Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
-  - [**新一代開源語音庫CoQui TTS衝到了GitHub 20.5k Star**](https://zhuanlan.zhihu.com/p/661291996)：https://github.com/coqui-ai/TTS/
-  - [**清華大學LightGrad-TTS，且流式實現**](https://zhuanlan.zhihu.com/p/656012430)：https://github.com/thuhcsi/LightGrad
-  - **Bark**：https://github.com/suno-ai/bark
-      - [最強文本轉語音工具：Bark，本地安裝+雲端部署+在線體驗詳細教程](https://zhuanlan.zhihu.com/p/630900585)
-      - [使用Transformers 優化文本轉語音模型Bark](https://zhuanlan.zhihu.com/p/651951136)
-  - [**Wunjo AI: Synthesize & clone voices in English, Russian & Chinese**](https://github.com/wladradchenko/wunjo.wladradchenko.ru)：https://huggingface.co/wladradchenko/wunjo.wladradchenko.ru
-  - [VALL-E：微軟全新語音合成模型可以在3秒內復制任何人的聲音](https://zhuanlan.zhihu.com/p/598473227)
-      - [非官方](https://lifeiteng.github.io/valle/)：To avoid abuse, Well-trained models and services will not be provided.
+* [**Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
+* [coqui-ai TTS](https://github.com/coqui-ai/TTS)
+    * [XTTS v2線上體驗](https://huggingface.co/spaces/coqui/xtts)
+    * [coqui-ai TTS 簡評](https://www.speechhome.com/blogs/news/1726435660778311680)
+    * [新一代開源語音庫CoQui TTS衝到了GitHub 20.5k Star](https://zhuanlan.zhihu.com/p/661291996)：https://github.com/coqui-ai/TTS/
+* [EmotiVoice](https://github.com/netease-youdao/EmotiVoice)
+    * [正式開源！網路易有道上線「易魔聲」語音合成引擎](https://zhuanlan.zhihu.com/p/666172336)
+* **Bark**：https://github.com/suno-ai/bark
+    * [最強文本轉語音工具：Bark，本地安裝+雲端部署+在線體驗詳細教程](https://zhuanlan.zhihu.com/p/630900585)
+    * [使用Transformers 優化文本轉語音模型Bark](https://zhuanlan.zhihu.com/p/651951136)
+    * [GitHub 開源神器Bark模型，讓文字轉語音更簡單！](https://www.speechhome.com/blogs/news/1724361984838864896)
+* [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2)
+    * [本地訓練,開箱可用,Bert-VITS2 V2.0.2版本本地基於現有資料集訓練](https://zhuanlan.zhihu.com/p/668211415)
+    * [栩栩如生,音色克隆,Bert-vits2文字轉語音打造鬼畜視訊實踐](https://zhuanlan.zhihu.com/p/662885913)
+* [**清華大學LightGrad-TTS，且流式實現**](https://zhuanlan.zhihu.com/p/656012430)：https://github.com/thuhcsi/LightGrad
+* [**Wunjo AI: Synthesize & clone voices in English, Russian & Chinese**](https://github.com/wladradchenko/wunjo.wladradchenko.ru)：https://huggingface.co/wladradchenko/wunjo.wladradchenko.ru
+* [VALL-E：微軟全新語音合成模型可以在3秒內復制任何人的聲音](https://zhuanlan.zhihu.com/p/598473227)
+    * [非官方](https://lifeiteng.github.io/valle/)：To avoid abuse, Well-trained models and services will not be provided.
 
 
-  - [BLSTM-RNN、Deep Voice、Tacotron…你都掌握了吗？一文总结语音合成必备经典模型（一）](https://new.qq.com/rain/a/20221204A02GIT00)
-  - [Tacotron2、GST、Glow-TTS、Flow-TTS…你都掌握了吗？一文总结语音合成必备经典模型（二）](https://cloud.tencent.com/developer/article/2250062)
+* [BLSTM-RNN、Deep Voice、Tacotron…你都掌握了吗？一文总结语音合成必备经典模型（一）](https://new.qq.com/rain/a/20221204A02GIT00)
+* [Tacotron2、GST、Glow-TTS、Flow-TTS…你都掌握了吗？一文总结语音合成必备经典模型（二）](https://cloud.tencent.com/developer/article/2250062)
 
-  - [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
+* [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
