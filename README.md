@@ -151,7 +151,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 * [coqui-ai TTS](https://github.com/coqui-ai/TTS)
     * [XTTS v2線上體驗](https://huggingface.co/spaces/coqui/xtts)
     * [coqui-ai TTS 簡評](https://www.speechhome.com/blogs/news/1726435660778311680)
-    * [新一代開源語音庫CoQui TTS衝到了GitHub 20.5k Star](https://zhuanlan.zhihu.com/p/661291996)：https://github.com/coqui-ai/TTS/
+    * [新一代開源語音庫CoQui TTS衝到了GitHub 20.5k Star](https://zhuanlan.zhihu.com/p/661291996)
 * [EmotiVoice](https://github.com/netease-youdao/EmotiVoice)
     * [正式開源！網路易有道上線「易魔聲」語音合成引擎](https://zhuanlan.zhihu.com/p/666172336)
 * **Bark**：https://github.com/suno-ai/bark
