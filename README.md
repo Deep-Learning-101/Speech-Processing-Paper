@@ -21,11 +21,9 @@ https://huggingface.co/DeepLearning101
     * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
-    * [OpenAI大動作：Whisper large-v3重塑語音辨識技術](https://zhuanlan.zhihu.com/p/665560972)
     * [語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
     * [Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)：https://github.com/Vaibhavs10/insanely-fast-whisper
     * [微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
-    * [OpenAI語音力作Whisper](https://zhuanlan.zhihu.com/p/664595535)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [在消費級顯示卡上微調OpenAI開源的自動語言辨識模型Whisper：8GB記憶體即可針對自己的資料建立ASR模型](https://www.datalearner.com/blog/1051684336082480)
