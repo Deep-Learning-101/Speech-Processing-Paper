@@ -152,6 +152,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
     * [新一代開源語音庫CoQui TTS衝到了GitHub 20.5k Star](https://zhuanlan.zhihu.com/p/661291996)
 * [EmotiVoice](https://github.com/netease-youdao/EmotiVoice)
     * [正式開源！網路易有道上線「易魔聲」語音合成引擎](https://zhuanlan.zhihu.com/p/666172336)
+* Amphion@OpenMMLab：https://github.com/open-mmlab/Amphion
 * **Bark**：https://github.com/suno-ai/bark
     * [最強文本轉語音工具：Bark，本地安裝+雲端部署+在線體驗詳細教程](https://zhuanlan.zhihu.com/p/630900585)
     * [使用Transformers 優化文本轉語音模型Bark](https://zhuanlan.zhihu.com/p/651951136)
