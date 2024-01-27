@@ -21,6 +21,7 @@ https://huggingface.co/DeepLearning101
     * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
+    * [免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)：https://github.com/collabora/WhisperLive
     * [語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
     * [Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)：https://github.com/Vaibhavs10/insanely-fast-whisper
     * [微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
@@ -145,7 +146,9 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
-* [**Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
+* [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：[GPT-SoVits: 上線兩天獲得了1.4k star的開源聲音克隆項目，1分鐘語音訓練TTS模型](https://zhuanlan.zhihu.com/p/679547903)
+* [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
+* [Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
 * [coqui-ai TTS](https://github.com/coqui-ai/TTS)
     * [XTTS v2線上體驗](https://huggingface.co/spaces/coqui/xtts)
     * [coqui-ai TTS 簡評](https://www.speechhome.com/blogs/news/1726435660778311680)
