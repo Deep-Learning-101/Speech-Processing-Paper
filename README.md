@@ -23,6 +23,7 @@ https://huggingface.co/DeepLearning101
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
     * [免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)：https://github.com/collabora/WhisperLive
     * [語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
+    * [使用推測解碼使Whisper實現2 倍的推理加速](https://huggingface.co/blog/zh/whisper-speculative-decoding)
     * [Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)：https://github.com/Vaibhavs10/insanely-fast-whisper
     * [微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
