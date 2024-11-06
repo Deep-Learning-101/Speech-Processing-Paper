@@ -169,13 +169,19 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
-* [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：[GPT-SoVits: 上線兩天獲得了1.4k star的開源聲音克隆項目，1分鐘語音訓練TTS模型](https://zhuanlan.zhihu.com/p/679547903)
-
+* 2024/10/15：[阿里最強TTS，STT工具CosyVoice，SenseVoice，在ComfyUI中的使用，讓你實現流暢對話](https://mp.weixin.qq.com/s/Lvijhi3U8jg88C8_h5Gbww)
+* 2024/10/15：[F5-TTS：上海交大開源超逼真聲音克隆TTS，15秒克隆聲音](https://mp.weixin.qq.com/s/tWrjQfl2XkOO8GwwVyFoqw)
+* 2024/09/09：[Hugging Face 開源TTS 模型: Parler-TTS！一行指令即可安裝！](https://mp.weixin.qq.com/s/uzYMnR6ole_RSPE_Es_thw)
+* 2024/06/09：[ChatTTS 開源文字轉語音模型本地部署、API使用和建立WebUI介面](https://mp.weixin.qq.com/s/rL3vyJ_xEj7GGoKaxUh8_A)
+* 2024/08/6：[VALL-E X語音模型，手把手實操語音轉文字和聲音克隆](https://mp.weixin.qq.com/s/Fo8ESzbEfjZQNUUx_giJRA)
+* [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
 
 <details 過往資訊 close>
 <summary><strong>其它連結</strong></summary>
 
-   - [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
+- [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：[GPT-SoVits: 上線兩天獲得了1.4k star的開源聲音克隆項目，1分鐘語音訓練TTS模型](https://zhuanlan.zhihu.com/p/679547903)
+
+- [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
 
 - [Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
 
