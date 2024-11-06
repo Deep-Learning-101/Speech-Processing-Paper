@@ -1,10 +1,32 @@
-# Speech Processing (語音處理)
-
+#
 https://www.twman.org/AI/ASR
 
 https://huggingface.co/DeepLearning101
+#
 
-[那些語音處理 (Speech Processing) 踩的坑](https://blog.twman.org/2021/04/ASR.html)
+<details open>
+<summary><strong>手把手帶你一起踩AI坑：https://reurl.cc/g6GlZX</strong></summary>
+   
+- [白話文手把手帶你科普 GenAI](https://blog.twman.org/2024/08/LLM.html)
+   
+- [ComfyUI + Stable Diffuision](https://blog.twman.org/2024/11/diffusion.html)
+  
+- [大型語言模型直接就打完收工？](https://blog.twman.org/2024/09/LLM.html)
+  
+- [那些檢索增強生成要踩的坑](https://blog.twman.org/2024/07/RAG.html)
+  
+- [那些大型語言模型要踩的坑](https://blog.twman.org/2024/02/LLM.html)
+  
+- [Large Language Model，LLM](https://blog.twman.org/2023/04/GPT.html)
+  
+- [那些自然語言處理踩的坑](https://blog.twman.org/2021/04/NLP.html)
+
+- [那些語音處理 (Speech Processing) 踩的坑](https://blog.twman.org/2021/04/ASR.html)
+
+- [那些ASR和TTS可能會踩的坑](https://blog.twman.org/2024/02/asr-tts.html)
+</details>
+
+# Speech Processing (語音處理)
 
 [音視頻開發基礎入門｜聲音的採集與量化、音頻數字信號質量、音頻碼率](https://zhuanlan.zhihu.com/p/577850804)
 
@@ -148,29 +170,39 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 ### **相關連結**
 
 * [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：[GPT-SoVits: 上線兩天獲得了1.4k star的開源聲音克隆項目，1分鐘語音訓練TTS模型](https://zhuanlan.zhihu.com/p/679547903)
-* [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
-* [Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
-* [coqui-ai TTS](https://github.com/coqui-ai/TTS)
+
+
+<details 過往資訊 close>
+<summary><strong>其它連結</strong></summary>
+
+   - [Retrieval-based-Voice-Conversion-WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI)
+
+- [Rectified Flow Matching 語音合成，上海交大開源**](https://www.speechhome.com/blogs/news/1712396018944970752)：https://github.com/cantabile-kwok/VoiceFlow-TTS
+
+- [coqui-ai TTS](https://github.com/coqui-ai/TTS)
     * [XTTS v2線上體驗](https://huggingface.co/spaces/coqui/xtts)
     * [coqui-ai TTS 簡評](https://www.speechhome.com/blogs/news/1726435660778311680)
     * [新一代開源語音庫CoQui TTS衝到了GitHub 20.5k Star](https://zhuanlan.zhihu.com/p/661291996)
-* [EmotiVoice](https://github.com/netease-youdao/EmotiVoice)
+- [EmotiVoice](https://github.com/netease-youdao/EmotiVoice)
     * [正式開源！網路易有道上線「易魔聲」語音合成引擎](https://zhuanlan.zhihu.com/p/666172336)
-* Amphion@OpenMMLab：https://github.com/open-mmlab/Amphion
-* **Bark**：https://github.com/suno-ai/bark
+
+- Amphion@OpenMMLab：https://github.com/open-mmlab/Amphion
+- Bark：https://github.com/suno-ai/bark
     * [最強文本轉語音工具：Bark，本地安裝+雲端部署+在線體驗詳細教程](https://zhuanlan.zhihu.com/p/630900585)
     * [使用Transformers 優化文本轉語音模型Bark](https://zhuanlan.zhihu.com/p/651951136)
     * [GitHub 開源神器Bark模型，讓文字轉語音更簡單！](https://www.speechhome.com/blogs/news/1724361984838864896)
-* [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2)
+- [Bert-VITS2](https://github.com/fishaudio/Bert-VITS2)
     * [本地訓練,開箱可用,Bert-VITS2 V2.0.2版本本地基於現有資料集訓練](https://zhuanlan.zhihu.com/p/668211415)
     * [栩栩如生,音色克隆,Bert-vits2文字轉語音打造鬼畜視訊實踐](https://zhuanlan.zhihu.com/p/662885913)
-* [**清華大學LightGrad-TTS，且流式實現**](https://zhuanlan.zhihu.com/p/656012430)：https://github.com/thuhcsi/LightGrad
-* [**Wunjo AI: Synthesize & clone voices in English, Russian & Chinese**](https://github.com/wladradchenko/wunjo.wladradchenko.ru)：https://huggingface.co/wladradchenko/wunjo.wladradchenko.ru
-* [VALL-E：微軟全新語音合成模型可以在3秒內復制任何人的聲音](https://zhuanlan.zhihu.com/p/598473227)
+- [清華大學LightGrad-TTS，且流式實現](https://zhuanlan.zhihu.com/p/656012430)：https://github.com/thuhcsi/LightGrad
+
+- [Wunjo AI: Synthesize & clone voices in English, Russian & Chinese](https://github.com/wladradchenko/wunjo.wladradchenko.ru)：https://huggingface.co/wladradchenko/wunjo.wladradchenko.ru
+
+- [VALL-E：微軟全新語音合成模型可以在3秒內復制任何人的聲音](https://zhuanlan.zhihu.com/p/598473227)
     * [非官方](https://lifeiteng.github.io/valle/)：To avoid abuse, Well-trained models and services will not be provided.
+- [BLSTM-RNN、Deep Voice、Tacotron…你都掌握了吗？一文总结语音合成必备经典模型（一）](https://new.qq.com/rain/a/20221204A02GIT00)
 
+- [Tacotron2、GST、Glow-TTS、Flow-TTS…你都掌握了吗？一文总结语音合成必备经典模型（二）](https://cloud.tencent.com/developer/article/2250062)
 
-* [BLSTM-RNN、Deep Voice、Tacotron…你都掌握了吗？一文总结语音合成必备经典模型（一）](https://new.qq.com/rain/a/20221204A02GIT00)
-* [Tacotron2、GST、Glow-TTS、Flow-TTS…你都掌握了吗？一文总结语音合成必备经典模型（二）](https://cloud.tencent.com/developer/article/2250062)
-
-* [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
+- [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
+</details>
