@@ -179,7 +179,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 * [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
 
 <details 過往資訊 close>
-<summary><strong>其它連結</strong></summary>
+<summary><strong>過往資訊</strong></summary>
 
 - [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：[GPT-SoVits: 上線兩天獲得了1.4k star的開源聲音克隆項目，1分鐘語音訓練TTS模型](https://zhuanlan.zhihu.com/p/679547903)
 
