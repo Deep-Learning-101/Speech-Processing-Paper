@@ -41,7 +41,7 @@ https://huggingface.co/DeepLearning101
 
 * 2024/05/01：[使用Hugging Face 推理終端建立強大的「語音辨識+ 說話者分割+ 投機解碼」工作流程](https://huggingface.co/blog/zh/asr-diarization)
 * **Whisper**
-    *  [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
+    * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
     * [免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)：https://github.com/collabora/WhisperLive
@@ -171,6 +171,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
+* 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
 * 2024/10/15：[阿里最強TTS，STT工具CosyVoice，SenseVoice，在ComfyUI中的使用，讓你實現流暢對話](https://mp.weixin.qq.com/s/Lvijhi3U8jg88C8_h5Gbww)
 * 2024/10/15：[F5-TTS：上海交大開源超逼真聲音克隆TTS，15秒克隆聲音](https://mp.weixin.qq.com/s/tWrjQfl2XkOO8GwwVyFoqw)
 * 2024/09/09：[Parler-TTS](https://github.com/huggingface/parler-tts)：[Hugging Face 開源TTS 模型！一行指令即可安裝！](https://mp.weixin.qq.com/s/uzYMnR6ole_RSPE_Es_thw)
