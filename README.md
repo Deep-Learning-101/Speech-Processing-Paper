@@ -41,6 +41,7 @@ https://huggingface.co/DeepLearning101
 
 * 2024/05/01：[使用Hugging Face 推理終端建立強大的「語音辨識+ 說話者分割+ 投機解碼」工作流程](https://huggingface.co/blog/zh/asr-diarization)
 * **Whisper**
+    * 2024-09-07：[CrisperWhisper](https://github.com/nyrahealth/CrisperWhisper)：[CrisperWhisper：精確的逐字語音轉錄工具](https://www.aisharenet.com/crisperwhisper/#google_vignette)
     * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
@@ -125,8 +126,8 @@ https://www.twman.org/AI/ASR/SpeechEnhancement
 * [Real Time Speech Enhancement in the Waveform Domain](https://arxiv.org/pdf/2006.12847.pdf)
 
 ### **相關連結**
+* 2024-12-07：[ClearVoice: Speech Enhancement](https://github.com/modelscope/ClearerVoice-Studio)：[阿里巴巴開源超強語音處理神器，語音分離、音訊視訊說話者擷取等功能一站式解決。](https://juejin.cn/post/7445237715863093275)，[HuggingFace Space Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)
 * https://github.com/facebookresearch/denoiser
-
 * https://www.youtube.com/watch?v=77cm_MVtLfk
 
 ### **2020/08/30-2021/01/25 開發心得：**
@@ -156,6 +157,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
+* 2024-12-07：[ClearVoice: Speech Enhancement](https://github.com/modelscope/ClearerVoice-Studio)：[阿里巴巴開源超強語音處理神器，語音分離、音訊視訊說話者擷取等功能一站式解決。](https://juejin.cn/post/7445237715863093275)，[HuggingFace Space Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)
 * [ICASSP2023論文代碼開源｜TOLD能對混疊語音建模的說話人日誌框架](https://zhuanlan.zhihu.com/p/650346578)
 * [ICASSP 2023論文模型開源｜語音分離Mossformer](https://zhuanlan.zhihu.com/p/609728122)
 
@@ -171,6 +173,8 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
+* 2024/12/09：[fish-speech-1.5](https://huggingface.co/fishaudio/fish-speech-1.5)，[性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)，[fish-speech-gui
+](https://github.com/AnyaCoder/fish-speech-gui)，[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)，[Document](https://speech.fish.audio/zh/)
 * 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
 * 2024/10/15：[阿里最強TTS，STT工具CosyVoice，SenseVoice，在ComfyUI中的使用，讓你實現流暢對話](https://mp.weixin.qq.com/s/Lvijhi3U8jg88C8_h5Gbww)
 * 2024/10/15：[F5-TTS：上海交大開源超逼真聲音克隆TTS，15秒克隆聲音](https://mp.weixin.qq.com/s/tWrjQfl2XkOO8GwwVyFoqw)
