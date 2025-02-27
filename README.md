@@ -7,28 +7,21 @@ https://huggingface.co/DeepLearning101
 <details open>
 <summary><strong>手把手帶你一起踩AI坑：https://reurl.cc/g6GlZX</strong></summary>
    
-- [白話文手把手帶你科普 GenAI](https://blog.twman.org/2024/08/LLM.html)
-   
+- [白話文手把手帶你科普 GenAI](https://blog.twman.org/2024/08/LLM.html)   
 - [ComfyUI + Stable Diffuision](https://blog.twman.org/2024/11/diffusion.html)
-  
-- [大型語言模型直接就打完收工？](https://blog.twman.org/2024/09/LLM.html)
-  
-- [那些檢索增強生成要踩的坑](https://blog.twman.org/2024/07/RAG.html)
-  
-- [那些大型語言模型要踩的坑](https://blog.twman.org/2024/02/LLM.html)
-  
-- [Large Language Model，LLM](https://blog.twman.org/2023/04/GPT.html)
-  
+- [大型語言模型直接就打完收工？](https://blog.twman.org/2024/09/LLM.html)  
+- [那些檢索增強生成要踩的坑](https://blog.twman.org/2024/07/RAG.html)  
+- [那些大型語言模型要踩的坑](https://blog.twman.org/2024/02/LLM.html)  
+- [Large Language Model，LLM](https://blog.twman.org/2023/04/GPT.html)  
 - [那些自然語言處理踩的坑](https://blog.twman.org/2021/04/NLP.html)
-
 - [那些語音處理 (Speech Processing) 踩的坑](https://blog.twman.org/2021/04/ASR.html)
-
 - [那些ASR和TTS可能會踩的坑](https://blog.twman.org/2024/02/asr-tts.html)
 </details>
 
 # Speech Processing (語音處理)
 
 - [音視頻開發基礎入門｜聲音的採集與量化、音頻數字信號質量、音頻碼率](https://zhuanlan.zhihu.com/p/577850804)
+- 2025-01-19：[小米語音首席科學家Daniel Povey：語音辨識捲完了，下一個機會在哪裡？](https://www.jiqizhixin.com/articles/2025-01-19-4?)
 - [一文總覽萬字語音合成系列基礎與論文總結](https://mp.weixin.qq.com/s/S9T9fk9THUF3JQRnNuOM7Q)
 - [語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
 - [Mozilla Common Voice Datasets - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
@@ -173,6 +166,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 
 ### **相關連結**
 
+* [OpenAI-Edge-TTS](https://github.com/travisvn/openai-edge-tts)：[開源的免費文字轉語音API接口，託管在GitHub上](https://mp.weixin.qq.com/s/lt9Vr0hR7wwyhqTh68gTkA)
 * 2024/12/09：[fish-speech-1.5](https://huggingface.co/fishaudio/fish-speech-1.5)，[性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)，[fish-speech-gui
 ](https://github.com/AnyaCoder/fish-speech-gui)，[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)，[Document](https://speech.fish.audio/zh/)
 * 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
@@ -183,6 +177,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 * 2024/06/09：[ChatTTS](https://github.com/2noise/ChatTTS)：[開源文字轉語音模型本地部署、API使用和建立WebUI介面](https://mp.weixin.qq.com/s/rL3vyJ_xEj7GGoKaxUh8_A)
 * 2024/08/6：[VALL-E X語音模型，手把手實操語音轉文字和聲音克隆](https://mp.weixin.qq.com/s/Fo8ESzbEfjZQNUUx_giJRA)
 * MeloTTS：[https://github.com/myshell-ai/MeloTTS](https://github.com/myshell-ai/MeloTTS)
+   * [多語言即時文字轉語音的高品質工具！無GPU也可靈活使用！](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
 * [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
 [Deepgram](* https://deepgram.com/)
 
