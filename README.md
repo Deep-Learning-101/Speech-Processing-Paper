@@ -176,6 +176,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 * 2024/12/09：[fish-speech-1.5](https://huggingface.co/fishaudio/fish-speech-1.5)，[性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)，[fish-speech-gui
 ](https://github.com/AnyaCoder/fish-speech-gui)，[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)，[Document](https://speech.fish.audio/zh/)
 * 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
+* 2024-11-02：[Kokoro-TTS](https://huggingface.co/spaces/hexgrad/Kokoro-TTS)：[Kokoro TTS：文字轉語音AI](https://kokorotts.net/zh-Hant)
 * 2024/10/15：[阿里最強TTS，STT工具CosyVoice，SenseVoice，在ComfyUI中的使用，讓你實現流暢對話](https://mp.weixin.qq.com/s/Lvijhi3U8jg88C8_h5Gbww)
 * 2024/10/15：[F5-TTS：上海交大開源超逼真聲音克隆TTS，15秒克隆聲音](https://mp.weixin.qq.com/s/tWrjQfl2XkOO8GwwVyFoqw)
 * 2024/09/09：[Parler-TTS](https://github.com/huggingface/parler-tts)：[Hugging Face 開源TTS 模型！一行指令即可安裝！](https://mp.weixin.qq.com/s/uzYMnR6ole_RSPE_Es_thw)
@@ -183,6 +184,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 * 2024/08/6：[VALL-E X語音模型，手把手實操語音轉文字和聲音克隆](https://mp.weixin.qq.com/s/Fo8ESzbEfjZQNUUx_giJRA)
 * MeloTTS：[https://github.com/myshell-ai/MeloTTS](https://github.com/myshell-ai/MeloTTS)
 * [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
+[Deepgram](* https://deepgram.com/)
 
 <details 過往資訊 close>
 <summary><strong>過往資訊</strong></summary>
