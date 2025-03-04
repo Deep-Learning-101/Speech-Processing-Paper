@@ -179,7 +179,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 * MeloTTS：[https://github.com/myshell-ai/MeloTTS](https://github.com/myshell-ai/MeloTTS)
    * [多語言即時文字轉語音的高品質工具！無GPU也可靈活使用！](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
 * [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
-[Deepgram](* https://deepgram.com/)
+* [Deepgram](https://deepgram.com/)
 
 <details 過往資訊 close>
 <summary><strong>過往資訊</strong></summary>
