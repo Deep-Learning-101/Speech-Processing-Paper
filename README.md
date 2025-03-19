@@ -167,6 +167,8 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 ### **相關連結**
 
 * [OpenAI-Edge-TTS](https://github.com/travisvn/openai-edge-tts)：[開源的免費文字轉語音API接口，託管在GitHub上](https://mp.weixin.qq.com/s/lt9Vr0hR7wwyhqTh68gTkA)
+* 2025-03-02：[Spark-TTS](http://github.com/SparkAudio/Spark-TTS)：[基於單流解耦語音令牌的高效能文字轉語音模型](https://zhuanlan.zhihu.com/p/29631171989)
+* 2025-03-15：[CSM-Conversational Speech Generation Model](https://github.com/SesameAILabs/csm)：[AI語音合成新標竿！開源10小時斬獲8K Star！ 1B參數實現電影級人聲!](https://mp.weixin.qq.com/s/q4c1bUsRkpQHxFwpePsJLg)
 * 2024/12/09：[fish-speech-1.5](https://huggingface.co/fishaudio/fish-speech-1.5)，[性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)，[fish-speech-gui
 ](https://github.com/AnyaCoder/fish-speech-gui)，[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)，[Document](https://speech.fish.audio/zh/)
 * 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
