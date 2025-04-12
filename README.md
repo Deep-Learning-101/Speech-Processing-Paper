@@ -212,6 +212,7 @@ https://www.twman.org/AI/ASR/SpeechSeparation
 ### **相關連結**
 
 * [OpenAI-Edge-TTS](https://github.com/travisvn/openai-edge-tts)：[開源的免費文字轉語音API接口，託管在GitHub上](https://mp.weixin.qq.com/s/lt9Vr0hR7wwyhqTh68gTkA)
+* 2025-03-30：[MegaTTS3](https://huggingface.co/spaces/ByteDance/MegaTTS3)：[字節跳動MegaTTS3 開源：0.45B 參數實現高品質中英雙語TTS 與語音克隆](https://zhuanlan.zhihu.com/p/1889796359344857240)
 * 2025-03-21：[Orpheus TTS](https://github.com/canopyai/Orpheus-TTS)
    * [Space@HuggingFace](https://huggingface.co/spaces/MohamedRashad/Orpheus-TTS)
    * [一款剛剛開源的TTS語音模型！ 25ms超低延遲支援即時對話](https://zhuanlan.zhihu.com/p/31739692960)
