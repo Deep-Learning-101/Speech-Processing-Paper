@@ -4,7 +4,7 @@ https://www.twman.org/AI/ASR
 https://huggingface.co/DeepLearning101
 #
 
-## 🎙️ 語音識別 / 合成平台比較
+## 🎙️ 語音識別 / 合成平台假格比較
 
 | 名稱 | 功能 | 網址 | 說明 |
 |------|------|------|------|
