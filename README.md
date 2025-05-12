@@ -108,7 +108,6 @@ https://huggingface.co/DeepLearning101
     * [在消費級顯示卡上微調OpenAI開源的自動語言辨識模型Whisper：8GB記憶體即可針對自己的資料建立ASR模型](https://www.datalearner.com/blog/1051684336082480)
     * [WhisperX](https://github.com/m-bain/whisperX)
     * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
-* 2024/07/03：[SenseVoice](https://funaudiollm.github.io/)：[阿里開源語音大模型：語音辨識效果與表現強於Whisper，還能偵測掌聲、笑聲、咳嗽等！](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)
 *  **FunASR**
     * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
     * https://github.com/alibaba-damo-academy/FunASR
@@ -123,6 +122,8 @@ https://huggingface.co/DeepLearning101
 * [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
 * [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
 * [Meta Massively Multilingual Speech, MMS](https://github.com/facebookresearch/fairseq)：https://huggingface.co/facebook/mms-tts-eng
+* 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
+* 2024/07/03：[SenseVoice](https://funaudiollm.github.io/)：[阿里開源語音大模型：語音辨識效果與表現強於Whisper，還能偵測掌聲、笑聲、咳嗽等！](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)  
 
 
 ### **2020/03-2021/01 開發心得：**
