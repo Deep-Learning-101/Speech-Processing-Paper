@@ -4,7 +4,7 @@ https://www.twman.org/AI/ASR
 https://huggingface.co/DeepLearning101
 #
 
-## 🎙️ 語音識別 / 合成平台假格比較
+## 🎙️ 語音識別 / 合成平台價格比較
 
 | 名稱 | 功能 | 網址 | 說明 |
 |------|------|------|------|
@@ -16,13 +16,11 @@ https://huggingface.co/DeepLearning101
 | [Google WaveNet](https://cloud.google.com/text-to-speech/pricing) | 語音合成 | TTS：英文 $0.024，中文 $0.072 |
 | [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/pricing?hl=zh-tw#gemini-models) | 大型語言模型 | Gemini/Claude 定價頁 |
 | [Google Cloud VM](https://cloud.google.com/compute/vm-instance-pricing?hl=zh-tw#sharedcore_machine_types) | 虛擬機器 | VM 執行個體定價頁面 |
-                                                                                        |
-
 
 <details open>
 <summary><strong>手把手帶你一起踩AI坑：https://blog.twman.org/p/deeplearning101.html</strong></summary>
    
-- [那些 AI Agent 要踩的坑](https://blog.twman.org/2025/03/AIAgent.html)：淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。
+- [避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案](https://blog.twman.org/2025/03/AIAgent.html)：淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。
    - 介紹生成式人工智慧（GenAI）的核心概念，包括大型語言模型（LLM）、提示詞設計（Prompt）、檢索增強生成（RAG）、微調（Fine-Tuning）、功能調用（Function Calling）、工作流程（Workflow）、代理人（Agentic）和多模態（Multimodal）等。
    - 分享這些技術在實際應用中的經驗，並強調了硬體資源和數據在開發過程中的重要性。
      
@@ -34,14 +32,14 @@ https://huggingface.co/DeepLearning101
    - 回顧在大型語言模型（LLM）領域的探索歷程，分享了在語音識別、文本分類等多個自然語言處理（NLP）任務中的實踐經驗。
    - 隨著 LLM 的出現，許多過去需要複雜處理的任務變得更加簡單，並討論了硬體升級對 AI 開發的重要性。
 
-- [那些檢索增強生成要踩的坑](https://blog.twman.org/2024/07/RAG.html)：探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。
+- [檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧](https://blog.twman.org/2024/07/RAG.html)：探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。
    - 探討了檢索增強生成（Retrieval-Augmented Generation, RAG）技術的應用與挑戰，特別是結合知識圖譜的 GraphRAG 方法。 ​
    - 分享在本地端部署大型語言模型（LLM）的經驗，並強調了硬體資源的重要性。
    - 還介紹如何有效地將文檔拆分為片段（chunk），並使用嵌入模型和重新排序器（Reranker）來提升檢索結果的準確性。 ​
    - 提供多種開源工具的推薦，如 Ollama、xinference 和 MinerU，來協助處理 PDF 等非結構化資料。
    - 文章強調了在實施 RAG 技術時需注意的各種挑戰，並提供了實用的經驗分享和工具建議。
   
-- [那些大型語言模型要踩的坑](https://blog.twman.org/2024/02/LLM.html)：探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。
+- [大型語言模型 (LLM) 入門完整指南：原理、應用與未來](https://blog.twman.org/2024/02/LLM.html)：探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。
    - 探討多種大型語言模型（LLM）工具的應用與挑戰，包括 Ollama、Dify、OpenManus、LangFlow、Flowise、RAGFlow、AnythingLLM、CrewAI 和 AutoGen。
    - 分享這些工具在實際應用中的經驗，並指出部分工具在穩定性和安裝過程中可能遇到的困難。
    - 強調了硬體資源在 LLM 開發中的重要性，並提供了硬體升級的建議。       
@@ -51,12 +49,12 @@ https://huggingface.co/DeepLearning101
    - 詳細說明了訓練這些模型所需的龐大資源，例如，訓練 GPT-3 模型需要使用 1,024 張 A100 GPU，耗時 24 天。
    - 強調硬體資源在 LLM 開發中的關鍵作用，並分享了作者在硬體升級方面的經驗。
      
-- [ComfyUI + Stable Diffuision](https://blog.twman.org/2024/11/diffusion.html)：深入探討影像生成與分割技術的應用，強調硬體資源的重要性。
+- [Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)](https://blog.twman.org/2024/11/diffusion.html)：深入探討影像生成與分割技術的應用，強調硬體資源的重要性。
    - 深入探討了多種影像生成與分割技術的應用與發展，特別是 ComfyUI、Stable Diffusion、FLUX、Segment Anything Model 2（SAM2）等工具的結合使用。
    - 分享實際應用中的經驗，並強調了硬體資源在影像處理任務中的重要性。
    - 介紹了多模態模型的應用，展示了如何同時處理文本、影像等多種數據形式，以提升影像生成與分割的效果。
 
-- [那些ASR和TTS可能會踩的坑](https://blog.twman.org/2024/02/asr-tts.html)探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。
+- [ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策](https://blog.twman.org/2024/02/asr-tts.html)探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。
    - 探討了在自動語音識別（ASR）和文本轉語音（TTS）技術應用中可能遇到的問題與解決方案。
    - 分享在實際商業場景中使用 OpenAI 的 Whisper 模型的經驗，並強調了微調模型以提升中文語音識別效果的重要性。
    - 文章介紹了多種開源工具，如 faster-whisper、WhisperX 和 BELLE-2，這些工具可用於優化 ASR 和 TTS 的性能。
@@ -89,8 +87,6 @@ https://huggingface.co/DeepLearning101
 
 #
 # 中文語音識別 (Chinese Speech Recognition)
-
-### RelatedLink
 
 * 2024/05/01：[使用Hugging Face 推理終端建立強大的「語音辨識+ 說話者分割+ 投機解碼」工作流程](https://huggingface.co/blog/zh/asr-diarization)
 * **Whisper**
@@ -173,6 +169,8 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 # 中文語音增強(去噪) Chinese Speech Enhancement
 
 https://www.twman.org/AI/ASR/SpeechEnhancement
+
+https://huggingface.co/spaces/DeepLearning101/Speech-Quality-Inspection_Meta-Denoiser
 
 找到描述特定聲音特徵，並將其去除以提高質量；從含雜訊的語音信號中提取出純淨語音的過程
 
