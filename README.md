@@ -5,7 +5,7 @@ https://huggingface.co/DeepLearning101
 #
 
 ## 🎙️ 語音識別 / 合成平台價格比較
-
+~2025/04
 | 名稱 | 功能 | 網址 | 說明 |
 |------|------|------|------|
 | [Whisper (開源)](https://github.com/openai/whisper) | 語音識別、翻譯 | 每分鐘150字 × 10分鐘 = 1500字 |
@@ -118,6 +118,7 @@ https://huggingface.co/DeepLearning101
 * [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
 * [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
 * [Meta Massively Multilingual Speech, MMS](https://github.com/facebookresearch/fairseq)：https://huggingface.co/facebook/mms-tts-eng
+* 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)  
 * 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
 * 2024/07/03：[SenseVoice](https://funaudiollm.github.io/)：[阿里開源語音大模型：語音辨識效果與表現強於Whisper，還能偵測掌聲、笑聲、咳嗽等！](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)  
 
