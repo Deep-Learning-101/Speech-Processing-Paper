@@ -17,64 +17,52 @@ https://huggingface.co/DeepLearning101
 | [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/pricing?hl=zh-tw#gemini-models) | 大型語言模型 | Gemini/Claude 定價頁 |
 | [Google Cloud VM](https://cloud.google.com/compute/vm-instance-pricing?hl=zh-tw#sharedcore_machine_types) | 虛擬機器 | VM 執行個體定價頁面 |
 
-<details close>
-<summary><strong>手把手帶你一起踩AI坑：https://blog.twman.org/p/deeplearning101.html</strong></summary>
-   
-- [避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案](https://blog.twman.org/2025/03/AIAgent.html)：淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。
-   - 介紹生成式人工智慧（GenAI）的核心概念，包括大型語言模型（LLM）、提示詞設計（Prompt）、檢索增強生成（RAG）、微調（Fine-Tuning）、功能調用（Function Calling）、工作流程（Workflow）、代理人（Agentic）和多模態（Multimodal）等。
-   - 分享這些技術在實際應用中的經驗，並強調了硬體資源和數據在開發過程中的重要性。
-     
-- [白話文手把手帶你科普 GenAI](https://blog.twman.org/2024/08/LLM.html)：淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。
-   - 介紹生成式人工智慧（GenAI）的核心概念，包括大型語言模型（LLM）、提示詞設計（Prompt）、檢索增強生成（RAG）、微調（Fine-Tuning）、功能調用（Function Calling）、工作流程（Workflow）、代理人（Agentic）和多模態（Multimodal）等。
-   - 分享這些技術在實際應用中的經驗，並強調了硬體資源和數據在開發過程中的重要性。
+---
 
-- [大型語言模型直接就打完收工？](https://blog.twman.org/2024/09/LLM.html)：回顧 LLM 領域探索歷程，討論硬體升級對 AI 開發的重要性。
-   - 回顧在大型語言模型（LLM）領域的探索歷程，分享了在語音識別、文本分類等多個自然語言處理（NLP）任務中的實踐經驗。
-   - 隨著 LLM 的出現，許多過去需要複雜處理的任務變得更加簡單，並討論了硬體升級對 AI 開發的重要性。
+<details>
+<summary>手把手帶你一起踩 AI 坑</summary>
 
-- [檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧](https://blog.twman.org/2024/07/RAG.html)：探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。
-   - 探討了檢索增強生成（Retrieval-Augmented Generation, RAG）技術的應用與挑戰，特別是結合知識圖譜的 GraphRAG 方法。 ​
-   - 分享在本地端部署大型語言模型（LLM）的經驗，並強調了硬體資源的重要性。
-   - 還介紹如何有效地將文檔拆分為片段（chunk），並使用嵌入模型和重新排序器（Reranker）來提升檢索結果的準確性。 ​
-   - 提供多種開源工具的推薦，如 Ollama、xinference 和 MinerU，來協助處理 PDF 等非結構化資料。
-   - 文章強調了在實施 RAG 技術時需注意的各種挑戰，並提供了實用的經驗分享和工具建議。
-  
-- [大型語言模型 (LLM) 入門完整指南：原理、應用與未來](https://blog.twman.org/2024/02/LLM.html)：探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。
-   - 探討多種大型語言模型（LLM）工具的應用與挑戰，包括 Ollama、Dify、OpenManus、LangFlow、Flowise、RAGFlow、AnythingLLM、CrewAI 和 AutoGen。
-   - 分享這些工具在實際應用中的經驗，並指出部分工具在穩定性和安裝過程中可能遇到的困難。
-   - 強調了硬體資源在 LLM 開發中的重要性，並提供了硬體升級的建議。       
+<h3><a href="https://blog.twman.org/p/deeplearning101.html" target="_blank">手把手帶你一起踩 AI 坑</a>：<a href="https://www.twman.org/AI" target="_blank">https://www.twman.org/AI</a></h3>
 
-- [Large Language Model，LLM](https://blog.twman.org/2023/04/GPT.html)：探討 LLM 的發展與應用，強調硬體資源在開發中的關鍵作用。
-   - 探討大型語言模型（LLM）的發展與應用，特別是 OpenAI 的 GPT-3 和 ChatGPT 的影響力。
-   - 詳細說明了訓練這些模型所需的龐大資源，例如，訓練 GPT-3 模型需要使用 1,024 張 A100 GPU，耗時 24 天。
-   - 強調硬體資源在 LLM 開發中的關鍵作用，並分享了作者在硬體升級方面的經驗。
-     
-- [Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)](https://blog.twman.org/2024/11/diffusion.html)：深入探討影像生成與分割技術的應用，強調硬體資源的重要性。
-   - 深入探討了多種影像生成與分割技術的應用與發展，特別是 ComfyUI、Stable Diffusion、FLUX、Segment Anything Model 2（SAM2）等工具的結合使用。
-   - 分享實際應用中的經驗，並強調了硬體資源在影像處理任務中的重要性。
-   - 介紹了多模態模型的應用，展示了如何同時處理文本、影像等多種數據形式，以提升影像生成與分割的效果。
+<ul>
+  <li>
+    <b><a href="https://blog.twman.org/2025/03/AIAgent.html" target="_blank">避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案</a></b>：<a href="https://deep-learning-101.github.io/agent" target="_blank">探討多種 AI 代理人工具的應用經驗與挑戰，分享實用經驗與工具推薦。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/08/LLM.html" target="_blank">白話文手把手帶你科普 GenAI</a></b>：<a href="https://deep-learning-101.github.io/GenAI" target="_blank">淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/09/LLM.html" target="_blank">大型語言模型直接就打完收工？</a></b>：<a href="https://deep-learning-101.github.io/1010LLM" target="_blank">回顧 LLM 領域探索歷程，討論硬體升級對 AI 開發的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/07/RAG.html" target="_blank">檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧</a></b>：<a href="https://deep-learning-101.github.io/RAG" target="_blank">探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/02/LLM.html" target="_blank">大型語言模型 (LLM) 入門完整指南：原理、應用與未來</a></b>：<a href="https://deep-learning-101.github.io/0204LLM" target="_blank">探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2023/04/GPT.html" target="_blank">解析探索大型語言模型：模型發展歷史、訓練及微調技術的 VRAM 估算</a></b>：<a href="https://deep-learning-101.github.io/GPU" target="_blank">探討 LLM 的發展與應用，強調硬體資源在開發中的關鍵作用。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/11/diffusion.html" target="_blank">Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)</a></b>；<a href="https://deep-learning-101.github.io/diffusion" target="_blank">深入探討影像生成與分割技術的應用，強調硬體資源的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2024/02/asr-tts.html" target="_blank">ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策</a></b>：<a href="https://deep-learning-101.github.io/asr-tts" target="_blank">探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2021/04/NLP.html" target="_blank">那些 NLP 踩的坑</a></b>：<a href="https://deep-learning-101.github.io/nlp" target="_blank">分享 NLP 領域的實踐經驗，強調數據質量對模型效果的影響。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2021/04/ASR.html" target="_blank">那些語音處理踩的坑</a></b>：<a href="https://deep-learning-101.github.io/speech" target="_blank">分享語音處理領域的實務經驗，強調資料品質對模型效果的影響。</a>
+  </li>
+  <li>
+    <b><a href="https://blog.twman.org/2020/05/DeepLearning.html" target="_blank">手把手學深度學習安裝環境</a></b>：<a href="https://deep-learning-101.github.io/101" target="_blank">詳細介紹在 Ubuntu 上安裝深度學習環境的步驟，分享實際操作經驗。</a>
+  </li>
+</ul>
 
-- [ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策](https://blog.twman.org/2024/02/asr-tts.html)探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。
-   - 探討了在自動語音識別（ASR）和文本轉語音（TTS）技術應用中可能遇到的問題與解決方案。
-   - 分享在實際商業場景中使用 OpenAI 的 Whisper 模型的經驗，並強調了微調模型以提升中文語音識別效果的重要性。
-   - 文章介紹了多種開源工具，如 faster-whisper、WhisperX 和 BELLE-2，這些工具可用於優化 ASR 和 TTS 的性能。
-   - 強調數據質量在模型訓練中的關鍵作用，並提供了處理和訓練數據的工具與技巧。
-     
-- [那些自然語言處理踩的坑](https://blog.twman.org/2021/04/NLP.html)：分享 NLP 領域的實踐經驗，強調數據質量對模型效果的影響。
-   - 分享在自然語言處理（NLP）領域的實踐經驗，涵蓋文本糾錯、文本分類、文本相似度、命名實體識別、文本摘要和機器閱讀理解等應用。
-   - 強調數據質量對模型效果的關鍵影響，並指出在深度學習興起前，已有多種演算法可供使用。
-   - 文章提到 BERT 等模型的出現對 NLP 領域的重大影響，並建議讀者了解相關技術。
-
-- [那些語音處理 (Speech Processing) 踩的坑](https://blog.twman.org/2021/04/ASR.html)：分享語音處理領域的實務經驗，強調資料品質對模型效果的影響。
-   - 分享在語音處理領域的實務經驗，涵蓋了說話者辨識、語音增強、語音分離等多個面向。
-   - 強調資料品質對模型效果的關鍵影響，並指出在深度學習興起之前，已有多種演算法可供使用。
-   - 文章提到硬體資源在語音處理任務中的重要性，分享了作者在硬體升級的經驗。
-     
-- [手把手帶你學 Pytorch、CUDA、NVIDIA-SMI、cuDNN、Ubuntu、NGC、Docker、NVIDIA-Docker 的安裝與設定](https://blog.twman.org/2020/05/DeepLearning.html)：詳細介紹在 Ubuntu 上安裝深度學習環境的步驟，分享實際操作經驗。
-   - 詳細介紹在 Ubuntu 系統上安裝與配置深度學習環境的步驟，包括 TensorFlow、PyTorch、CUDA、NVIDIA-SMI、cuDNN、NGC、Docker 和 NVIDIA-Docker 等組件。
-   - 分享在實際操作中可能遇到的挑戰與解決方案，並強調硬體資源在深度學習開發中的重要性。
-   - 文章還介紹了作者在硬體升級方面的經驗，展示了從 GIGABYTE GTX 960 4G 到 RTX 6000 Ada 48 GB 等顯卡的演進過程。
 </details>
+
+---
 
 # Speech Processing (語音處理)
 
@@ -96,39 +84,40 @@ https://huggingface.co/DeepLearning101
 
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
+* 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)
+* 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
+* 2025-04-02：[Dolphin](https://github.com/DataoceanAI/Dolphin)；[Dolphin: A Large-Scale Automatic Speech Recognition Model for Eastern Languages](https://arxiv.org/abs/2503.20212)
+* 2024/07/03：[SenseVoice](https://funaudiollm.github.io/)：[阿里開源語音大模型：語音辨識效果與表現強於Whisper，還能偵測掌聲、笑聲、咳嗽等！](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)
 * 2024/05/01：[使用Hugging Face 推理終端建立強大的「語音辨識+ 說話者分割+ 投機解碼」工作流程](https://huggingface.co/blog/zh/asr-diarization)
+
+---
+
 * **Whisper**
-    * 2024-09-07：[CrisperWhisper](https://github.com/nyrahealth/CrisperWhisper)：[CrisperWhisper：精確的逐字語音轉錄工具](https://www.aisharenet.com/crisperwhisper/#google_vignette)
+    * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
     * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
-    * [免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)：https://github.com/collabora/WhisperLive
-    * [語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
-    * [使用推測解碼使Whisper實現2 倍的推理加速](https://huggingface.co/blog/zh/whisper-speculative-decoding)
-    * [Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)：https://github.com/Vaibhavs10/insanely-fast-whisper
-    * [微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
-    * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
-    * [使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
-    * [在消費級顯示卡上微調OpenAI開源的自動語言辨識模型Whisper：8GB記憶體即可針對自己的資料建立ASR模型](https://www.datalearner.com/blog/1051684336082480)
+    * [CrisperWhisper](https://github.com/nyrahealth/CrisperWhisper)：[CrisperWhisper：精確的逐字語音轉錄工具](https://www.aisharenet.com/crisperwhisper/#google_vignette)
+    * [WhisperLive](https://github.com/collabora/WhisperLive)：[免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)
+    * [distil-whisper](https://github.com/huggingface/distil-whisper)：[語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
+    * whisper-speculative-decoding：[使用推測解碼使Whisper實現2 倍的推理加速](https://huggingface.co/blog/zh/whisper-speculative-decoding)
+    * [insanely-fast-whisper](https://github.com/Vaibhavs10/insanely-fast-whisper)；[Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)
+    * Whisper-Finetune：[微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
+    * fine-tune-whisper：[使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [WhisperX](https://github.com/m-bain/whisperX)
     * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
 *  **FunASR**
-    * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://arxiv.org/abs/2305.11013)
-    * https://github.com/alibaba-damo-academy/FunASR
+    * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://github.com/alibaba-damo-academy/FunASR)
     * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
     * [達摩院FunASR離線文件轉寫SDK發布](https://zhuanlan.zhihu.com/p/642807244)
-* **WeNet**：[58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
+* **WeNet**
+    * [58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
     * [WeNet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://arxiv.org/pdf/2102.01547.pdf)
 * [**PaddleSpeech**](https://github.com/PaddlePaddle/PaddleSpeech)
 * [**Speech Brain**：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
 * [**Kaldi 2**：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
     * [Next-gen-Kaldi 近期進展](https://zhuanlan.zhihu.com/p/617877445)
-* [QuartzNet: Deep Automatic Speech Recognition with 1D Time-Channel Separable Convolutions](https://arxiv.org/pdf/1910.10261.pdf)
-* [Self-training and Pre-training are Complementary for Speech Recognition](https://arxiv.org/pdf/2010.11430.pdf)
-* [Meta Massively Multilingual Speech, MMS](https://github.com/facebookresearch/fairseq)：https://huggingface.co/facebook/mms-tts-eng
-* 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)
-* 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
-* 2024/07/03：[SenseVoice](https://funaudiollm.github.io/)：[阿里開源語音大模型：語音辨識效果與表現強於Whisper，還能偵測掌聲、笑聲、咳嗽等！](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)  
+
 
 <details>
 <summary>2020/03-2021/01 開發心得</summary>
@@ -239,6 +228,10 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
 ### **相關連結**
 
 * [OpenAI-Edge-TTS](https://github.com/travisvn/openai-edge-tts)：[開源的免費文字轉語音API接口，託管在GitHub上](https://mp.weixin.qq.com/s/lt9Vr0hR7wwyhqTh68gTkA)
+* [fish-speech](https://huggingface.co/fishaudio/fish-speech-1.5)
+  * [性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)
+  * [fish-speech-gui](https://github.com/AnyaCoder/fish-speech-gui)；[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)；[Document](https://speech.fish.audio/zh/)
+  * 2025-06-05：[OpenAudio S1](https://huggingface.co/fishaudio/openaudio-s1-mini)；[重新定義文字轉語音，釋放聲音的無限潛能](https://zhuanlan.zhihu.com/p/1913864308212863691)
 * 2025-03-30：[MegaTTS3](https://huggingface.co/spaces/ByteDance/MegaTTS3)：[字節跳動MegaTTS3 開源：0.45B 參數實現高品質中英雙語TTS 與語音克隆](https://zhuanlan.zhihu.com/p/1889796359344857240)
 * 2025-03-21：[Orpheus TTS](https://github.com/canopyai/Orpheus-TTS)
    * [Space@HuggingFace](https://huggingface.co/spaces/MohamedRashad/Orpheus-TTS)
@@ -248,8 +241,6 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
    * [驅動「超真人」虛擬助理Maya的即時語音對話模型CSM-1b開源！](https://zhuanlan.zhihu.com/p/30943039927)
 * 2025-03-02：[Spark-TTS](http://github.com/SparkAudio/Spark-TTS)：[基於單流解耦語音令牌的高效能文字轉語音模型](https://zhuanlan.zhihu.com/p/29631171989)
 * 2025-03-01：[Step-Audio](https://github.com/stepfun-ai/Step-Audio)：[[ComfyUI]最新聲音複製技術，配合數位人無敵了](https://mp.weixin.qq.com/s/HLYM5g8bJGCoytcoxOXzjA)
-* 2024/12/09：[fish-speech-1.5](https://huggingface.co/fishaudio/fish-speech-1.5)，[性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)，[fish-speech-gui
-](https://github.com/AnyaCoder/fish-speech-gui)，[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)，[Document](https://speech.fish.audio/zh/)
 * 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
 * 2024-11-02：[Kokoro-TTS](https://huggingface.co/spaces/hexgrad/Kokoro-TTS)：[Kokoro TTS：文字轉語音AI](https://kokorotts.net/zh-Hant)
 * 2024/10/15：[阿里最強TTS，STT工具CosyVoice，SenseVoice，在ComfyUI中的使用，讓你實現流暢對話](https://mp.weixin.qq.com/s/Lvijhi3U8jg88C8_h5Gbww)
@@ -261,6 +252,7 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
    * [多語言即時文字轉語音的高品質工具！無GPU也可靈活使用！](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
 * [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
 * [Deepgram](https://deepgram.com/)
+
 
 
 
