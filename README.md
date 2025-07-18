@@ -84,6 +84,8 @@ https://huggingface.co/DeepLearning101
 
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
+* 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！全面碾壓Whisper，多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
+* 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
 * 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)
 * 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
 * 2025-04-02：[Dolphin](https://github.com/DataoceanAI/Dolphin)；[Dolphin: A Large-Scale Automatic Speech Recognition Model for Eastern Languages](https://arxiv.org/abs/2503.20212)
@@ -106,6 +108,7 @@ https://huggingface.co/DeepLearning101
     * fine-tune-whisper：[使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
     * [WhisperX](https://github.com/m-bain/whisperX)
     * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
+    * [Whisper斷句不夠好？用AI LLM和結構化資料打造完美字幕](https://juejin.cn/post/7526324030387994675)
 *  **FunASR**
     * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://github.com/alibaba-damo-academy/FunASR)
     * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
@@ -209,7 +212,7 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
     * [閱讀筆記”Dual-path RNN for Speech Separation“](https://zhuanlan.zhihu.com/p/104606356)
 
 ### **相關連結**
-
+* 2025-06-03：[SoloSpeech](https://github.com/WangHelin1997/SoloSpeech)；[高品質語音處理模型，一鍵提取指定說話者音訊並提升提取音訊清晰度和品質](https://zhuanlan.zhihu.com/p/1913305854289097038)
 * 2024-12-07：[ClearVoice: Speech Enhancement](https://github.com/modelscope/ClearerVoice-Studio)：[阿里巴巴開源超強語音處理神器，語音分離、音訊視訊說話者擷取等功能一站式解決。](https://juejin.cn/post/7445237715863093275)，[HuggingFace Space Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)
 * [ICASSP2023論文代碼開源｜TOLD能對混疊語音建模的說話人日誌框架](https://zhuanlan.zhihu.com/p/650346578)
 * [ICASSP 2023論文模型開源｜語音分離Mossformer](https://zhuanlan.zhihu.com/p/609728122)
@@ -231,7 +234,7 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
 * [fish-speech](https://huggingface.co/fishaudio/fish-speech-1.5)
   * [性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)
   * [fish-speech-gui](https://github.com/AnyaCoder/fish-speech-gui)；[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)；[Document](https://speech.fish.audio/zh/)
-  * 2025-06-05：[OpenAudio S1](https://huggingface.co/fishaudio/openaudio-s1-mini)；[重新定義文字轉語音，釋放聲音的無限潛能](https://zhuanlan.zhihu.com/p/1913864308212863691)
+  * 2025-06-05：[OpenAudio S1](https://huggingface.co/fishaudio/openaudio-s1-mini)；[重新定義文字轉語音，釋放聲音的無限潛能](https://zhuanlan.zhihu.com/p/1913864308212863691)；[全球唯一高可控多語言TTS-OpenAudio-S1，並開源mini版](https://zhuanlan.zhihu.com/p/1913736328702592271)
 * 2025-03-30：[MegaTTS3](https://huggingface.co/spaces/ByteDance/MegaTTS3)：[字節跳動MegaTTS3 開源：0.45B 參數實現高品質中英雙語TTS 與語音克隆](https://zhuanlan.zhihu.com/p/1889796359344857240)
 * 2025-03-21：[Orpheus TTS](https://github.com/canopyai/Orpheus-TTS)
    * [Space@HuggingFace](https://huggingface.co/spaces/MohamedRashad/Orpheus-TTS)
