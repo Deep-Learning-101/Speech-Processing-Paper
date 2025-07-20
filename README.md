@@ -85,6 +85,7 @@ https://huggingface.co/DeepLearning101
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
 * 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！全面碾壓Whisper，多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
+2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
 * 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
 * 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)
 * 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
