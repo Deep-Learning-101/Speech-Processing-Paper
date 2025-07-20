@@ -127,6 +127,7 @@ https://huggingface.co/DeepLearning101
 <summary>2020/03-2021/01 開發心得</summary>
 語音辨識（speech recognition）技術，也被稱為自動語音辨識（英語：Automatic Speech Recognition, ASR）、電腦語音識別（英語：Computer Speech Recognition）或是語音轉文字識別（英語：Speech To Text, STT），其目標是以電腦自動將人類的語音內容轉換為相應的文字；跟小夥伴們一起嘗試過NEMO還有Kaldi、MASR、VOSK，wav2vec以及Google、Azure等API，更別說後來陸續又出現SpeechBrain、出門問問的WeNet跟騰訊PIKA等。目前已知可訓練聲學模型(AM)中文語音(中國發音/用語，可惜還沒臺灣較靠譜的)公開數據如：Magic-Data_Mandarin-Chinese-Read-Speech-Corpus、aidatatang、aishell-1 、aishell-2等約2000多小時(aishell目前已到4，但想商用至少得破萬小時較靠譜)；再搭配語言模型(LM)，然後基於各種演算法架構優化各有優缺點，效果也各有優劣。與說話人辨識及說話人確認不同，後者嘗試辨識或確認發出語音的說話人而非其中所包含的詞彙內容。 語音辨識技術的應用包括語音撥號、語音導航、室內裝置控制、語音文件檢索、簡單的聽寫資料錄入等。語音辨識技術與其他自然語言處理技術如機器翻譯及語音合成技術相結合，可以構建出更加複雜的應用，例如語音到語音的翻譯。語音辨識技術所涉及的領域包括：訊號處理、圖型識別、概率論和資訊理論、發聲機理和聽覺機理、人工智慧等等。
 </details>
+<br><br>
 
 
 # 中文語者(聲紋)識別 (Chinese Speaker Recognition)
@@ -168,6 +169,7 @@ Real Time Factor 實時比:衡量提取時間跟音頻時長的關係，ex:1秒�
 ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 閥值：當分數超過閥值才做出接受決定。<br><br>  
 </details>
+<br><br>
 
 # 中文語音增強(去噪) (Chinese Speech Enhancement)
 
@@ -189,6 +191,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 <summary>2020/08/30-2021/01/25 開發心得</summary>
 分組投入約150天；說到會做語音增強(去噪音)，這一切真的只是因為那有一面之緣的圖靈獎大神在FB發文介紹FAIR的最新成果；而噪音去除你可以跟另外一個聲音分離做聯想，基本概念其實差不多，只是噪音去除是把非人聲給去除 (記得注意一下是不是多通道)；而做這個項目時，一樣也是匯整準備了相當多的學術論文和實驗結果 (如下所附) ；做語音感覺上數據也是很重要，但噪音去除相對的數據集就比較好處理，網路上都可以找到，只要進行前後調整合併，就可以產出數量頗大的數據集，唯一需要考量的就是你的 GPU 夠不夠大整個吃下了，還有你這些數據集裡的人聲是不是一樣是英文，或者是你想要中文的效果？順道一提最後我們的模型大小是經過優化的9 MB，而 RTF 是 0.08。
 </details>
+<br><br>
 
 # 中文語者分離(分割) (Chinese Speaker Separation)
 
@@ -226,6 +229,7 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
 中間也意外發現了Google brain 的 wavesplit，在有噪音及兩個人同時講話情形下，感覺效果還不差，但沒找到相關的code，未能進一步驗證或是嘗試更改數據集。還有又是那位有一起用餐之緣的深度學習大神 Yann LeCun繼發文介紹 完去噪後，又發文介紹了語音分離；後來還有像是最早應用在NLP的Transformer等Dual-path RNN (DP-RNN) 或 DPT-NET (Dual-path transformer) 等應用在語音增強/分割，另外VoiceFilter、TasNet 跟 Conv-TasNet還有sudo-rm等等也是語音分割相關，當然更不能錯過臺大電機李宏毅老師一篇SSL-pretraining-separation的論文 (務必看完臺大電機李宏毅老師的影片)，最後也是多虧李老師及第一作者黃同學的解惑，然後小夥伴們才又更深入的確認並且解決問題。
 這裡做數據時相對簡單一點，直接打散混合，再從中隨機挑選兩個人，然後分別挑出語音做混合，若長度不同，選擇短者為參考，將長者切到與短者相同，兩兩完全重疊或者兩兩互不完全重疊等都對效果有不小的影響；同時也研究了Data Parallel 跟 Distributed Data Parallel 的差異，但是如何才能在 CPU 上跑得又快又準才是落地的關鍵
 </details>
+<br><br>
 
 # 中文語音合成 (Chinese Speech Synthesis)
 
