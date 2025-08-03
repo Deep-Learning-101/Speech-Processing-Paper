@@ -84,6 +84,7 @@ https://huggingface.co/DeepLearning101
 
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
+* 2025-07-26：[vosk-browser](https://github.com/ccoreilly/vosk-browser)
 * 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！全面碾壓Whisper，多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
 2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
 * 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
@@ -239,6 +240,7 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
 * [fish-speech](https://huggingface.co/fishaudio/fish-speech-1.5)
   * [性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)
   * [fish-speech-gui](https://github.com/AnyaCoder/fish-speech-gui)；[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)；[Document](https://speech.fish.audio/zh/)
+  * 2025-07-25：[Higgs Audio V2](https://github.com/boson-ai/higgs-audio)；[李沐B站更新了！教你手搓語音大模型，程式碼全開源還能在線上試玩](https://zhuanlan.zhihu.com/p/1931365847840069074)
   * 2025-06-05：[OpenAudio S1](https://huggingface.co/fishaudio/openaudio-s1-mini)；[重新定義文字轉語音，釋放聲音的無限潛能](https://zhuanlan.zhihu.com/p/1913864308212863691)；[全球唯一高可控多語言TTS-OpenAudio-S1，並開源mini版](https://zhuanlan.zhihu.com/p/1913736328702592271)
 * 2025-03-30：[MegaTTS3](https://huggingface.co/spaces/ByteDance/MegaTTS3)：[字節跳動MegaTTS3 開源：0.45B 參數實現高品質中英雙語TTS 與語音克隆](https://zhuanlan.zhihu.com/p/1889796359344857240)
 * 2025-03-21：[Orpheus TTS](https://github.com/canopyai/Orpheus-TTS)
