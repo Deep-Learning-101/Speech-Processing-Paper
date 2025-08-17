@@ -249,6 +249,8 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
     * [李沐B站更新了！教你手搓語音大模型，程式碼全開源還能在線上試玩](https://zhuanlan.zhihu.com/p/1931365847840069074)
     * 2025-08-03：[Higgs audio學會了越南語](https://github.com/JimmyMa99/train-higgs-audio)
     * [https://mp.weixin.qq.com/s/k7PMihbveN8XUS-bvQOOsw](https://mp.weixin.qq.com/s/k7PMihbveN8XUS-bvQOOsw)
+* 2025-07-23：[FreeAudio](https://freeaudio.github.io/FreeAudio/)；[AI音效90秒長時可控生成！ 「狼嚎2秒，蟋蟀鳴8秒」精準搞定](https://mp.weixin.qq.com/s/gwfbwuQ91AF-WCzSVmTxNQ)
+* 2025-07-14：[MOSS-TTSD](https://www.open-moss.com/en/moss-ttsd/)；[邱錫鵬團隊開源MOSS-TTSD！百萬小時音頻訓練](https://finance.sina.com.cn/tech/roll/2025-07-05/doc-infemitp8423057.shtml)
 * 2025-06-05：[OpenAudio S1](https://huggingface.co/fishaudio/openaudio-s1-mini)；[重新定義文字轉語音，釋放聲音的無限潛能](https://zhuanlan.zhihu.com/p/1913864308212863691)；[全球唯一高可控多語言TTS-OpenAudio-S1，並開源mini版](https://zhuanlan.zhihu.com/p/1913736328702592271)
 * 2025-03-30：[MegaTTS3](https://huggingface.co/spaces/ByteDance/MegaTTS3)：[字節跳動MegaTTS3 開源：0.45B 參數實現高品質中英雙語TTS 與語音克隆](https://zhuanlan.zhihu.com/p/1889796359344857240)
 * 2025-03-21：[Orpheus TTS](https://github.com/canopyai/Orpheus-TTS)
