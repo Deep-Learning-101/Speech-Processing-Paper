@@ -2,6 +2,8 @@
 https://www.twman.org/AI/ASR
 
 https://huggingface.co/DeepLearning101
+
+https://deep-learning-101.github.io/Speech-Processing
 #
 
 ## 🎙️ 語音識別 / 合成平台價格比較
@@ -19,54 +21,10 @@ https://huggingface.co/DeepLearning101
 
 ---
 
-<details>
-<summary>手把手帶你一起踩 AI 坑</summary>
+## Speech-Processing
+**語音處理 (Speech Processing)**
 
-<h3><a href="https://blog.twman.org/p/deeplearning101.html" target="_blank">手把手帶你一起踩 AI 坑</a>：<a href="https://www.twman.org/AI" target="_blank">https://www.twman.org/AI</a></h3>
-
-<ul>
-  <li>
-    <b><a href="https://blog.twman.org/2025/03/AIAgent.html" target="_blank">避開 AI Agent 開發陷阱：常見問題、挑戰與解決方案</a></b>：<a href="https://deep-learning-101.github.io/agent" target="_blank">探討多種 AI 代理人工具的應用經驗與挑戰，分享實用經驗與工具推薦。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/08/LLM.html" target="_blank">白話文手把手帶你科普 GenAI</a></b>：<a href="https://deep-learning-101.github.io/GenAI" target="_blank">淺顯介紹生成式人工智慧核心概念，強調硬體資源和數據的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/09/LLM.html" target="_blank">大型語言模型直接就打完收工？</a></b>：<a href="https://deep-learning-101.github.io/1010LLM" target="_blank">回顧 LLM 領域探索歷程，討論硬體升級對 AI 開發的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/07/RAG.html" target="_blank">檢索增強生成(RAG)不是萬靈丹之優化挑戰技巧</a></b>：<a href="https://deep-learning-101.github.io/RAG" target="_blank">探討 RAG 技術應用與挑戰，提供實用經驗分享和工具建議。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/02/LLM.html" target="_blank">大型語言模型 (LLM) 入門完整指南：原理、應用與未來</a></b>：<a href="https://deep-learning-101.github.io/0204LLM" target="_blank">探討多種 LLM 工具的應用與挑戰，強調硬體資源的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2023/04/GPT.html" target="_blank">解析探索大型語言模型：模型發展歷史、訓練及微調技術的 VRAM 估算</a></b>：<a href="https://deep-learning-101.github.io/GPU" target="_blank">探討 LLM 的發展與應用，強調硬體資源在開發中的關鍵作用。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/11/diffusion.html" target="_blank">Diffusion Model 完全解析：從原理、應用到實作 (AI 圖像生成)</a></b>；<a href="https://deep-learning-101.github.io/diffusion" target="_blank">深入探討影像生成與分割技術的應用，強調硬體資源的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2024/02/asr-tts.html" target="_blank">ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策</a></b>：<a href="https://deep-learning-101.github.io/asr-tts" target="_blank">探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2021/04/NLP.html" target="_blank">那些 NLP 踩的坑</a></b>：<a href="https://deep-learning-101.github.io/nlp" target="_blank">分享 NLP 領域的實踐經驗，強調數據質量對模型效果的影響。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2021/04/ASR.html" target="_blank">那些語音處理踩的坑</a></b>：<a href="https://deep-learning-101.github.io/speech" target="_blank">分享語音處理領域的實務經驗，強調資料品質對模型效果的影響。</a>
-  </li>
-  <li>
-    <b><a href="https://blog.twman.org/2020/05/DeepLearning.html" target="_blank">手把手學深度學習安裝環境</a></b>：<a href="https://deep-learning-101.github.io/101" target="_blank">詳細介紹在 Ubuntu 上安裝深度學習環境的步驟，分享實際操作經驗。</a>
-  </li>
-</ul>
-
-</details>
-
----
-
-# Speech Processing (語音處理)
-
-- 2025-05-14：[ten-turn-detection](https://deepwiki.com/TEN-framework/ten-turn-detection)；[ten-vad](https://deepwiki.com/TEN-framework/ten-vad)
+- 2025-05-14：[ten-turn-detection](https://zread.ai/TEN-framework/ten-turn-detection)；[ten-vad](https://zread.ai/TEN-framework/ten-vad)
 - 2025-01-19：[小米語音首席科學家Daniel Povey：語音辨識捲完了，下一個機會在哪裡？](https://www.jiqizhixin.com/articles/2025-01-19-4?)
 -  [ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策](https://blog.twman.org/2024/02/asr-tts.html)；[探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性](https://deep-learning-101.github.io/asr-tts)
 -  [那些語音處理踩的坑](https://blog.twman.org/2021/04/ASR.html)；[分享語音處理領域的實務經驗，強調資料品質對模型效果的影響](https://deep-learning-101.github.io/speech)
@@ -77,16 +35,16 @@ https://huggingface.co/DeepLearning101
 - [語音合成,語音辨識常見資料集](https://mp.weixin.qq.com/s/xGAEzuT5x7BkTRH6DCJFhA)
 
 
-
-# 中文語音識別 (Chinese Speech Recognition)
+## Speech-Recognition
+**中文語音識別 (Chinese Speech Recognition)**
 
 [https://www.twman.org/AI/ASR](https://www.twman.org/AI/ASR)
 
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
-* 2025-07-26：[vosk-browser](https://github.com/ccoreilly/vosk-browser)
-* 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！全面碾壓Whisper，多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
-2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
+* 2025-09-19：[Canary-1b-v2_NVIDIA](https://huggingface.co/nvidia/canary-1b-v2)；[推動語音AI 創新：NVIDIA 發布多語種語音AI 開放資料集與模型](https://zhuanlan.zhihu.com/p/1952436345222993067)
+* 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
+* 2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
 * 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
 * 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)
 * 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
@@ -100,17 +58,15 @@ https://huggingface.co/DeepLearning101
     * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
     * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
     * [Introducing Whisper](https://openai.com/research/whisper)
-    * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune)
-    * [CrisperWhisper](https://github.com/nyrahealth/CrisperWhisper)：[CrisperWhisper：精確的逐字語音轉錄工具](https://www.aisharenet.com/crisperwhisper/#google_vignette)
-    * [WhisperLive](https://github.com/collabora/WhisperLive)：[免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)
-    * [distil-whisper](https://github.com/huggingface/distil-whisper)：[語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
-    * whisper-speculative-decoding：[使用推測解碼使Whisper實現2 倍的推理加速](https://huggingface.co/blog/zh/whisper-speculative-decoding)
-    * [insanely-fast-whisper](https://github.com/Vaibhavs10/insanely-fast-whisper)；[Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)
-    * Whisper-Finetune：[微調Whisper語音辨識模型與加速推理](https://github.com/yeyupiaoling/Whisper-Finetune/)
-    * fine-tune-whisper：[使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
-    * [WhisperX](https://github.com/m-bain/whisperX)
-    * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
-    * [Whisper斷句不夠好？用AI LLM和結構化資料打造完美字幕](https://juejin.cn/post/7526324030387994675)
+      * [WhisperLiveKit](https://github.com/QuentinFuxa/WhisperLiveKit)：[別再裸跑Whisper 了！這個開源神器，讓即時語音轉寫絲滑得不像話](https://zhuanlan.zhihu.com/p/1944712252512010607)
+      * [WhisperLive](https://github.com/collabora/WhisperLive)：[免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)
+      * [distil-whisper](https://github.com/huggingface/distil-whisper)：[語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
+      * [insanely-fast-whisper](https://github.com/Vaibhavs10/insanely-fast-whisper)；[Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)
+      * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune/)
+      * fine-tune-whisper：[使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
+      * [WhisperX](https://github.com/m-bain/whisperX)
+      * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
+      * [Whisper斷句不夠好？用AI LLM和結構化資料打造完美字幕](https://juejin.cn/post/7526324030387994675)
 *  **FunASR**
     * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://github.com/alibaba-damo-academy/FunASR)
     * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
@@ -138,8 +94,8 @@ https://huggingface.co/DeepLearning101
 找到描述特定對象的聲紋特徵，通過聲音判別說話人身份的技術；借助不同人的聲音，在語譜圖的分佈情況不同這一特徵，去對比兩個人的聲音，來判斷是否同人。
 
 ### **相關論文**
-* [Wespeaker: A Research and Production oriented Speaker Embedding Learning Toolkit](https://arxiv.org/pdf/2210.17016.pdf)
-* [SincNet：Speaker Recognition from Raw Waveform with SincNet](https://arxiv.org/abs/1808.00158)
+* [Wespeaker: A Research and Production oriented Speaker Embedding Learning Toolkit](https://www.alphaxiv.org/zh/overview/2210.17016v2)
+* [SincNet：Speaker Recognition from Raw Waveform with SincNet](https://www.alphaxiv.org/zh/overview/1808.00158v3)
 
 ### **相關連結**
 * [Wespeaker v1.2.0 發布：新增SSL Recipe，NIST SRE 數據集支持, PLDA 及自適應代碼等](https://zhuanlan.zhihu.com/p/645726183)
@@ -181,7 +137,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 找到描述特定聲音特徵，並將其去除以提高質量；從含雜訊的語音信號中提取出純淨語音的過程
 
 ### **相關論文**
-* [Real Time Speech Enhancement in the Waveform Domain](https://arxiv.org/pdf/2006.12847.pdf)
+* [Real Time Speech Enhancement in the Waveform Domain](https://www.alphaxiv.org/abs/2006.12847v3)
 
 ### **相關連結**
 * 2024-12-07：[ClearVoice: Speech Enhancement](https://github.com/modelscope/ClearerVoice-Studio)：[阿里巴巴開源超強語音處理神器，語音分離、音訊視訊說話者擷取等功能一站式解決。](https://juejin.cn/post/7445237715863093275)，[HuggingFace Space Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)
@@ -240,6 +196,7 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
 * [fish-speech](https://huggingface.co/fishaudio/fish-speech-1.5)
   * [性能超過F5、CosySense，一文帶你理論+實操多種語言克隆效果](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)
   * [fish-speech-gui](https://github.com/AnyaCoder/fish-speech-gui)；[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)；[Document](https://speech.fish.audio/zh/)
+* 2025-08-15：[ZipVoice：CPU is all you need!](https://github.com/k2-fsa/ZipVoice)
 * 2025-08-08：[KittenTTS](https://github.com/KittenML/KittenTTS)；[超迷你 TTS 模型（小於 25 MB）](https://www.reddit.com/r/LocalLLaMA/comments/1mhyzp7/kitten_tts_sota_supertiny_tts_model_less_than_25/?tl=zh-hant)
 * 2025-07-30：[Microsoft DragonV2.1](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/personal-voice-upgraded-to-v2-1-in-azure-ai-speech-more-expressive-than-ever-bef/4435233)
 * 2025-07-25：[Higgs Audio V2](https://github.com/boson-ai/higgs-audio)
