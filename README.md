@@ -42,6 +42,7 @@ https://deep-learning-101.github.io/Speech-Processing
 
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
+* 2025-11-15：[Omnilingual-ASR](https://github.com/facebookresearch/omnilingual-asr)；[DEMO](https://aidemos.atmeta.com/omnilingualasr/language-globe)
 * 2025-09-19：[Canary-1b-v2_NVIDIA](https://huggingface.co/nvidia/canary-1b-v2)；[推動語音AI 創新：NVIDIA 發布多語種語音AI 開放資料集與模型](https://zhuanlan.zhihu.com/p/1952436345222993067)
 * 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
 * 2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
