@@ -44,6 +44,7 @@ https://deep-learning-101.github.io/Speech-Processing
 
 * 2025-11-15：[Omnilingual-ASR](https://github.com/facebookresearch/omnilingual-asr)；[DEMO](https://aidemos.atmeta.com/omnilingualasr/language-globe)
 * 2025-09-19：[Canary-1b-v2_NVIDIA](https://huggingface.co/nvidia/canary-1b-v2)；[推動語音AI 創新：NVIDIA 發布多語種語音AI 開放資料集與模型](https://zhuanlan.zhihu.com/p/1952436345222993067)
+* 2025-08-29：[WhisperLiveKit](http://github.com/QuentinFuxa/WhisperLiveKit)；[別再裸跑Whisper 了！這個開源神器，讓即時語音轉寫絲滑得不像話](https://zhuanlan.zhihu.com/p/1944712252512010607)
 * 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
 * 2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
 * 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
