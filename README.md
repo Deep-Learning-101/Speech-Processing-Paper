@@ -33,6 +33,7 @@ https://deep-learning-101.github.io/Speech-Processing
 - [Mozilla Common Voice Datasets - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
 - [語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
 - [語音合成,語音辨識常見資料集](https://mp.weixin.qq.com/s/xGAEzuT5x7BkTRH6DCJFhA)
+- [2024年-2025年開源語音資料彙整：數十萬小時多語種、兒童老人語音、醫療健康等（截止2025年11月）](https://zhuanlan.zhihu.com/p/1974579913194501708)
 
 
 ## Speech-Recognition
