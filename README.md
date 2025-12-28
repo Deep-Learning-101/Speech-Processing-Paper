@@ -44,11 +44,12 @@ https://deep-learning-101.github.io/Speech-Processing
 
 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
 
-* 2025-12-23：[MedASR](https://huggingface.co/google/medasr)
-* 2025-12-16：[](https://github.com/FunAudioLLM/Fun-ASR)；[[阿里開源0.8B語音辨識模型fun-asr，效能直逼12B巨頭](https://zhuanlan.zhihu.com/p/1984310683358217029)]
+* 2025-12-23：[谷歌發布MedASR醫學語音辨識模型](https://huggingface.co/google/medasr)
+* 2025-12-16：[Fun-ASR](https://github.com/FunAudioLLM/Fun-ASR)；[[阿里開源0.8B語音辨識模型fun-asr，效能直逼12B巨頭](https://zhuanlan.zhihu.com/p/1984310683358217029)]
 * 2025-11-15：[Omnilingual-ASR](https://github.com/facebookresearch/omnilingual-asr)；[DEMO](https://aidemos.atmeta.com/omnilingualasr/language-globe)
-* 2025-09-19：[Canary-1b-v2_NVIDIA](https://huggingface.co/nvidia/canary-1b-v2)；[推動語音AI 創新：NVIDIA 發布多語種語音AI 開放資料集與模型](https://zhuanlan.zhihu.com/p/1952436345222993067)
 * 2025-08-29：[WhisperLiveKit](http://github.com/QuentinFuxa/WhisperLiveKit)；[別再裸跑Whisper 了！這個開源神器，讓即時語音轉寫絲滑得不像話](https://zhuanlan.zhihu.com/p/1944712252512010607)
+* 2025-08-10：[Canary-1b-v2_NVIDIA](https://huggingface.co/nvidia/canary-1b-v2)；[推動語音AI 創新：NVIDIA 發布多語種語音AI 開放資料集與模型](https://zhuanlan.zhihu.com/p/1952436345222993067)
+* 2025-08-08：[parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)；[1秒轉錄1小時音訊！輝達重磅開源語音識別最強模型Parakeet！](https://hk.finance.yahoo.com/news/1%E7%A7%92%E8%BD%89%E9%8C%841%E5%B0%8F%E6%99%82%E9%9F%B3%E8%A8%8A-%E8%BC%9D%E9%81%94%E9%87%8D%E7%A3%85%E9%96%8B%E6%BA%90%E8%AA%9E%E9%9F%B3%E8%AD%98%E5%88%A5%E6%9C%80%E5%BC%B7%E6%A8%A1%E5%9E%8Bparakeet-075846970.html)
 * 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
 * 2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
 * 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
