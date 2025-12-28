@@ -24,6 +24,7 @@ https://deep-learning-101.github.io/Speech-Processing
 ## Speech-Processing
 **語音處理 (Speech Processing)**
 
+- 2025-09-23：[Sherpa onnx](https://github.com/k2-fsa/sherpa-onnx)
 - 2025-05-14：[ten-turn-detection](https://zread.ai/TEN-framework/ten-turn-detection)；[ten-vad](https://zread.ai/TEN-framework/ten-vad)
 - 2025-01-19：[小米語音首席科學家Daniel Povey：語音辨識捲完了，下一個機會在哪裡？](https://www.jiqizhixin.com/articles/2025-01-19-4?)
 -  [ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策](https://blog.twman.org/2024/02/asr-tts.html)；[探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性](https://deep-learning-101.github.io/asr-tts)
@@ -202,6 +203,9 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
   * [fish-speech-gui](https://github.com/AnyaCoder/fish-speech-gui)；[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)；[Document](https://speech.fish.audio/zh/)
 * 2025-12-24：[Qwen3-TTS-VD、Qwen3-TTS-VC](https://link.zhihu.com/?target=https%3A//www.alibabacloud.com/help/zh/model-studio/qwen-tts-voice-design%3Fspm%3Da2ty_o06.30285417.0.0.56a0c9216Ey6VM)；[音色創造 Qwen3-TTS-VD (VoiceDesign) 和音色克隆Qwen3-TTS-VC (VoiceClone)](https://zhuanlan.zhihu.com/p/1987225312841445557)  
 * 2025-12-16：[Fun-CosyVoice3](https://github.com/FunAudioLLM/CosyVoice)；[阿里通義百聆推出語音模型新版本：3 秒錄音即可「複製」9 種語言、18 種方言](https://finance.sina.com.cn/tech/digi/2025-12-15/doc-inhawpkf1938223.shtml)
+* 2025-12-12：[VoxCPM](https://huggingface.co/openbmb/VoxCPM1.5)；[告別機械音！ VoxCPM 1.5開源，這才是我們要的“最強嘴替”](https://zhuanlan.zhihu.com/p/1982596122645116335)
+* 2025-12-08：[VibeVoice-Realtime-0.5B](https://github.com/microsoft/VibeVoice)；[VibeVoice-Realtime：超快流式輸入TTS](https://zhuanlan.zhihu.com/p/1983650496431547790
+* 2025-10-12：[NeuTTS Air](https://github.com/neuphonic/neutts-air)；[只要3秒鐘克隆你的聲音！開源神器NeuTTS Air來了，手機就能跑](https://zhuanlan.zhihu.com/p/1962976509611454658)
 * 2025-08-15：[ZipVoice：CPU is all you need!](https://github.com/k2-fsa/ZipVoice)
 * 2025-08-08：[KittenTTS](https://github.com/KittenML/KittenTTS)；[超迷你 TTS 模型（小於 25 MB）](https://www.reddit.com/r/LocalLLaMA/comments/1mhyzp7/kitten_tts_sota_supertiny_tts_model_less_than_25/?tl=zh-hant)
 * 2025-07-30：[Microsoft DragonV2.1](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/personal-voice-upgraded-to-v2-1-in-azure-ai-speech-more-expressive-than-ever-bef/4435233)
