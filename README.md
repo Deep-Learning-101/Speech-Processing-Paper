@@ -37,55 +37,89 @@ https://deep-learning-101.github.io/Speech-Processing
 - [2024年-2025年開源語音資料彙整：數十萬小時多語種、兒童老人語音、醫療健康等（截止2025年11月）](https://zhuanlan.zhihu.com/p/1974579913194501708)
 
 
-## Speech-Recognition
 **中文語音識別 (Chinese Speech Recognition)**
+> 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述。
+> [🌐 更多 ASR 資源](https://www.twman.org/AI/ASR)
 
-[https://www.twman.org/AI/ASR](https://www.twman.org/AI/ASR)
+### 🔥 最新模型 (2025)
 
-通過語音信號處理和模式識別讓機器自動識別和理解人類的口述
+- 2025-12-23｜**MedASR**
+  - 說明：Google 發布醫學語音辨識模型
+  - 資源：[🤗 HuggingFace](https://huggingface.co/google/medasr)
 
-* 2025-12-23：[谷歌發布MedASR醫學語音辨識模型](https://huggingface.co/google/medasr)
-* 2025-12-16：[Fun-ASR](https://github.com/FunAudioLLM/Fun-ASR)；[[阿里開源0.8B語音辨識模型fun-asr，效能直逼12B巨頭](https://zhuanlan.zhihu.com/p/1984310683358217029)]
-* 2025-11-15：[Omnilingual-ASR](https://github.com/facebookresearch/omnilingual-asr)；[DEMO](https://aidemos.atmeta.com/omnilingualasr/language-globe)
-* 2025-08-29：[WhisperLiveKit](http://github.com/QuentinFuxa/WhisperLiveKit)；[別再裸跑Whisper 了！這個開源神器，讓即時語音轉寫絲滑得不像話](https://zhuanlan.zhihu.com/p/1944712252512010607)
-* 2025-08-10：[Canary-1b-v2_NVIDIA](https://huggingface.co/nvidia/canary-1b-v2)；[推動語音AI 創新：NVIDIA 發布多語種語音AI 開放資料集與模型](https://zhuanlan.zhihu.com/p/1952436345222993067)
-* 2025-08-08：[parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)；[1秒轉錄1小時音訊！輝達重磅開源語音識別最強模型Parakeet！](https://hk.finance.yahoo.com/news/1%E7%A7%92%E8%BD%89%E9%8C%841%E5%B0%8F%E6%99%82%E9%9F%B3%E8%A8%8A-%E8%BC%9D%E9%81%94%E9%87%8D%E7%A3%85%E9%96%8B%E6%BA%90%E8%AA%9E%E9%9F%B3%E8%AD%98%E5%88%A5%E6%9C%80%E5%BC%B7%E6%A8%A1%E5%9E%8Bparakeet-075846970.html)
-* 2025-07-16：[Voxtral Small 1.0 (24B) - 2507](https://huggingface.co/mistralai/Voxtral-Small-24B-2507)；[Voxtral-Mini-3B-250](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507)；[Mistral首個開源語音模型來了！多項測試超越GPT-4o mini](https://zhuanlan.zhihu.com/p/1928945056955471125)
-* 2025-07-02：[OpusLM](https://huggingface.co/espnet/OpusLM_7B_Anneal)：[全開源！ CMU 發布OpusLM：統一語音辨識、合成、文字理解的大模型](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
-* 2025-06-06：[speakr](https://github.com/murtaza-nasir/speakr)；[開源的轉錄音訊記錄工具，更夠設定音訊轉錄語言和AI 生成內容](https://cloud.tencent.com/developer/news/2645205)
-* 2025-05-06：[VITA-Audio](https://deepwiki.com/VITA-MLLM/VITA-Audio)；[VITA-Audio：快速交錯跨模態令牌生成，用於高效的大型語音語言模型](https://www.alphaxiv.org/zh/overview/2505.03739)
-* 2025-04-28：[FireRedASR](https://github.com/FireRedTeam/FireRedASR)：[AI語音助理語音轉文字FireRedASR轉API](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)；[如何使用](https://deepwiki.com/search/_ca59f67a-33b7-4008-8ac0-296d135051ea)
-* 2025-04-02：[Dolphin](https://github.com/DataoceanAI/Dolphin)；[Dolphin: A Large-Scale Automatic Speech Recognition Model for Eastern Languages](https://arxiv.org/abs/2503.20212)
-* 2024/07/03：[SenseVoice](https://funaudiollm.github.io/)：[阿里開源語音大模型：語音辨識效果與表現強於Whisper，還能偵測掌聲、笑聲、咳嗽等！](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)
-* 2024/05/01：[使用Hugging Face 推理終端建立強大的「語音辨識+ 說話者分割+ 投機解碼」工作流程](https://huggingface.co/blog/zh/asr-diarization)
+- 2025-12-16｜**Fun-ASR**
+  - 說明：阿里開源 0.8B 模型，效能直逼 12B 巨頭
+  - 資源：[🐙 GitHub](https://github.com/FunAudioLLM/Fun-ASR) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1984310683358217029)
+
+- 2025-11-15｜**Omnilingual-ASR**
+  - 資源：[🐙 GitHub](https://github.com/facebookresearch/omnilingual-asr) | [🌐 DEMO](https://aidemos.atmeta.com/omnilingualasr/language-globe)
+
+- 2025-08-29｜**WhisperLiveKit**
+  - 說明：讓即時語音轉寫絲滑得不像話的神器
+  - 資源：[🐙 GitHub](http://github.com/QuentinFuxa/WhisperLiveKit) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1944712252512010607)
+
+- 2025-08-27｜**CarelessWhisper**
+  - 說明：微調Whisper實現低延遲串流識別，效果接近非串流式
+  - 資源：[🐙 GitHub](https://github.com/tomer9080/CarelessWhisper-streaming) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1977136140139141051)
+
+- 2025-08-10｜**Canary-1b-v2**
+  - 說明：NVIDIA 發布多語種語音 AI 開放資料集與模型
+  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/canary-1b-v2) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1952436345222993067)
+
+- 2025-08-08｜**Parakeet-tdt-0.6b-v3**
+  - 說明：1秒轉錄1小時音訊！輝達最強開源模型
+  - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) | [📝 媒體報導](https://hk.finance.yahoo.com/news/1%E7%A7%92%E8%BD%89%E9%8C%841%E5%B0%8F%E6%99%82%E9%9F%B3%E8%A8%8A-%E8%BC%9D%E9%81%94%E9%87%8D%E7%A3%85%E9%96%8B%E6%BA%90%E8%AA%9E%E9%9F%B3%E8%AD%98%E5%88%A5%E6%9C%80%E5%BC%B7%E6%A8%A1%E5%9E%8Bparakeet-075846970.html)
+
+- 2025-07-16｜**Voxtral (Mistral)**
+  - 說明：Mistral 首個開源語音模型，超越 GPT-4o mini
+  - 資源：[Small 24B](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) | [Mini 3B](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1928945056955471125)
+
+- 2025-07-02｜**OpusLM**
+  - 說明：CMU 發布統一語音辨識、合成、文字理解的大模型
+  - 資源：[🤗 HuggingFace](https://huggingface.co/espnet/OpusLM_7B_Anneal) | [📝 中文解讀](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
+
+- 2025-06-06｜**speakr**
+  - 說明：開源轉錄工具，支援 AI 生成內容
+  - 資源：[🐙 GitHub](https://github.com/murtaza-nasir/speakr) | [📝 中文解讀](https://cloud.tencent.com/developer/news/2645205)
+
+- 2025-05-06｜**VITA-Audio**
+  - 說明：快速交錯跨模態令牌生成
+  - 資源：[📚 DeepWiki](https://deepwiki.com/VITA-MLLM/VITA-Audio) | [📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2505.03739)
+
+- 2025-04-28｜**FireRedASR**
+  - 說明：AI 語音助理語音轉文字 API
+  - 資源：[🐙 GitHub](https://github.com/FireRedTeam/FireRedASR) | [📝 教學](https://mp.weixin.qq.com/s/FUC-rSkItxEQJIWUbU4Cpw)
+
+- 2025-04-02｜**Dolphin**
+  - 說明：Large-Scale ASR Model for Eastern Languages
+  - 資源：[🐙 GitHub](https://github.com/DataoceanAI/Dolphin) | [📄 arXiv](https://arxiv.org/abs/2503.20212)
+
+- 2024-07-03｜**SenseVoice**
+  - 說明：阿里開源，支援偵測掌聲、笑聲
+  - 資源：[🌐 Project](https://funaudiollm.github.io/) | [📝 中文解讀](https://mp.weixin.qq.com/s/q-DyyAQikz8nSNm6qMwZKQ)
+
+### 經典模型庫 (Classic Toolkits)
+
+- **Whisper Family (OpenAI)**
+  - [**Whisper**](https://openai.com/research/whisper): OpenAI 開源準確率最高的通用模型。
+  - [**WhisperLive**](https://github.com/collabora/WhisperLive): 免費即時語音轉文字工具。
+  - [**Distil-Whisper**](https://github.com/huggingface/distil-whisper): 輕量級 AI 的強大力量。
+  - [**Insanely-Fast-Whisper**](https://github.com/Vaibhavs10/insanely-fast-whisper): 超快速辨識腳本。
+  - [**WhisperX**](https://github.com/m-bain/whisperX): 強化的時間戳記與說話者識別。
+  - [**Fine-tune Whisper**](https://huggingface.co/blog/zh/fine-tune-whisper): 微調教學。
+
+- **FunASR (阿里達摩院)**
+  - [Github](https://github.com/alibaba-damo-academy/FunASR) | [離線轉寫 SDK](https://zhuanlan.zhihu.com/p/642807244)
+
+- **WeNet (58同城)**
+  - [Paper](https://arxiv.org/pdf/2102.01547.pdf) | [落地方案](https://zhuanlan.zhihu.com/p/573133117)
+
+- **Other Toolkits**
+  - [**PaddleSpeech**](https://github.com/PaddlePaddle/PaddleSpeech)
+  - [**Speech Brain**](https://github.com/speechbrain/speechbrain)
+  - [**Kaldi 2 (k2)**](https://github.com/k2-fsa/k2)
 
 ---
-
-* **Whisper**
-    * [Whisper: openAI開源準確率最高的通用語言語音識別](https://zhuanlan.zhihu.com/p/634462613)
-    * [Robust Speech Recognition via Large-Scale Weak Supervision](https://cdn.openai.com/papers/whisper.pdf)
-    * [Introducing Whisper](https://openai.com/research/whisper)
-      * [WhisperLiveKit](https://github.com/QuentinFuxa/WhisperLiveKit)：[別再裸跑Whisper 了！這個開源神器，讓即時語音轉寫絲滑得不像話](https://zhuanlan.zhihu.com/p/1944712252512010607)
-      * [WhisperLive](https://github.com/collabora/WhisperLive)：[免費的即時語音轉文字工具：Whisper Live，精準高效，支援多語言](https://www.zhihu.com/tardis/zm/art/676939649)
-      * [distil-whisper](https://github.com/huggingface/distil-whisper)：[語音辨識的未來已來-探索Distil-Whisper，輕量級AI的強大力量](https://zhuanlan.zhihu.com/p/666238999)
-      * [insanely-fast-whisper](https://github.com/Vaibhavs10/insanely-fast-whisper)；[Insanely Fast Whisper：超快速的Whisper語音辨識腳本](https://www.wehelpwin.com/article/4532)
-      * [Whisper-Finetune](https://github.com/yeyupiaoling/Whisper-Finetune/)
-      * fine-tune-whisper：[使用Transformers 為多語種語音識別任務微調Whisper 模型](https://huggingface.co/blog/zh/fine-tune-whisper)
-      * [WhisperX](https://github.com/m-bain/whisperX)
-      * [Faster-Whisper對影片進行雙語字幕轉錄實踐(Python3.10)](https://zhuanlan.zhihu.com/p/664892334)
-      * [Whisper斷句不夠好？用AI LLM和結構化資料打造完美字幕](https://juejin.cn/post/7526324030387994675)
-*  **FunASR**
-    * [FunASR: A Fundamental End-to-End Speech Recognition Toolkit](https://github.com/alibaba-damo-academy/FunASR)
-    * [阿里達摩院開源大型端到端語音識別工具包FunASR](https://zhuanlan.zhihu.com/p/634646731)
-    * [達摩院FunASR離線文件轉寫SDK發布](https://zhuanlan.zhihu.com/p/642807244)
-* **WeNet**
-    * [58同城：WeNet端到端語音識別大規模落地方案](https://zhuanlan.zhihu.com/p/573133117)
-    * [WeNet: Production First and Production Ready End-to-End Speech Recognition Toolkit](https://arxiv.org/pdf/2102.01547.pdf)
-* [**PaddleSpeech**](https://github.com/PaddlePaddle/PaddleSpeech)
-* [**Speech Brain**：A PyTorch-based Speech Toolkit](https://github.com/speechbrain/speechbrain)
-* [**Kaldi 2**：FSA/FST algorithms, differentiable, with PyTorch compatibility.](https://github.com/k2-fsa/k2)
-    * [Next-gen-Kaldi 近期進展](https://zhuanlan.zhihu.com/p/617877445)
-
 
 <details>
 <summary>2020/03-2021/01 開發心得</summary>
@@ -94,25 +128,26 @@ https://deep-learning-101.github.io/Speech-Processing
 <br><br>
 
 
-# 中文語者(聲紋)識別 (Chinese Speaker Recognition)
+## Speaker-Recognition
+**中文語者(聲紋)識別 (Chinese Speaker Recognition)**
+> 通過聲音判別說話人身份的技術 (聲紋特徵)。
+> [🌐 更多資源](https://www.twman.org/AI/ASR/SpeakerRecognition)
 
-[https://www.twman.org/AI/ASR/SpeakerRecognition](https://www.twman.org/AI/ASR/SpeakerRecognition)
+- **Wespeaker**
+  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2210.17016v2) | [📝 v1.2.0 發布說明](https://zhuanlan.zhihu.com/p/645726183)
 
-找到描述特定對象的聲紋特徵，通過聲音判別說話人身份的技術；借助不同人的聲音，在語譜圖的分佈情況不同這一特徵，去對比兩個人的聲音，來判斷是否同人。
+- **SincNet**
+  - 資源：[📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/1808.00158v3)
 
-### **相關論文**
-* [Wespeaker: A Research and Production oriented Speaker Embedding Learning Toolkit](https://www.alphaxiv.org/zh/overview/2210.17016v2)
-* [SincNet：Speaker Recognition from Raw Waveform with SincNet](https://www.alphaxiv.org/zh/overview/1808.00158v3)
+- **實戰與教學**
+  - [ASV-Subtools 聲紋識別實戰](https://speech.xmu.edu.cn/2022/1124/c18207a465302/page.htm)
+  - [深度學習在聲紋識別中的應用](https://yutouwd.github.io/posts/600d0d5d/)
+  - [聲紋識別原理](https://www.zhihu.com/question/30141460)
+  - [CN-Celeb-AV 多模態數據集](https://zhuanlan.zhihu.com/p/647786644)
+  - [提高聲紋辨識正確率 更添防疫新利器](https://www.nchc.org.tw/Message/MessageView/3731?mid=43)
+  - [ICASSP 2023說話人識別方向論文合集（一）](https://zhuanlan.zhihu.com/p/645560614)
+  - [相關聲紋識別介紹匯整](http://xinguiz.com/category/#/声纹识别)
 
-### **相關連結**
-* [Wespeaker v1.2.0 發布：新增SSL Recipe，NIST SRE 數據集支持, PLDA 及自適應代碼等](https://zhuanlan.zhihu.com/p/645726183)
-* [ASV-Subtools聲紋識別實戰](https://speech.xmu.edu.cn/2022/1124/c18207a465302/page.htm)
-* [ICASSP 2023說話人識別方向論文合集（一）](https://zhuanlan.zhihu.com/p/645560614)
-* [聲紋識別原理](https://www.zhihu.com/question/30141460)
-* [深度學習在聲紋識別中的應用](https://yutouwd.github.io/posts/600d0d5d/)
-* [相關聲紋識別介紹匯整](http://xinguiz.com/category/#/声纹识别)
-* [提高聲紋辨識正確率 更添防疫新利器](https://www.nchc.org.tw/Message/MessageView/3731?mid=43)
-* [CN-Celeb-AV: 多場景視聽多模態數據集發布](https://zhuanlan.zhihu.com/p/647786644)
 
 <details>
 <summary>2020/03/08-2020/08/29 開發心得</summary>
@@ -135,21 +170,17 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 </details>
 <br><br>
 
-# 中文語音增強(去噪) (Chinese Speech Enhancement)
+## Speech-Enhancement
+**中文語音增強(去噪) (Chinese Speech Enhancement)**
+> 從含雜訊的語音信號中提取出純淨語音。
+> [🌐 更多資源](https://www.twman.org/AI/ASR/SpeechEnhancement) | [🤗 Demo Space](https://huggingface.co/spaces/DeepLearning101/Speech-Quality-Inspection_Meta-Denoiser)
 
-[https://www.twman.org/AI/ASR/SpeechEnhancement](https://www.twman.org/AI/ASR/SpeechEnhancement)
+- **ClearVoice (2024-12-07)**
+  - 說明：一站式語音處理工具包 (降噪、分離、提取)
+  - 資源：[🐙 GitHub](https://github.com/modelscope/ClearerVoice-Studio) | [🤗 Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/18109659892)
 
-[https://huggingface.co/spaces/DeepLearning101/Speech-Quality-Inspection_Meta-Denoiser](https://huggingface.co/spaces/DeepLearning101/Speech-Quality-Inspection_Meta-Denoiser)
-
-找到描述特定聲音特徵，並將其去除以提高質量；從含雜訊的語音信號中提取出純淨語音的過程
-
-### **相關論文**
-* [Real Time Speech Enhancement in the Waveform Domain](https://www.alphaxiv.org/abs/2006.12847v3)
-
-### **相關連結**
-* 2024-12-07：[ClearVoice: Speech Enhancement](https://github.com/modelscope/ClearerVoice-Studio)：[阿里巴巴開源超強語音處理神器，語音分離、音訊視訊說話者擷取等功能一站式解決。](https://juejin.cn/post/7445237715863093275)，[HuggingFace Space Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)
-* https://github.com/facebookresearch/denoiser
-* https://www.youtube.com/watch?v=77cm_MVtLfk
+- **Meta Denoiser**
+  - 資源：[🐙 GitHub](https://github.com/facebookresearch/denoiser) | [📄 Real Time Speech Enhancement](https://www.alphaxiv.org/abs/2006.12847v3)
 
 <details>
 <summary>2020/08/30-2021/01/25 開發心得</summary>
@@ -157,34 +188,43 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 </details>
 <br><br>
 
-# 中文語者分離(分割) (Chinese Speaker Separation)
+## Speaker-Separation
+**中文語者分離 (Speaker Separation)**
+> **定義：** 從混疊的聲音訊號中提取出單一目標訊號（解決雞尾酒會問題，即多人同時說話的場景）。
+>
+> 資源導航：[🌐 站長整理](https://www.twman.org/AI/ASR/SpeechSeparation) | [🤗 HF Space Demo](https://huggingface.co/spaces/DeepLearning101/Speech-Separation)
 
-https://www.twman.org/AI/ASR/SpeechSeparation
+### 📚 經典論文與實作 (Papers & Code)
 
-https://huggingface.co/spaces/DeepLearning101/Speech-Separation
+- **Stabilizing Label Assignment for Speech Separation**
+  - 說明：Self-supervised Pre-training
+  - 資源：[📄 arXiv](https://arxiv.org/abs/2010.15366) | [🐙 GitHub](https://github.com/SungFeng-Huang/SSL-pretraining-separation)
 
-從多個聲音信號中提取出目標信號；多個說話人情況的語音辨識問題，比如雞尾酒會上很多人講話
+- **Sudo rm -rf**
+  - 說明：Efficient Networks for Universal Audio Source Separation
+  - 資源：[📄 arXiv](https://arxiv.org/abs/2007.06833) | [🐙 Code (Asteroid)](https://github.com/asteroid-team/asteroid/blob/master/asteroid/models/sudormrf.py) | [🐙 GitHub](https://github.com/etzinis/sudo_rm_rf)
 
-### **相關論文**
+- **Dual-Path Transformer (DPTNet)**
+  - 說明：Direct Context-Aware Modeling for End-to-End Monaural Speech Separation
+  - 資源：[📄 arXiv](https://arxiv.org/pdf/2007.13975v3.pdf)
 
-* Stabilizing Label Assignment for Speech Separation by Self-supervised Pre-training：https://arxiv.org/abs/2010.15366
-    * https://github.com/SungFeng-Huang/SSL-pretraining-separation
-* Self-supervised Pre-training Reduces Label Permutation Instability of Speech Separation：https://arxiv.org/pdf/2010.15366v1.pdf
-    * https://github.com/SungFeng-Huang/SSL-pretraining-separation
-* Sudo rm -rf: Efficient Networks for Universal Audio Source Separation：https://arxiv.org/abs/2007.06833
-    * https://github.com/asteroid-team/asteroid/blob/master/asteroid/models/sudormrf.py 
-    * https://github.com/etzinis/sudo_rm_rf   
-* Dual-Path Transformer Network: Direct Context-Aware Modeling for End-to-End Monaural Speech Separation：https://arxiv.org/pdf/2007.13975v3.pdf
-* Dual-path RNN: efficient long sequence modeling for time-domain single-channel speech separation：https://arxiv.org/pdf/1910.06379.pdf
-    * https://github.com/JusperLee/Dual-path-RNN-Pytorch
-    * [閱讀筆記”Dual-path RNN for Speech Separation“](https://zhuanlan.zhihu.com/p/104606356)
+- **Dual-path RNN (DPRNN)**
+  - 說明：Efficient long sequence modeling for time-domain separation
+  - 資源：[📄 arXiv](https://arxiv.org/pdf/1910.06379.pdf) | [🐙 GitHub](https://github.com/JusperLee/Dual-path-RNN-Pytorch) | [📝 閱讀筆記](https://zhuanlan.zhihu.com/p/104606356)
 
-### **相關連結**
-* 2025-06-03：[SoloSpeech](https://github.com/WangHelin1997/SoloSpeech)；[高品質語音處理模型，一鍵提取指定說話者音訊並提升提取音訊清晰度和品質](https://zhuanlan.zhihu.com/p/1913305854289097038)
-* 2024-12-07：[ClearVoice: Speech Enhancement](https://github.com/modelscope/ClearerVoice-Studio)：[阿里巴巴開源超強語音處理神器，語音分離、音訊視訊說話者擷取等功能一站式解決。](https://juejin.cn/post/7445237715863093275)，[HuggingFace Space Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice)
-* [ICASSP2023論文代碼開源｜TOLD能對混疊語音建模的說話人日誌框架](https://zhuanlan.zhihu.com/p/650346578)
-* [ICASSP 2023論文模型開源｜語音分離Mossformer](https://zhuanlan.zhihu.com/p/609728122)
+### 🛠️ 實戰模型與工具 (Tools)
 
+- 2025-06-03｜**SoloSpeech**
+  - 說明：一鍵提取指定說話者音訊，提升清晰度
+  - 資源：[🐙 GitHub](https://github.com/WangHelin1997/SoloSpeech) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1913305854289097038)
+
+- 2024-12-07｜**ClearVoice**
+  - 說明：阿里開源一站式語音處理（降噪、分離、提取）
+  - 資源：[🐙 GitHub](https://github.com/modelscope/ClearerVoice-Studio) | [🤗 Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice) | [📝 中文解讀](https://juejin.cn/post/7445237715863093275)
+
+- **其他開源項目**
+  - [**TOLD**](https://zhuanlan.zhihu.com/p/650346578): 能對混疊語音建模的說話人日誌框架 (ICASSP 2023).
+  - [**Mossformer**](https://zhuanlan.zhihu.com/p/609728122): 語音分離模型 (ICASSP 2023).
 
 <details>
 <summary>2020/08/30-2021/01/25 開發心得</summary>
@@ -195,52 +235,127 @@ https://huggingface.co/spaces/DeepLearning101/Speech-Separation
 </details>
 <br><br>
 
-# 中文語音合成 (Chinese Speech Synthesis)
+## Speech-Synthesis
+**中文語音合成 (Chinese Speech Synthesis / TTS)**
 
-### **相關連結**
+### ⭐ 必備明星專案 (Star Projects)
 
-* [OpenAI-Edge-TTS](https://github.com/travisvn/openai-edge-tts)：[開源的免費文字轉語音API接口，託管在GitHub上](https://mp.weixin.qq.com/s/lt9Vr0hR7wwyhqTh68gTkA)
-* [fish-speech](https://huggingface.co/fishaudio/fish-speech-1.5)
-  * [fish-speech-gui](https://github.com/AnyaCoder/fish-speech-gui)；[Github](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md)；[Document](https://speech.fish.audio/zh/)
-* 2025-12-24：[Qwen3-TTS-VD、Qwen3-TTS-VC](https://link.zhihu.com/?target=https%3A//www.alibabacloud.com/help/zh/model-studio/qwen-tts-voice-design%3Fspm%3Da2ty_o06.30285417.0.0.56a0c9216Ey6VM)；[音色創造 Qwen3-TTS-VD (VoiceDesign) 和音色克隆Qwen3-TTS-VC (VoiceClone)](https://zhuanlan.zhihu.com/p/1987225312841445557)  
-* 2025-12-16：[Fun-CosyVoice3](https://github.com/FunAudioLLM/CosyVoice)；[阿里通義百聆推出語音模型新版本：3 秒錄音即可「複製」9 種語言、18 種方言](https://finance.sina.com.cn/tech/digi/2025-12-15/doc-inhawpkf1938223.shtml)
-* 2025-12-12：[VoxCPM](https://huggingface.co/openbmb/VoxCPM1.5)；[告別機械音！ VoxCPM 1.5開源，這才是我們要的“最強嘴替”](https://zhuanlan.zhihu.com/p/1982596122645116335)
-* 2025-12-08：[VibeVoice-Realtime-0.5B](https://github.com/microsoft/VibeVoice)；[VibeVoice-Realtime：超快流式輸入TTS](https://zhuanlan.zhihu.com/p/1983650496431547790
-* 2025-10-12：[NeuTTS Air](https://github.com/neuphonic/neutts-air)；[只要3秒鐘克隆你的聲音！開源神器NeuTTS Air來了，手機就能跑](https://zhuanlan.zhihu.com/p/1962976509611454658)
-* 2025-08-15：[ZipVoice：CPU is all you need!](https://github.com/k2-fsa/ZipVoice)
-* 2025-08-08：[KittenTTS](https://github.com/KittenML/KittenTTS)；[超迷你 TTS 模型（小於 25 MB）](https://www.reddit.com/r/LocalLLaMA/comments/1mhyzp7/kitten_tts_sota_supertiny_tts_model_less_than_25/?tl=zh-hant)
-* 2025-07-30：[Microsoft DragonV2.1](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/personal-voice-upgraded-to-v2-1-in-azure-ai-speech-more-expressive-than-ever-bef/4435233)
-* 2025-07-25：[Higgs Audio V2](https://github.com/boson-ai/higgs-audio)
-    * [Github](https://github.com/boson-ai/higgs-audio)
-    * [HF Space Playground](https://huggingface.co/spaces/smola/higgs_audio_v2)
-    * [Boson AI Playground](https://www.boson.ai/demo/tts)
-    * [李沐B站更新了！教你手搓語音大模型，程式碼全開源還能在線上試玩](https://zhuanlan.zhihu.com/p/1931365847840069074)
-    * 2025-08-03：[Higgs audio學會了越南語](https://github.com/JimmyMa99/train-higgs-audio)
-    * [https://mp.weixin.qq.com/s/k7PMihbveN8XUS-bvQOOsw](https://mp.weixin.qq.com/s/k7PMihbveN8XUS-bvQOOsw)
-* 2025-07-23：[FreeAudio](https://freeaudio.github.io/FreeAudio/)；[AI音效90秒長時可控生成！ 「狼嚎2秒，蟋蟀鳴8秒」精準搞定](https://mp.weixin.qq.com/s/gwfbwuQ91AF-WCzSVmTxNQ)
-* 2025-07-14：[MOSS-TTSD](https://www.open-moss.com/en/moss-ttsd/)；[邱錫鵬團隊開源MOSS-TTSD！百萬小時音頻訓練](https://finance.sina.com.cn/tech/roll/2025-07-05/doc-infemitp8423057.shtml)
-* 2025-06-05：[OpenAudio S1](https://huggingface.co/fishaudio/openaudio-s1-mini)；[重新定義文字轉語音，釋放聲音的無限潛能](https://zhuanlan.zhihu.com/p/1913864308212863691)；[全球唯一高可控多語言TTS-OpenAudio-S1，並開源mini版](https://zhuanlan.zhihu.com/p/1913736328702592271)
-* 2025-03-30：[MegaTTS3](https://huggingface.co/spaces/ByteDance/MegaTTS3)：[字節跳動MegaTTS3 開源：0.45B 參數實現高品質中英雙語TTS 與語音克隆](https://zhuanlan.zhihu.com/p/1889796359344857240)
-* 2025-03-21：[Orpheus TTS](https://github.com/canopyai/Orpheus-TTS)
-   * [Space@HuggingFace](https://huggingface.co/spaces/MohamedRashad/Orpheus-TTS)
-   * [一款剛剛開源的TTS語音模型！ 25ms超低延遲支援即時對話](https://zhuanlan.zhihu.com/p/31739692960)
-* 2025-03-15：[CSM-Conversational Speech Generation Model](https://github.com/SesameAILabs/csm)
-   * [AI語音合成新標竿！開源10小時斬獲8K Star！ 1B參數實現電影級人聲!](https://mp.weixin.qq.com/s/q4c1bUsRkpQHxFwpePsJLg)
-   * [驅動「超真人」虛擬助理Maya的即時語音對話模型CSM-1b開源！](https://zhuanlan.zhihu.com/p/30943039927)
-* 2025-03-02：[Spark-TTS](http://github.com/SparkAudio/Spark-TTS)：[基於單流解耦語音令牌的高效能文字轉語音模型](https://zhuanlan.zhihu.com/p/29631171989)
-* 2025-03-01：[Step-Audio](https://github.com/stepfun-ai/Step-Audio)：[[ComfyUI]最新聲音複製技術，配合數位人無敵了](https://mp.weixin.qq.com/s/HLYM5g8bJGCoytcoxOXzjA)
-* 2024/11/30：[MockingBird](https://github.com/babysor/MockingBird)：[MockingBird 開源語音克隆神器，5 秒速「復刻」 聲音，摘得35.4k 星閃耀佳績！](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
-* 2024-11-02：[Kokoro-TTS](https://huggingface.co/spaces/hexgrad/Kokoro-TTS)：[Kokoro TTS：文字轉語音AI](https://kokorotts.net/zh-Hant)
-* 2024/10/15：[F5-TTS：上海交大開源超逼真聲音克隆TTS，15秒克隆聲音](https://mp.weixin.qq.com/s/tWrjQfl2XkOO8GwwVyFoqw)
-* 2024/09/09：[Parler-TTS](https://github.com/huggingface/parler-tts)：[Hugging Face 開源TTS 模型！一行指令即可安裝！](https://mp.weixin.qq.com/s/uzYMnR6ole_RSPE_Es_thw)
-* 2024/06/09：[ChatTTS](https://github.com/2noise/ChatTTS)：[開源文字轉語音模型本地部署、API使用和建立WebUI介面](https://mp.weixin.qq.com/s/rL3vyJ_xEj7GGoKaxUh8_A)
-* 2024/08/6：[VALL-E X語音模型，手把手實操語音轉文字和聲音克隆](https://mp.weixin.qq.com/s/Fo8ESzbEfjZQNUUx_giJRA)
-* MeloTTS：[https://github.com/myshell-ai/MeloTTS](https://github.com/myshell-ai/MeloTTS)
-   * [多語言即時文字轉語音的高品質工具！無GPU也可靈活使用！](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
-* [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)：Github 獲得 35.2k star的開源聲音克隆項目，1分鐘語音訓練TTS模型
-* [Deepgram](https://deepgram.com/)
+- **Fish Speech** (當前熱門)
+  - 說明：性能強大，支援多語言克隆
+  - 資源：[🤗 Model](https://huggingface.co/fishaudio/fish-speech-1.5) | [🐙 GitHub](https://github.com/fishaudio/fish-speech/blob/main/docs/README.zh.md) | [📖 Document](https://speech.fish.audio/zh/)
+  - 延伸：[🐙 GUI版](https://github.com/AnyaCoder/fish-speech-gui) | [📝 實操教學](https://mp.weixin.qq.com/s/z8L3lpEbQ1-bkD7MM6oLsw)
 
+- **OpenAI Edge TTS** (免費/輕量)
+  - 說明：免 GPU、免費使用微軟 Edge 接口
+  - 資源：[🐙 GitHub](https://github.com/travisvn/openai-edge-tts) | [📝 使用教學](https://mp.weixin.qq.com/s/lt9Vr0hR7wwyhqTh68gTkA)
 
+- **GPT-SoVITS** (人聲克隆首選)
+  - 說明：1分鐘語音訓練，35k+ Star 神級項目
+  - 資源：[🐙 GitHub](https://github.com/RVC-Boss/GPT-SoVITS)
+
+- **Deepgram** (商業方案)
+  - 資源：[🌐 Official Site](https://deepgram.com/)
+
+---
+
+### 📅 2025 最新模型 (Latest Arrivals)
+
+- 2025-12-24｜**Qwen3-TTS**
+  - 說明：音色創造 (VoiceDesign) 與 音色克隆 (VoiceClone)
+  - 資源：[📝 官方介紹](https://link.zhihu.com/?target=https%3A//www.alibabacloud.com/help/zh/model-studio/qwen-tts-voice-design%3Fspm%3Da2ty_o06.30285417.0.0.56a0c9216Ey6VM) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1987225312841445557)
+
+- 2025-12-16｜**Fun-CosyVoice3**
+  - 說明：阿里通義百聆，3秒錄音複製9種語言
+  - 資源：[🐙 GitHub](https://github.com/FunAudioLLM/CosyVoice) | [📝 媒體報導](https://finance.sina.com.cn/tech/digi/2025-12-15/doc-inhawpkf1938223.shtml)
+
+- 2025-12-12｜**VoxCPM 1.5**
+  - 說明：告別機械音的「最強嘴替」
+  - 資源：[🤗 HuggingFace](https://huggingface.co/openbmb/VoxCPM1.5) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1982596122645116335)
+
+- 2025-10-12｜**NeuTTS Air**
+  - 說明：手機也能跑，3秒克隆聲音
+  - 資源：[🐙 GitHub](https://github.com/neuphonic/neutts-air) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1962976509611454658)
+
+- 2025-08-15｜**ZipVoice**
+  - 說明：CPU is all you need!
+  - 資源：[🐙 GitHub](https://github.com/k2-fsa/ZipVoice)
+
+- 2025-08-08｜**KittenTTS**
+  - 說明：超迷你 TTS 模型（< 25 MB）
+  - 資源：[🐙 GitHub](https://github.com/KittenML/KittenTTS) | [📝 討論](https://www.reddit.com/r/LocalLLaMA/comments/1mhyzp7/kitten_tts_sota_supertiny_tts_model_less_than_25/?tl=zh-hant)
+
+- 2025-07-30｜**Microsoft DragonV2.1**
+  - 資源：[📝 官方 Blog](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/personal-voice-upgraded-to-v2-1-in-azure-ai-speech-more-expressive-than-ever-bef/4435233)
+
+- 2025-07-25｜**Higgs Audio V2**
+  - 說明：李沐團隊開源，支援越南語
+  - 資源：[🐙 GitHub](https://github.com/boson-ai/higgs-audio) | [🤗 Space](https://huggingface.co/spaces/smola/higgs_audio_v2) | [🌐 Demo](https://www.boson.ai/demo/tts)
+  - 延伸：[📝 李沐教學](https://zhuanlan.zhihu.com/p/1931365847840069074) | [🐙 越南語訓練](https://github.com/JimmyMa99/train-higgs-audio)
+
+- 2025-07-23｜**FreeAudio**
+  - 說明：90秒長時可控音效生成 (狼嚎、蟋蟀聲)
+  - 資源：[🌐 Project](https://freeaudio.github.io/FreeAudio/) | [📝 中文解讀](https://mp.weixin.qq.com/s/gwfbwuQ91AF-WCzSVmTxNQ)
+
+- 2025-07-14｜**MOSS-TTSD**
+  - 說明：邱錫鵬團隊開源，百萬小時訓練
+  - 資源：[🌐 Project](https://www.open-moss.com/en/moss-ttsd/) | [📝 媒體報導](https://finance.sina.com.cn/tech/roll/2025-07-05/doc-infemitp8423057.shtml)
+
+- 2025-06-05｜**OpenAudio S1**
+  - 說明：全球唯一高可控多語言 TTS
+  - 資源：[🤗 HuggingFace](https://huggingface.co/fishaudio/openaudio-s1-mini) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1913864308212863691)
+
+- 2025-03-30｜**MegaTTS3**
+  - 說明：字節跳動開源 0.45B 參數中英雙語模型
+  - 資源：[🤗 Demo](https://huggingface.co/spaces/ByteDance/MegaTTS3) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1889796359344857240)
+
+- 2025-03-21｜**Orpheus TTS**
+  - 說明：25ms 超低延遲，支援即時對話
+  - 資源：[🐙 GitHub](https://github.com/canopyai/Orpheus-TTS) | [🤗 Demo](https://huggingface.co/spaces/MohamedRashad/Orpheus-TTS) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/31739692960)
+
+- 2025-03-15｜**CSM (Conversational Speech)**
+  - 說明：1B 參數實現電影級人聲
+  - 資源：[🐙 GitHub](https://github.com/SesameAILabs/csm) | [📝 中文解讀](https://mp.weixin.qq.com/s/q4c1bUsRkpQHxFwpePsJLg)
+
+- 2025-03-02｜**Spark-TTS**
+  - 說明：基於單流解耦語音令牌的高效能模型
+  - 資源：[🐙 GitHub](http://github.com/SparkAudio/Spark-TTS) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/29631171989)
+
+- 2025-03-01｜**Step-Audio**
+  - 說明：ComfyUI 聲音複製技術
+  - 資源：[🐙 GitHub](https://github.com/stepfun-ai/Step-Audio) | [📝 中文解讀](https://mp.weixin.qq.com/s/HLYM5g8bJGCoytcoxOXzjA)
+
+---
+
+### 🏛️ 2024 經典模型與教程 (Classics)
+
+- **MockingBird** (2024/11/30)
+  - 說明：5秒速「復刻」聲音，35.4k Star
+  - 資源：[🐙 GitHub](https://github.com/babysor/MockingBird) | [📝 中文解讀](https://mp.weixin.qq.com/s/4Ce-be5YMBTQn9aHX2OeaQ)
+
+- **Kokoro-TTS** (2024/11/02)
+  - 資源：[🤗 Demo](https://huggingface.co/spaces/hexgrad/Kokoro-TTS) | [🌐 介紹](https://kokorotts.net/zh-Hant)
+
+- **CosyVoice & SenseVoice ComfyUI** (2024/10/15)
+  - 資源：[📝 實戰教學](https://mp.weixin.qq.com/s/Lvijhi3U8jg88C8_h5Gbww)
+
+- **F5-TTS** (2024/10/15)
+  - 說明：上海交大開源，15秒克隆聲音
+  - 資源：[📝 中文解讀](https://mp.weixin.qq.com/s/tWrjQfl2XkOO8GwwVyFoqw)
+
+- **Parler-TTS** (2024/09/09)
+  - 說明：Hugging Face 開源，一行指令安裝
+  - 資源：[🐙 GitHub](https://github.com/huggingface/parler-tts) | [📝 中文解讀](https://mp.weixin.qq.com/s/uzYMnR6ole_RSPE_Es_thw)
+
+- **ChatTTS** (2024/06/09)
+  - 說明：支援笑聲、停頓，擬真度極高
+  - 資源：[🐙 GitHub](https://github.com/2noise/ChatTTS) | [📝 部署教學](https://mp.weixin.qq.com/s/rL3vyJ_xEj7GGoKaxUh8_A)
+
+- **VALL-E X** (2024/08/06)
+  - 資源：[📝 手把手實操教學](https://mp.weixin.qq.com/s/Fo8ESzbEfjZQNUUx_giJRA)
+
+- **MeloTTS**
+  - 說明：無 GPU 也可靈活使用
+  - 資源：[🐙 GitHub](https://github.com/myshell-ai/MeloTTS) | [📝 中文解讀](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
 
 
 <details 過往資訊 close>
