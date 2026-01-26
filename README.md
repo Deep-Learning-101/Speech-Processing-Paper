@@ -262,7 +262,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 
 - 2025-12-24｜**Qwen3-TTS**
   - 說明：音色創造 (VoiceDesign) 與 音色克隆 (VoiceClone)
-  - 資源：[📝 官方介紹](https://link.zhihu.com/?target=https%3A//www.alibabacloud.com/help/zh/model-studio/qwen-tts-voice-design%3Fspm%3Da2ty_o06.30285417.0.0.56a0c9216Ey6VM) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1987225312841445557)
+  - 資源：[📝 官方介紹](https://link.zhihu.com/?target=https%3A//www.alibabacloud.com/help/zh/model-studio/qwen-tts-voice-design%3Fspm%3Da2ty_o06.30285417.0.0.56a0c9216Ey6VM) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1987225312841445557) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/4p-jiewYUkRbO6uRK-uYOQ)
 
 - 2025-12-16｜**Fun-CosyVoice3**
   - 說明：阿里通義百聆，3秒錄音複製9種語言
@@ -270,7 +270,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 
 - 2025-12-12｜**VoxCPM 1.5**
   - 說明：告別機械音的「最強嘴替」
-  - 資源：[🤗 HuggingFace](https://huggingface.co/openbmb/VoxCPM1.5) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1982596122645116335)
+  - 資源：[🤗 HuggingFace](https://huggingface.co/openbmb/VoxCPM1.5) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1982596122645116335) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/kmA6aZmCIhv1x0qS1kPCNg)
 
 - 2025-10-12｜**NeuTTS Air**
   - 說明：手機也能跑，3秒克隆聲音
