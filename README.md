@@ -258,7 +258,15 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 
 ---
 
-### 📅 2025 最新模型 (Latest Arrivals)
+### 📅 2026 最新模型 (Latest Arrivals)
+
+- 2026-02-22 | **Ming-flash-omni-2.0**
+  - 說明：透過簡單指令即可控制產生音訊的語速、音量、音調
+  - 資源：[🐙 GitHub](https://github.com/inclusionAI/Ming-omni-tts)  | [🤗 Hugging Face](https://huggingface.co/inclusionAI/Ming-flash-omni-2.0) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/x3DPVL92NhO4ENm6WId-uw)
+
+- 2026-01-26 | **Chroma 1.0**
+  - 說明：FlashLabs開源，150ms 極速響應+ 零樣本聲音克隆，可打斷，邊想邊說、還能換聲線
+  - 資源：[🐙 GitHub](https://github.com/FlashLabs-AI-Corp/FlashLabs-Chroma)  | [🤗 Hugging Face](https://huggingface.co/FlashLabs/Chroma-4B) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/V9xctkJYAuoURqbREXHidQ)
 
 - 2025-12-24｜**Qwen3-TTS**
   - 說明：音色創造 (VoiceDesign) 與 音色克隆 (VoiceClone)
