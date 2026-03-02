@@ -381,6 +381,74 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
   - 說明：無 GPU 也可靈活使用
   - 資源：[🐙 GitHub](https://github.com/myshell-ai/MeloTTS) | [📝 中文解讀](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
 
+## Speech-Datasets
+**開源語音資料 (Speech Datasets)**
+
+### 🇨🇳 中文與方言 / 區域性資料集
+
+* **WenetSpeech-Chuan** (無標示日期)
+* 說明：10,000小時首個大規模川渝方言語料庫，涵蓋9個領域，提供多維標註與專屬評測基準。
+* 資源：[🐙 GitHub](https://github.com/ASLP-lab/WenetSpeech-Chuan)
+
+* **Easy-Turn-Trainset** (無標示日期)
+* 說明：約1100小時對話輪次檢測資料集，用於全雙工對話系統，包含完整、回應、等待等多種狀態。
+* 資源：[🌐 ModelScope](https://www.modelscope.cn/datasets/ASLP-lab/Easy-Turn-Trainset)
+
+* **WenetSpeech-Yue** (2025)
+* 說明：21,800小時全球最大粵語語音資料集，涵蓋10大領域並具備多維標註，支援中英混雜場景。
+* 資源：[🐙 GitHub](https://github.com/ASLP-lab/WenetSpeech-Yue)
+
+* **Chinese-LiPS** (2025/05)
+* 說明：100小時中文多模態語音辨識資料集，首創結合「唇讀資訊 + 投影片語意」，多模態融合後CER降至2.58%。
+* 資源：[🌐 計畫首頁](https://kiri0824.github.io/Chinese-LiPS/)
+
+* **CS-Dialogue** (2025/02)
+* 說明：104小時目前最大的公開自發式「中英切換」對話資料集，捕捉真實自然的語言切換現象。
+* 資源：[📄 arXiv](https://arxiv.org/pdf/2502.18913) | [🤗 Hugging Face](https://huggingface.co/datasets/BAAI/CS-Dialogue)
+
+* **ChildMandarin & SeniorTalk** (2025/04)
+* 說明：智源研究院發布的特殊人群資料集。ChildMandarin 填補低幼兒童（41.25小時）語音數據空白；SeniorTalk 為世界首個中文超高齡老人（55.53小時）對話資料集。
+* 資源：[🌐 智源社群](https://hub.baai.ac.cn/view/44729) | [🤗 ChildMandarin](https://huggingface.co/datasets/BAAI/ChildMandarin) | [🤗 SeniorTalk](https://huggingface.co/datasets/BAAI/SeniorTalk)
+
+* **Emilia** (2024/08)
+* 說明：101,000小時目前最大多語種語音生成資料集，支援中、英等6種語言，涵蓋脫口秀、辯論等多種場景。
+* 資源：[🤗 Hugging Face](https://huggingface.co/datasets/Amphion/Emilia)
+
+* **GigaSpeech 2** (2024/06)
+* 說明：30,000小時東南亞多語言（泰語、印尼語、越南語）資料集，涵蓋19個主題領域，模型效能達商業水準。
+* 資源：[🤗 Hugging Face](https://huggingface.co/datasets/speechcolab/gigaspeech2)
+
+* **LLaSO** (2024)
+* 說明：開源語音大模型框架，包含1200萬對齊樣本、1350萬多任務指令樣本及標準化評估基準。
+* 資源：[🐙 GitHub](https://github.com/EIT-NLP/LLaSO)
+
+---
+
+### 🌍 國際與特殊應用資料集
+
+* **VietMed** (無標示日期)
+* 說明：越南醫療語音資料集，包含16小時標註與2200小時無標註語音，涵蓋所有 ICD-10 疾病組及當地口音。
+* 資源：[🐙 GitHub](https://github.com/leduckhai/multimed)
+
+* **HiFiTTS-2** (2025)
+* 說明：專注高頻寬（22.05kHz / 44.1kHz）語音合成的英語資料集，規模達數萬小時，支援零樣本 TTS 訓練。
+* 資源：[🤗 Hugging Face](https://huggingface.co/datasets/nvidia/hifitts-2)
+
+* **Meta Omnilingual ASR Corpus** (2025/11)
+* 說明：支援1600+種語言的大規模轉錄資料集，具備少樣本學習能力（幾段音訊即可擴展），可擴展至5400+語言。
+* 資源：[🐙 GitHub](https://github.com/facebookresearch/omnilingual-asr) | [🤗 Hugging Face](https://huggingface.co/datasets/facebook/omnilingual-asr-corpus) | [🌐 線上示範](https://aidemos.atmeta.com/omnilingualasr/language-globe)
+
+* **Common Voice** (2025/06 - 最新 v22.0)
+* 說明：全球最大眾包語音資料集，累積近10萬人參與，錄製時長達3,718小時，覆蓋137種語言。
+* 資源：[🌐 Mozilla Data](https://datacollective.mozillafoundation.org/datasets)
+
+* **Bridge2AI-Voice** (2025/01)
+* 說明：由 NIH 推進的醫療語音資料集，涵蓋306位參與者，針對語音障礙、神經系統疾病及憂鬱症等進行收音。
+* 資源：[🏥 PhysioNet (需申請)](https://physionet.org/content/b2ai-voice/1.1/)
+
+* **nEMO** (2024/04)
+* 說明：3小時的波蘭語情緒語音資料集，包含9位演員錄製的憤怒、恐懼、快樂、悲傷等6種情緒。
+* 資源：[🤗 Hugging Face](https://huggingface.co/datasets/amu-cai/nEMO) | [📄 arXiv](https://arxiv.org/abs/2404.06292)
 
 <details 過往資訊 close>
 <summary><strong>過往資訊</strong></summary>
