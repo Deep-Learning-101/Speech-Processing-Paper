@@ -41,7 +41,19 @@ https://deep-learning-101.github.io/Speech-Processing
 > 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述。
 > [🌐 更多 ASR 資源](https://www.twman.org/AI/ASR)
 
-### 🔥 最新模型 (2025)
+### 🔥 最新模型 (2026)
+
+- 2026-02-25 | **FireRedASR2S**
+  - 說明：小紅書FireRedTeam團隊推出的第二代工業級全能語音辨識系統（All-in-One ASR System），是目前語音辨識領域的SOTA（State-of-the-Art）級作品
+  - 資源：[🐙 GitHub](https://github.com/FireRedTeam/FireRedASR2S) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/d1vYXNegQdqph_nFDDye9A)
+
+- 2026-01-30 | **VibeVoice-ASR**
+  - 說明：拒絕切片，拒絕拼湊，它能在一個64K 的超長上下文窗口內，一次性“吞下”整整60 分鐘的音頻，並直接吐出完美的結構化結果
+  - 資源：[🐙 GitHub](https://github.com/microsoft/VibeVoice) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/W8VVkg2igydIZgMkqw9wBA)
+
+- 2026-01-30 | **Qwen3-ASR**
+  - 說明：支援52 種語言和方言，吊打Whisper
+  - 資源：[🤗 HuggingFace](https://huggingface.co/spaces/Qwen/Qwen3-ASR)
 
 - 2025-12-23｜**MedASR**
   - 說明：Google 發布醫學語音辨識模型
@@ -49,7 +61,11 @@ https://deep-learning-101.github.io/Speech-Processing
 
 - 2025-12-16｜**Fun-ASR**
   - 說明：阿里開源 0.8B 模型，效能直逼 12B 巨頭
-  - 資源：[🐙 GitHub](https://github.com/FunAudioLLM/Fun-ASR) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1984310683358217029)
+  - 資源：[🐙 GitHub](https://github.com/FunAudioLLM/Fun-ASR) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1984310683358217029) | [📝 公眾號解讀，用Fun-ASR-Nano微調一個「聽懂行話」的語音模型](https://mp.weixin.qq.com/s/M1vGqFZV5MWREkSyx2-ITw)
+
+- 2025-12-15｜**GLM-ASR**
+  - 說明：解決複雜聲學環境、方言辨識以及低音量語音
+  - 資源：[🐙 GitHub](https://github.com/zai-org/GLM-ASR) | [🤗 HuggingFace](https://huggingface.co/zai-org/GLM-ASR-Nano-2512) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1983951645055419349)
 
 - 2025-11-15｜**Omnilingual-ASR**
   - 資源：[🐙 GitHub](https://github.com/facebookresearch/omnilingual-asr) | [🌐 DEMO](https://aidemos.atmeta.com/omnilingualasr/language-globe)
