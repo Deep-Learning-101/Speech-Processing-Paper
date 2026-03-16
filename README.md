@@ -4,6 +4,8 @@ https://www.twman.org/AI/ASR
 https://huggingface.co/DeepLearning101
 
 https://deep-learning-101.github.io/Speech-Processing
+
+https://github.com/Deep-Learning-101/Speech-Processing-Paper
 #
 
 ## 🎙️ 語音識別 / 合成平台價格比較
