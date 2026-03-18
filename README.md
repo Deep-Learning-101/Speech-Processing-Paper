@@ -10,6 +10,7 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
 
 ## 🎙️ 語音識別 / 合成平台價格比較
 ~2025/04
+
 | 名稱 | 功能 | 網址 | 說明 |
 |------|------|------|------|
 | [Whisper (開源)](https://github.com/openai/whisper) | 語音識別、翻譯 | 每分鐘150字 × 10分鐘 = 1500字 |
@@ -21,27 +22,81 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
 | [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/pricing?hl=zh-tw#gemini-models) | 大型語言模型 | Gemini/Claude 定價頁 |
 | [Google Cloud VM](https://cloud.google.com/compute/vm-instance-pricing?hl=zh-tw#sharedcore_machine_types) | 虛擬機器 | VM 執行個體定價頁面 |
 
----
+### **文章目錄**
+- [Speech Processing (語音處理)](#speech-processing)
+- [Speech Recognition (語音識別)](#speech-recognition)
+- [Speaker Recognition (語者識別)](#speaker-recognition)
+- [Speech Enhancement (語音增強)](#speech-enhancement)
+- [Speaker Separation (語者分離)](#speaker-separation)
+- [Speech Synthesis (語音合成)](#speech-synthesis)
+- [Speech Datasets (開源語音資料)](#speech-datasets)
 
 ## Speech-Processing
 **語音處理 (Speech Processing)**
 
-- 2025-09-23：[Sherpa onnx](https://github.com/k2-fsa/sherpa-onnx)
-- 2025-05-14：[ten-turn-detection](https://zread.ai/TEN-framework/ten-turn-detection)；[ten-vad](https://zread.ai/TEN-framework/ten-vad)
-- 2025-01-19：[小米語音首席科學家Daniel Povey：語音辨識捲完了，下一個機會在哪裡？](https://www.jiqizhixin.com/articles/2025-01-19-4?)
--  [ASR/TTS 開發避坑指南：語音辨識與合成的常見挑戰與對策](https://blog.twman.org/2024/02/asr-tts.html)；[探討 ASR 和 TTS 技術應用中的問題，強調數據質量的重要性](https://deep-learning-101.github.io/asr-tts)
--  [那些語音處理踩的坑](https://blog.twman.org/2021/04/ASR.html)；[分享語音處理領域的實務經驗，強調資料品質對模型效果的影響](https://deep-learning-101.github.io/speech)
-- [音視頻開發基礎入門｜聲音的採集與量化、音頻數字信號質量、音頻碼率](https://zhuanlan.zhihu.com/p/577850804)
-- [一文總覽萬字語音合成系列基礎與論文總結](https://mp.weixin.qq.com/s/S9T9fk9THUF3JQRnNuOM7Q)
-- [Mozilla Common Voice Datasets - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
-- [語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
-- [語音合成,語音辨識常見資料集](https://mp.weixin.qq.com/s/xGAEzuT5x7BkTRH6DCJFhA)
-- [2024年-2025年開源語音資料彙整：數十萬小時多語種、兒童老人語音、醫療健康等（截止2025年11月）](https://zhuanlan.zhihu.com/p/1974579913194501708)
+- 2025-09-23｜**Sherpa onnx**
+  - 資源：[🐙 GitHub](https://github.com/k2-fsa/sherpa-onnx)
 
+- 2025-05-14｜**TEN Framework**
+  - 資源：[📝 ten-turn-detection](https://zread.ai/TEN-framework/ten-turn-detection) | [📝 ten-vad](https://zread.ai/TEN-framework/ten-vad)
 
+- 2025-01-19｜**觀點文章**
+  - 標題：[小米語音首席科學家 Daniel Povey：語音辨識捲完了，下一個機會在哪裡？](https://www.jiqizhixin.com/articles/2025-01-19-4?)
+
+- **踩坑指南 (必讀)**
+  - [ASR/TTS 開發避坑指南](https://blog.twman.org/2024/02/asr-tts.html) (強調數據質量)
+  - [那些語音處理踩的坑](https://blog.twman.org/2021/04/ASR.html) (實務經驗分享)
+
+- **基礎知識 & 資料集**
+  - [音視頻開發基礎入門 (聲音採集、量化、碼率)](https://zhuanlan.zhihu.com/p/577850804)
+  - [萬字語音合成基礎與論文總結](https://mp.weixin.qq.com/s/S9T9fk9THUF3JQRnNuOM7Q)
+  - [Mozilla Common Voice Datasets - zhTW](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)
+  - [語音識別資料匯總：常見庫和特徵對比](https://zhuanlan.zhihu.com/p/616020595)
+  - [2024-2025 開源語音資料彙整](https://zhuanlan.zhihu.com/p/1974579913194501708)
+
+---
+
+## Speech-Recognition
 **中文語音識別 (Chinese Speech Recognition)**
 > 通過語音信號處理和模式識別讓機器自動識別和理解人類的口述。
 > [🌐 更多 ASR 資源](https://www.twman.org/AI/ASR)
+
+-----
+
+### 👑 2026 全球開源 ASR 語音辨識模型大比拚 (非中/歐美大廠篇)
+
+**1. Whisper 生態系擴充：效能與速度的極致壓榨**
+
+| 模型/工具名稱 | 開發源頭/生態 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **WhisperX** | 歐美開源社群 | **精準時間戳與語者辨識**：原版 Whisper 常常把不同人的對話糊在一起，它能強力對齊字級時間戳。 | 適合：會議紀錄、影片自動上字幕<br>`[需 GPU]` `[高精度時間戳]` |
+| **Distil-Whisper** | 歐美開源社群 | **輕量化與極速**：模型縮小 49%，速度提升 6 倍，但保留了 99% 的辨識精準度。 | 適合：算力有限的本地伺服器<br>`[低顯存需求]` `[英文效能極佳]` |
+| **Insanely-Fast-Whisper** | 歐美開源社群 | **天下武功唯快不破**：透過底層優化，讓 Whisper 的推理速度達到令人髮指的地步。 | 適合：需要批次處理海量音檔的企業<br>`[極速轉寫]` `[吞吐量王者]` |
+| **CarelessWhisper** | 歐美開源社群 | **低延遲串流辨識**：微調 Whisper 實現接近非串流式的精準度，適合即時應用。 | 適合：即時語音助理、直播實時字幕<br>`[低延遲]` `[即時辨識]` |
+
+**2. 歐美 AI 巨頭的逆襲：次世代 ASR 模型**
+
+| 模型名稱 | 開發團隊 | 💡 核心技術與亮點 | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **Parakeet-tdt-0.6b-v3** | 🇺🇸 **NVIDIA** (輝達) | **1秒轉錄1小時音訊！** 輝達推出的最強開源模型之一，吞吐量極其驚人。 | 適合：具備高等級 GPU 算力的企業級資料清洗<br>`[NVIDIA 生態]` `[極限速度]` |
+| **Voxtral (Small 24B/Mini 3B)** | 🇫🇷 **Mistral AI** | **超越 GPT-4o mini 的語音能力**，歐洲 AI 巨頭的首個開源語音模型。 | 適合：需要整合大型語言模型的語音應用<br>`[歐美頂規]` `[多語種]` |
+| **OpusLM** | 🇺🇸 **CMU** (卡內基梅隆) | 學術界重磅！統一了語音辨識、合成與文字理解的大模型。 | 適合：AI 研究人員、多模態系統開發<br>`[學術開源]` `[多模態]` |
+| **MedASR** | 🇺🇸 **Google** | 專攻醫療領域的語音辨識模型，解決專業術語難以辨識的痛點。 | 適合：醫療院所、數位健康領域的語音病歷輸入<br>`[醫療專精]` `[高準確度]` |
+
+-----
+
+### 🌏 亞洲頂尖開源 ASR 模型 (中文語境特化篇)
+
+*「如果你處理的音訊包含大量複雜的中文方言、中英夾雜，或是極具挑戰性的長時段錄音，以下這些由亞洲/中國科技大廠開源的模型，在中文語境的基準測試中目前處於領先地位。**（註：注重地緣資安合規的專案，請自行評估導入風險）**」*
+
+| 模型名稱 | 開發團隊 | 💡 核心優勢與突破點 | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **FireRedASR2S** | 🇨🇳 **小紅書** (FireRedTeam) | **SOTA 級別的工業全能系統**，第二代架構在極端場景下的辨識率非常強悍。 | 適合：短影音平台、社交媒體內容監控<br>`[中文 SOTA]` `[工業級]` |
+| **Qwen3-ASR** | 🇨🇳 **阿里巴巴** | **吊打原生 Whisper**，支援高達 52 種語言和方言，阿里體系的最新力作。 | 適合：出海企業、多語種客服系統<br>`[方言支援]` `[多語種]` |
+| **VibeVoice-ASR** | 🇨🇳 **開源社群** | **拒絕切片！一次吞下 60 分鐘音訊**。透過 64K 超長上下文窗口，直接吐出結構化結果。 | 適合：長篇演講、一小時以上的完整會議錄音<br>`[超長上下文]` `[免切片]` |
+| **Fun-ASR** | 🇨🇳 **阿里達摩院** | **小參數大能量**，0.8B 的模型效能直逼 12B 的巨頭，且支援離線轉寫 SDK。 | 適合：邊緣運算設備、本地端低資源部署<br>`[輕量化]` `[高性價比]` |
+
+-----
 
 ### 🔥 最新模型 (2026)
 
@@ -55,7 +110,7 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
 
 - 2026-01-30 | **Qwen3-ASR**
   - 說明：支援52 種語言和方言，吊打Whisper
-  - 資源：[🤗 HuggingFace](https://huggingface.co/spaces/Qwen/Qwen3-ASR)
+  - 資源：[🤗 HuggingFace](https://huggingface.co/spaces/Qwen/Qwen3-ASR) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/-7gm2BstDVxTkJ6lD3Znmg)
 
 - 2025-12-23｜**MedASR**
   - 說明：Google 發布醫學語音辨識模型
@@ -137,14 +192,11 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
   - [**Speech Brain**](https://github.com/speechbrain/speechbrain)
   - [**Kaldi 2 (k2)**](https://github.com/k2-fsa/k2)
 
----
-
 <details>
 <summary>2020/03-2021/01 開發心得</summary>
 語音辨識（speech recognition）技術，也被稱為自動語音辨識（英語：Automatic Speech Recognition, ASR）、電腦語音識別（英語：Computer Speech Recognition）或是語音轉文字識別（英語：Speech To Text, STT），其目標是以電腦自動將人類的語音內容轉換為相應的文字；跟小夥伴們一起嘗試過NEMO還有Kaldi、MASR、VOSK，wav2vec以及Google、Azure等API，更別說後來陸續又出現SpeechBrain、出門問問的WeNet跟騰訊PIKA等。目前已知可訓練聲學模型(AM)中文語音(中國發音/用語，可惜還沒臺灣較靠譜的)公開數據如：Magic-Data_Mandarin-Chinese-Read-Speech-Corpus、aidatatang、aishell-1 、aishell-2等約2000多小時(aishell目前已到4，但想商用至少得破萬小時較靠譜)；再搭配語言模型(LM)，然後基於各種演算法架構優化各有優缺點，效果也各有優劣。與說話人辨識及說話人確認不同，後者嘗試辨識或確認發出語音的說話人而非其中所包含的詞彙內容。 語音辨識技術的應用包括語音撥號、語音導航、室內裝置控制、語音文件檢索、簡單的聽寫資料錄入等。語音辨識技術與其他自然語言處理技術如機器翻譯及語音合成技術相結合，可以構建出更加複雜的應用，例如語音到語音的翻譯。語音辨識技術所涉及的領域包括：訊號處理、圖型識別、概率論和資訊理論、發聲機理和聽覺機理、人工智慧等等。
-</details>
+</details>  
 <br><br>
-
 
 ## Speaker-Recognition
 **中文語者(聲紋)識別 (Chinese Speaker Recognition)**
@@ -170,9 +222,7 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
 <details>
 <summary>2020/03/08-2020/08/29 開發心得</summary>
 投入約150天。通常我們是怎樣開始項目的研究與開發？首先會先盡可能的把3年內的學術論文或比賽等SOTA都查到，然後分工閱讀找到相關的數據集和論文及相關實作；同時會找到目前已有相關產品的公司(含新創)及他們提交的專利，這部份通常再花約30天的時間；通常就是透過 Google patens、paper with codes、arxiv等等。
-
 聲紋識別這塊在對岸查到非常多的新創公司，例如: 國音智能在我們研究開發過程就是一直被當做目標的新創公司。可以先看一下上方的DEMO影片效果；然後介紹相關實驗結果前，避免之後有人還陸續踩到我們踩過的坑；需注意的是上述很多數據集都是放在對岸像是百度雲盤等，百度是直接封鎖台灣的IP，所以你打不開是很正常的；另外像是voxcelab是切成7份，下載完再合起來也要花上不少時間，aishell、CMDS, TIMIT 比起來相對好處理就是。
-
 簡單總結為：1. 幾種 vector 的抽取 (i-vector, d-vector, x-vector) 跟 2. 模型架構 (CNN, ResNet) 和調參，再來就是 3. 評分方式 (LDA, PLDA (Probabilistic Linear Discriminant Analysis)) 等等幾種組合；我們也使用了 kaldi 其中內附的功能，光是 kaldi 就又投入了不少時間和精力 ! 其實比起自然語言處理做聲紋識別，最小的坑莫過於雖然數據集不是很容易獲取，但是聲音是可以自行用程式加工做切割合併，然後因為場景限制，錄聲紋時的時長頗短，還得處理非註冊聲紋的處理，所以前前後後花了很多時間在將相關的數據搭配評分模式調整，也算是個大工程。
 
 **技術指標：**
@@ -255,6 +305,49 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 
 ## Speech-Synthesis
 **中文語音合成 (Chinese Speech Synthesis / TTS)**
+
+### 🎙️ 2026 全球開源 TTS 語音合成與音色克隆大全 (依開發陣營分類)
+
+*「想做有聲書、全自動短影音，還是專屬的虛擬 VTuber 聲優？目前的 TTS 技術不僅告別了傳統的『機器人平淡嗓音』，還能做到 3 秒極速複製你的聲音。本清單為你拆解目前最主流的歐美大廠方案與亞洲霸榜神作，讓你根據資安需求與硬體條件精準選型。」*
+
+#### 1\. 歐美 AI 巨頭與國際開源社群 (資安友善 / 輕量部署篇)
+
+如果你對專案的「原產地」有嚴格要求，或者伺服器沒有配備頂級 GPU，以下由歐美巨頭或國際社群主導的專案是你的首選：
+
+| 模型/工具名稱 | 開發團隊/生態 | 💡 解決什麼痛點？ (核心優勢) | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **OpenAI Edge TTS** | 🇺🇸 **微軟/OpenAI 生態** | **完全免算力、免費白嫖！** 透過呼叫微軟 Edge 瀏覽器的語音介面，免 GPU 就能產出高水準語音。 | 適合：個人開發者、輕量級網頁應用<br>`[免 GPU]` `[零成本]` `[微軟原生]` |
+| **Parler-TTS** | 🇺🇸/🇪🇺 **Hugging Face** | **安裝最無腦的輕量之王**。Hugging Face 官方開源，主打「一行指令安裝」，對開發者極度友善。 | 適合：快速概念驗證 (PoC)、英/歐語系合成<br>`[極易部署]` `[國際開源]` |
+| **Kokoro-TTS** | 🌐 **國際開源社群** | 近期在歐美社群討論度極高的 TTS 方案，架構輕量且聲音自然，是取代龐大模型的優質平替。 | 適合：本地端輕量化語音助理<br>`[輕量模型]` `[社群熱推]` |
+| **VALL-E X** / **DragonV2.1** | 🇺🇸 **Microsoft** (微軟) | **跨語言音色保留**。微軟的經典架構（VALL-E X）與 2025 最新模型（DragonV2.1），技術底蘊深厚。 | 適合：企業級多語種配音、微軟生態系整合<br>`[大廠背書]` `[多語種克隆]` |
+| **Deepgram** | 🇺🇸 **Deepgram** | **超穩定的商業級 API**。雖然不是純開源，但提供極低延遲的商業級 TTS/ASR 接口，適合不想管底層架構的企業。 | 適合：企業級 SaaS 產品、即時語音對話系統<br>`[商業方案]` `[高穩定性]` |
+
+-----
+
+#### 2\. 亞洲/中國開源霸榜神作 (極致擬真 & 零樣本克隆篇)
+
+*技術客觀評析：在「中文」的表現上，以下模型目前領先全球。它們不僅能精確掌握中文的發音，甚至能生成帶有「笑聲、嘆氣、語氣詞」的超擬真人類語音。**（註：注重地緣資安的專案，建議於完全離線的本地沙盒環境中運行）***
+
+| 模型名稱 | 開發團隊 | 💡 核心優勢與突破點 | 🚀 推薦適用場景 & 規格標籤 |
+| :--- | :--- | :--- | :--- |
+| **GPT-SoVITS** | 🇨🇳 **開源社群 (RVC-Boss)** | **人聲克隆的無冕王！** 只要 1 分鐘的語音樣本，就能完美複製你的聲音，目前在 GitHub 狂攬 35k+ Stars。 | 適合：VTuber 聲優克隆、個人有聲書配音<br>`[極少樣本]` `[霸榜神作]` |
+| **ChatTTS** | 🇨🇳 **2noise** | **打破 AI 機械音的終極武器**。它最大的震撼在於支援在語句中加入「笑聲」、「停頓」，擬真度極高。 | 適合：AI Podcast、劇情對白生成<br>`[超高擬真]` `[情緒控制]` |
+| **Fish Speech** | 🇨🇳 **Fish Audio** | **當前最火紅的全能型 TTS**。性能極其強大，不僅支援多語言克隆，還配備了視覺化的 GUI 介面，降低使用門檻。 | 適合：短影音自動化生成、多語種自媒體<br>`[多語支援]` `[自帶 GUI]` |
+| **Qwen3-TTS** | 🇨🇳 **阿里巴巴** | **不只克隆，還能「捏聲音」**。提供 VoiceDesign (音色創造) 與 VoiceClone (音色克隆) 雙重強大功能。 | 適合：遊戲 NPC 配音生成、大型多模態系統<br>`[音色創造]` `[大廠開源]` |
+| **Fun-CosyVoice3** | 🇨🇳 **阿里通義百聆** | **極速克隆專家**。只需短短 3 秒錄音，就能直接複製並轉換成 9 種不同的語言。 | 適合：出海行銷影片自動翻譯配音<br>`[3秒克隆]` `[跨語言]` |
+| **MOSS-TTSD** / **F5-TTS** | 🇨🇳 **復旦大學 / 上海交大** | **學術界的頂規猛獸**。MOSS 經過百萬小時訓練；F5-TTS 則能用 15 秒樣本完成聲音克隆。 | 適合：學術研究、底層架構二次開發<br>`[學術開源]` `[巨量訓練]` |
+
+-----
+
+### 💡 額外優化建議：「效能指標」名詞解釋
+
+> **🎯 如何評估一個 TTS 模型的好壞？**
+>
+>   * **Zero-Shot Cloning (零樣本克隆)：** 指模型不需要重新訓練（Fine-tuning），只需聽你講 3\~10 秒的聲音，就能直接用你的音色唸出新稿子。
+>   * **Latency (延遲)：** 對於即時對話的 AI Agent，生成聲音的延遲至關重要。像 Orpheus TTS 標榜的 25ms 延遲，就是針對即時互動場景設計的。
+>   * **Prosody (韻律感)：** 聲音像不像真人，關鍵在於模型能否根據上下文自動加入呼吸聲、停頓和重音，這也是 ChatTTS 等新一代模型能勝出的關鍵。
+
+---
 
 ### ⭐ 必備明星專案 (Star Projects)
 
@@ -382,6 +475,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 - **MeloTTS**
   - 說明：無 GPU 也可靈活使用
   - 資源：[🐙 GitHub](https://github.com/myshell-ai/MeloTTS) | [📝 中文解讀](https://mp.weixin.qq.com/s/DSHabmduaUX5_aBedDhEFg)
+
 
 ## Speech-Datasets
 **開源語音資料 (Speech Datasets)**
