@@ -22,6 +22,8 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
 | [Google Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/pricing?hl=zh-tw#gemini-models) | 大型語言模型 | Gemini/Claude 定價頁 |
 | [Google Cloud VM](https://cloud.google.com/compute/vm-instance-pricing?hl=zh-tw#sharedcore_machine_types) | 虛擬機器 | VM 執行個體定價頁面 |
 
+---
+
 ### **文章目錄**
 - [Speech Processing (語音處理)](#speech-processing)
 - [Speech Recognition (語音識別)](#speech-recognition)
@@ -101,11 +103,11 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
 ### 🔥 最新模型 (2026)
 
 - 2026-02-25 | **FireRedASR2S**
-  - 說明：小紅書FireRedTeam團隊推出的第二代工業級全能語音辨識系統（All-in-One ASR System），是目前語音辨識領域的SOTA（State-of-the-Art）級作品
+  - 說明：目前中文開源界的 SOTA 霸主。針對短影音、直播與社交媒體中常見的複雜口音、中英夾雜與背景噪音干擾進行了深度優化，是打造高併發內容審核平台與全自動影片上字幕系統的工業級首選。
   - 資源：[🐙 GitHub](https://github.com/FireRedTeam/FireRedASR2S) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/d1vYXNegQdqph_nFDDye9A)
 
 - 2026-01-30 | **VibeVoice-ASR**
-  - 說明：拒絕切片，拒絕拼湊，它能在一個64K 的超長上下文窗口內，一次性“吞下”整整60 分鐘的音頻，並直接吐出完美的結構化結果
+  - 說明：徹底解決傳統 ASR 模型因音檔切片導致的語意斷層與時間戳記偏移問題。支援 64K 超長上下文，能一次處理 60 分鐘音檔，極度適合一小時以上的長篇 Podcast 轉錄、企業法說會或學術演講的完整逐字稿生成。
   - 資源：[🐙 GitHub](https://github.com/microsoft/VibeVoice) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/W8VVkg2igydIZgMkqw9wBA)
 
 - 2026-01-30 | **Qwen3-ASR**
@@ -117,7 +119,7 @@ https://github.com/Deep-Learning-101/Speech-Processing-Paper
   - 資源：[🤗 HuggingFace](https://huggingface.co/google/medasr)
 
 - 2025-12-16｜**Fun-ASR**
-  - 說明：阿里開源 0.8B 模型，效能直逼 12B 巨頭
+  - 說明：主打極致性價比與輕量化，僅需極低顯存（VRAM）即可在本地端流暢運行 0.8B 模型。內建完善的離線轉寫 SDK，非常適合邊緣運算設備（Edge AI）或需在封閉內網環境部署的企業語音客服系統。
   - 資源：[🐙 GitHub](https://github.com/FunAudioLLM/Fun-ASR) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1984310683358217029) | [📝 公眾號解讀，用Fun-ASR-Nano微調一個「聽懂行話」的語音模型](https://mp.weixin.qq.com/s/M1vGqFZV5MWREkSyx2-ITw)
 
 - 2025-12-15｜**GLM-ASR**
@@ -244,7 +246,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 > [🌐 更多資源](https://www.twman.org/AI/ASR/SpeechEnhancement) | [🤗 Demo Space](https://huggingface.co/spaces/DeepLearning101/Speech-Quality-Inspection_Meta-Denoiser)
 
 - **ClearVoice (2024-12-07)**
-  - 說明：一站式語音處理工具包 (降噪、分離、提取)
+  - 說明：整合了語音增強與多人語者分離技術，能有效對付棘手的雞尾酒會效應（Cocktail Party Effect）。非常適合應用於多人視訊會議紀錄的聲軌拆分，或是吵雜戶外採訪音檔的極限人聲修復與提取。
   - 資源：[🐙 GitHub](https://github.com/modelscope/ClearerVoice-Studio) | [🤗 Demo](https://huggingface.co/spaces/alibabasglab/ClearVoice) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/18109659892)
 
 - **Meta Denoiser**
@@ -376,7 +378,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
   - 資源：[🐙 GitHub](https://github.com/inclusionAI/Ming-omni-tts)  | [🤗 Hugging Face](https://huggingface.co/inclusionAI/Ming-flash-omni-2.0) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/x3DPVL92NhO4ENm6WId-uw)
 
 - 2026-01-26 | **Chroma 1.0**
-  - 說明：FlashLabs開源，150ms 極速響應+ 零樣本聲音克隆，可打斷，邊想邊說、還能換聲線
+  - 說明：專為全雙工（Full-duplex）即時語音對話設計。150ms 的超低延遲與隨時可打斷的特性，讓它成為開發次世代 AI 語音助理、虛擬陪伴機器人或即時 AI 客服智能體（Agent）的完美底層音訊引擎。
   - 資源：[🐙 GitHub](https://github.com/FlashLabs-AI-Corp/FlashLabs-Chroma)  | [🤗 Hugging Face](https://huggingface.co/FlashLabs/Chroma-4B) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/V9xctkJYAuoURqbREXHidQ)
 
 - 2025-12-24｜**Qwen3-TTS**
@@ -392,11 +394,11 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
   - 資源：[🤗 HuggingFace](https://huggingface.co/openbmb/VoxCPM1.5) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1982596122645116335) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/kmA6aZmCIhv1x0qS1kPCNg)
 
 - 2025-10-12｜**NeuTTS Air**
-  - 說明：手機也能跑，3秒克隆聲音
+  - 說明：主打端側運算（On-Device AI），極小的模型體積與超低功耗讓它能直接部署在 iOS/Android 手機或 IoT 穿戴裝置上。適合開發需要完全離線、保護使用者隱私的專屬語音播報 APP。
   - 資源：[🐙 GitHub](https://github.com/neuphonic/neutts-air) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1962976509611454658)
 
 - 2025-08-15｜**ZipVoice**
-  - 說明：CPU is all you need!
+  - 說明：完全擺脫對昂貴 GPU 獨立顯卡的依賴，純靠 CPU 就能實現流暢且高品質的語音合成。對於預算有限的個人開發者，或是想在輕量級雲端伺服器上部署 TTS API 服務的企業來說是絕佳的低成本方案。
   - 資源：[🐙 GitHub](https://github.com/k2-fsa/ZipVoice)
 
 - 2025-08-08｜**KittenTTS**
@@ -545,6 +547,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 * **nEMO** (2024/04)
 * 說明：3小時的波蘭語情緒語音資料集，包含9位演員錄製的憤怒、恐懼、快樂、悲傷等6種情緒。
 * 資源：[🤗 Hugging Face](https://huggingface.co/datasets/amu-cai/nEMO) | [📄 arXiv](https://arxiv.org/abs/2404.06292)
+
 
 <details 過往資訊 close>
 <summary><strong>過往資訊</strong></summary>
