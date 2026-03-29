@@ -1,15 +1,20 @@
+---
+layout: default
+title: 2026 語音處理資源懶人包 (Speech AI) | ASR, TTS & 聲紋辨識 | Deep Learning 101
+description: 2026 最新開源語音處理 (Speech AI) 資源與模型比較。涵蓋免切片語音辨識 (ASR)、極速人聲克隆 (TTS)、語音增強去噪等技術，收錄 Whisper 魔改版與 VibeVoice 等企業級落地解決方案。
+permalink: /Speech-Processing
+lang: zh-Hant
+schema_type: service
+service_type: AI Consulting
+---
+
 {% include header.html %}
 
-# 🎙️ 語音處理 (Speech Processing) 與 AI 語音大模型・2026 全攻略
+# 🎤 語音處理 (Speech)・必讀資源總整理
 
-> **編者按：** 本頁面彙整從傳統語音辨識 (ASR)、聲紋識別、語音去噪，到 2026 年最尖端的 **語音生成大模型 (Speech LLM)** 與 **即時語音複製 (Voice Clone)** 技術。
+> **編者按：** 本頁面彙整了語音處理領域的前沿技術。包含自動語音辨識、語音合成、語者識別與語音轉換的經典論文與開源工具。
 >
-> 🚀 **核心特色：**
-> * **實戰導向：** 收錄 2020 年至今的開發血淚史，包含 ASR/TTS 避坑指南。
-> * **全球視野：** 橫跨 OpenAI Whisper 生態、NVIDIA Parakeet 到亞洲頂尖的 FireRedASR 與 GPT-SoVITS。
-> * **多維資源：** 涵蓋 10 萬小時級別的開源語音資料集與價格比較表。
->
-> 歡迎訪問 **GitHub Repository**：
+> 如果您想尋找更詳細的筆記，歡迎訪問 **GitHub Repository**：
 > 👉 [**GitHub: Speech-Processing-Paper**](https://github.com/Deep-Learning-101/Speech-Processing-Paper) (歡迎 Star ⭐)
 
 ---
@@ -17,6 +22,10 @@
 {% include ai-share.html %}
 
 ---
+
+# 語音處理 (Speech Processing)
+
+[https://github.com/Deep-Learning-101/Speech-Processing-Paper](https://github.com/Deep-Learning-101/Speech-Processing-Paper)
 
 ## 🎙️ 語音識別 / 合成平台價格比較
 ~2025/04
@@ -596,6 +605,7 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 - [出門問問MeetVoice, 讓合成聲音以假亂真](https://zhuanlan.zhihu.com/p/92903377)
 </details>
 
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -604,8 +614,8 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
     "@type": "WebPage",
     "@id": "https://deep-learning-101.github.io/Speech-Processing"
   },
-  "headline": "2026 語音處理 (Speech Processing) 全攻略：從 Whisper 辨識到 GPT-SoVITS 擬真人聲克隆",
-  "description": "2026 年最詳盡的 AI 語音技術資源指南。涵蓋 ASR 語音辨識（FireRedASR, Qwen3-ASR）、TTS 語音合成（Fish Speech, ChatTTS）、聲紋識別、語音增強與 10 萬小時跨語種開源資料集。",
+  "headline": "2026 語音處理 (Speech Processing) 資源與模型大全",
+  "description": "一份詳盡的語音處理（Speech Processing）資源清單，涵蓋語音識別(ASR)、語者識別、語音增強、語者分離與語音合成(TTS)等領域的最新研究與開源工具，解決Podcast逐字稿、邊緣運算與即時語音對話痛點。",
   "image": "https://raw.githubusercontent.com/Deep-Learning-101/TonTon/refs/heads/main/_includes/DL101-Logo.jpg",
   "author": {
     "@type": "Organization",
@@ -622,20 +632,16 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
   },
   "datePublished": "2026-03-29",
   "dateModified": "2026-03-29",
-  "keywords": "語音處理, Speech Processing, ASR, 語音辨識, TTS, 語音合成, 聲紋識別, Speaker Recognition, 語音克隆, Voice Clone, GPT-SoVITS, FireRedASR, WhisperX, Fish Speech, ChatTTS, 語音去噪, Speech Enhancement, 開源語音資料集, WenetSpeech",
-  "about": [
-    {
-      "@type": "Service",
-      "name": "語音識別與分析 (ASR, VAD, Speaker Diarization)"
+  "keywords": "語音處理, Speech Processing, ASR, TTS, 語音辨識, 語音合成, 語者分離, 聲音克隆, Whisper, 本地部署, 逐字稿生成, AI客服, 邊緣運算",
+  "about": {
+    "@type": "Service",
+    "serviceType": "AI Consulting",
+    "provider": {
+      "@type": "Organization",
+      "name": "Deep Learning 101, Taiwan"
     },
-    {
-      "@type": "Service",
-      "name": "語音合成與複製 (TTS, Voice Cloning, Emotional Speech)"
-    },
-    {
-      "@type": "Service",
-      "name": "語音信號處理與增強 (Denoising, Separation)"
-    }
-  ]
+    "name": "人工智慧顧問服務 (AI Consulting)",
+    "description": "提供關於語音處理（Speech Processing）領域的專業顧問服務，包含語音識別（ASR）、語音合成（TTS）、模型開發與技術導入。"
+  }
 }
 </script>

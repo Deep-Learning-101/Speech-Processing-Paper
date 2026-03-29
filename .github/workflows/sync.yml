@@ -1,0 +1,50 @@
+name: Sync Speech Content and Assets
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.md'
+      - '**/images/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Sub Repo
+        uses: actions/checkout@v4
+        with:
+          path: sub-repo
+
+      - name: Checkout Main Repo
+        uses: actions/checkout@v4
+        with:
+          repository: Deep-Learning-101/deep-learning-101.github.io
+          token: ${{ secrets.GH_PAT }}
+          path: main-repo
+
+      - name: Sync and Mirror Structure
+        run: |
+          # 1. 處理 Speech 核心檔案
+          cp sub-repo/README.md main-repo/Speech-Processing.md
+          
+          # 2. 全資源鏡像
+          cd sub-repo
+          find . -maxdepth 1 -type d | while read dir; do
+            if [ "$dir" != "." ] && [ "$dir" != "./.github" ] && [ "$dir" != "./.git" ]; then
+              mkdir -p "../main-repo/$dir"
+              cp -a "$dir/." "../main-repo/$dir/"
+            fi
+          done
+
+      - name: Commit and Push
+        run: |
+          cd main-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          
+          ORIGINAL_MSG="${{ github.event.head_commit.message }}"
+          
+          git diff --quiet && git diff --staged --quiet || git commit -m "Speech Sync: $ORIGINAL_MSG"
+          git push
