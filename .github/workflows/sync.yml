@@ -6,6 +6,7 @@ on:
     paths:
       - '**/*.md'
       - '**/images/**'
+      - '.github/workflows/sync.yml' # 加上這行，改 YAML 時才會自動觸發補救同步
 
 jobs:
   sync:
@@ -22,6 +23,7 @@ jobs:
           repository: Deep-Learning-101/deep-learning-101.github.io
           token: ${{ secrets.GH_PAT }}
           path: main-repo
+          fetch-depth: 0 
 
       - name: Sync and Mirror Structure
         run: |
@@ -30,21 +32,38 @@ jobs:
           
           # 2. 全資源鏡像
           cd sub-repo
-          find . -maxdepth 1 -type d | while read dir; do
-            if [ "$dir" != "." ] && [ "$dir" != "./.github" ] && [ "$dir" != "./.git" ]; then
-              mkdir -p "../main-repo/$dir"
-              cp -a "$dir/." "../main-repo/$dir/"
-            fi
+          find . -maxdepth 1 -type d ! -name "." ! -name ".github" ! -name ".git" | while read dir; do
+            mkdir -p "../main-repo/$dir"
+            cp -a "$dir/." "../main-repo/$dir/"
           done
 
       - name: Commit and Push
         run: |
           cd main-repo
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          
+
+          # 1. 抓取資訊（增加預設值保險）
           ORIGINAL_MSG="${{ github.event.head_commit.message }}"
-          
-          git diff --quiet && git diff --staged --quiet || git commit -m "Speech Sync: $ORIGINAL_MSG"
-          git push
+          AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
+          AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
+          SUB_SHA="${{ github.sha }}"
+
+          # 如果抓不到作者，就用機器人當備胎
+          git config user.name "${AUTHOR_NAME:-github-actions[bot]}"
+          git config user.email "${AUTHOR_EMAIL:-github-actions[bot]@users.noreply.github.com}"
+
+          # 2. 暫存搬移過來的內容
+          git add .
+
+          # 3. 檢查是否有變動
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            # 建立 Commit (Speech 專屬標籤)
+            git commit -m "Speech Sync: $ORIGINAL_MSG (From Sub: ${SUB_SHA:0:7})"
+
+            # 4. 關鍵補救：Rebase 遠端變更
+            git pull --rebase origin main
+
+            # 5. 推送
+            git push origin main
+          else
+            echo "No changes detected, skipping sync."
+          fi
