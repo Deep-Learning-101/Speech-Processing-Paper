@@ -100,7 +100,7 @@ service_type: AI Consulting
 | 模型名稱 | 開發團隊 | 💡 核心技術與亮點 | 🚀 推薦適用場景 & 規格標籤 |
 | :--- | :--- | :--- | :--- |
 | **Parakeet-tdt-0.6b-v3** | 🇺🇸 **NVIDIA** (輝達) | **1秒轉錄1小時音訊！** 輝達推出的最強開源模型之一，吞吐量極其驚人。 | 適合：具備高等級 GPU 算力的企業級資料清洗<br>`[NVIDIA 生態]` `[極限速度]` |
-| **Voxtral (Small 24B/Mini 3B)** | 🇫🇷 **Mistral AI** | **超越 GPT-4o mini 的語音能力**，歐洲 AI 巨頭的首個開源語音模型。 | 適合：需要整合大型語言模型的語音應用<br>`[歐美頂規]` `[多語種]` |
+| **Voxtral (Small 24B/Mini 4B Realtime)** | 🇫🇷 **Mistral AI** | **超越 GPT-4o mini 的語音能力**，歐洲 AI 巨頭的首個開源語音模型。 | 適合：需要整合大型語言模型的語音應用<br>`[歐美頂規]` `[多語種]` |
 | **OpusLM** | 🇺🇸 **CMU** (卡內基梅隆) | 學術界重磅！統一了語音辨識、合成與文字理解的大模型。 | 適合：AI 研究人員、多模態系統開發<br>`[學術開源]` `[多模態]` |
 | **MedASR** | 🇺🇸 **Google** | 專攻醫療領域的語音辨識模型，解決專業術語難以辨識的痛點。 | 適合：醫療院所、數位健康領域的語音病歷輸入<br>`[醫療專精]` `[高準確度]` |
 
@@ -125,9 +125,14 @@ service_type: AI Consulting
   - 說明：目前中文開源界的 SOTA 霸主。針對短影音、直播與社交媒體中常見的複雜口音、中英夾雜與背景噪音干擾進行了深度優化，是打造高併發內容審核平台與全自動影片上字幕系統的工業級首選。
   - 資源：[🐙 GitHub](https://github.com/FireRedTeam/FireRedASR2S) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/d1vYXNegQdqph_nFDDye9A)
 
+- 2026-02-04｜**Voxtral (Mistral)**
+  - 說明：Mistral 開源語音模型 Voxtral Mini 4B Realtime；Voxtral Realtime 在480ms 延遲下英語短音頻WER 為8.47%，與離線Whisper（8.39%）幾乎持平。論文中GPT-4o mini Transcribe 和Scribe v2 Realtime 均被歸類為"實時API"模型（非離線），同類流式模型Nemotron Streaming 在560ms 延遲下WER 為9.59%，差距明顯。支援的13 種語言：英語、中文、西班牙語、法語、德語、阿拉伯語、印地語、日語、韓語、俄語、義大利語、荷蘭語、葡萄牙語。
+  - 資源：[🤗 HuggingFace](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/5fG_xOrPIsXCs5sNiFidMQ)
+  - 2025-07-16：[Small 24B](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) | [Mini 3B](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1928945056955471125)
+
 - 2026-01-30 | **VibeVoice-ASR**
-  - 說明：徹底解決傳統 ASR 模型因音檔切片導致的語意斷層與時間戳記偏移問題。支援 64K 超長上下文，能一次處理 60 分鐘音檔，極度適合一小時以上的長篇 Podcast 轉錄、企業法說會或學術演講的完整逐字稿生成。
-  - 資源：[🐙 GitHub](https://github.com/microsoft/VibeVoice) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/W8VVkg2igydIZgMkqw9wBA)
+  - 說明：微軟亞洲研究院發布的通用語音識別模型，徹底解決傳統 ASR 模型因音檔切片導致的語意斷層與時間戳記偏移問題。支援 64K 超長上下文，能一次處理 60 分鐘音檔，極度適合一小時以上的長篇 Podcast 轉錄、企業法說會或學術演講的完整逐字稿生成；並能夠可靠地生成豐富、結構化的輸出，清晰地記錄說話者是誰以及其說話時間。英文的WER是7.99，日文14.69，整體平均下來，WER大約12。官方明確說了只供研究，不建議商業使用 XD
+  - 資源：[🐙 GitHub](https://github.com/microsoft/VibeVoice) | [🤗 HuggingFace](https://huggingface.co/microsoft/VibeVoice-ASR) |  [📝 公眾號解讀](https://mp.weixin.qq.com/s/W8VVkg2igydIZgMkqw9wBA)
 
 - 2026-01-30 | **Qwen3-ASR**
   - 說明：支援52 種語言和方言，吊打Whisper
@@ -164,10 +169,6 @@ service_type: AI Consulting
   - 說明：1秒轉錄1小時音訊！輝達最強開源模型
   - 資源：[🤗 HuggingFace](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) | [📝 媒體報導](https://hk.finance.yahoo.com/news/1%E7%A7%92%E8%BD%89%E9%8C%841%E5%B0%8F%E6%99%82%E9%9F%B3%E8%A8%8A-%E8%BC%9D%E9%81%94%E9%87%8D%E7%A3%85%E9%96%8B%E6%BA%90%E8%AA%9E%E9%9F%B3%E8%AD%98%E5%88%A5%E6%9C%80%E5%BC%B7%E6%A8%A1%E5%9E%8Bparakeet-075846970.html)
 
-- 2025-07-16｜**Voxtral (Mistral)**
-  - 說明：Mistral 首個開源語音模型，超越 GPT-4o mini
-  - 資源：[Small 24B](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) | [Mini 3B](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1928945056955471125)
-
 - 2025-07-02｜**OpusLM**
   - 說明：CMU 發布統一語音辨識、合成、文字理解的大模型
   - 資源：[🤗 HuggingFace](https://huggingface.co/espnet/OpusLM_7B_Anneal) | [📝 中文解讀](https://mp.weixin.qq.com/s/XCgBTgfOs8y_fFFEEMrW-w)
@@ -199,6 +200,7 @@ service_type: AI Consulting
   - [**WhisperLive**](https://github.com/collabora/WhisperLive): 免費即時語音轉文字工具。
   - [**Distil-Whisper**](https://github.com/huggingface/distil-whisper): 輕量級 AI 的強大力量。
   - [**Insanely-Fast-Whisper**](https://github.com/Vaibhavs10/insanely-fast-whisper): 超快速辨識腳本。
+    - [📝 公眾號解讀 | 2.5 小時音訊只需98 秒轉錄，這個開源專案太離譜了](https://mp.weixin.qq.com/s/D2qBINl2m45IQsG5jJ08WA)
   - [**WhisperX**](https://github.com/m-bain/whisperX): 強化的時間戳記與說話者識別。
   - [**Fine-tune Whisper**](https://huggingface.co/blog/zh/fine-tune-whisper): 微調教學。
 
@@ -391,6 +393,10 @@ ROC曲線：描述FAR和FRR間變化的曲線，X軸為FAR,Y軸為FRR。
 ---
 
 ### 📅 2026 最新模型 (Latest Arrivals)
+
+- 2026-03-27 | **Voxtral TTS (Mistral AI)**
+  - 說明：一個文字轉語音模型。34億參數，能跑在你筆記本上，甚至你手機上。生成速度是真人說話的6倍，延遲不到0.1秒。權重全開源，MIT協議，隨便下，隨便用，隨便改。支援9種語言：English, French, German, Spanish, Dutch, Portuguese, Italian, Hindi, and Arabic；我試著錄我聲音可惜不能讓它講中文。
+  - 資源：[🤗 HuggingFace](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603)
 
 - 2026-02-22 | **Ming-flash-omni-2.0**
   - 說明：透過簡單指令即可控制產生音訊的語速、音量、音調
