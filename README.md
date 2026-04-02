@@ -452,6 +452,13 @@ service_type: AI Consulting
 ---
 
 ### 🔥 2025-2026 前沿創新與特殊場景模型 (Special Cases)
+- **[2026-04-02] OmniVoice**🔥
+  - **說明**：由 Kaldi 之父（Daniel Povey 團隊）領銜打造，支援超過 600 種語言的革命性 TTS 模型！打破傳統「文字 ➔ 語意 ➔ 聲音」的兩階段流程，直接**一步到位**。
+  - **核心優勢**：
+    1. **降維打擊的語言理解**：以 Qwen3-0.6B 為語言基底，讓模型「還沒學說話就先讀懂文字」，字錯率（WER）直接從 2.5% 砍半至 1.3%，在同數據條件下硬生生打贏了 F5-TTS 與 MaskGCT 等前輩。
+    2. **極致輕量與極速推理**：模型僅 0.8B 參數，推論速度最快可達實時的 40 倍（40x RTF）。
+    3. **全能語音控制**：媲美 ElevenLabs 等閉源平台，原生支援零樣本聲音克隆、音色設計、非語言符號（笑聲/嘆氣）插入與發音控制。
+  - **資源**：[🐙 GitHub](https://github.com/k2-fsa/OmniVoice)
 - **[2026-02-22] Ming-flash-omni-2.0**
   - **說明**：透過簡單指令即可控制產生音訊的語速、音量、音調。
   - **資源**：[🐙 GitHub](https://github.com/inclusionAI/Ming-omni-tts) | [🤗 HF Model](https://huggingface.co/inclusionAI/Ming-flash-omni-2.0) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/x3DPVL92NhO4ENm6WId-uw)
