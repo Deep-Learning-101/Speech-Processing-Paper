@@ -49,6 +49,8 @@ service_type: AI Consulting
 - [Speaker Separation (語者分離)](#speaker-separation)
 - [Speech Synthesis (語音合成)](#speech-synthesis)
 - [Speech Datasets (開源語音資料)](#speech-datasets)
+- [Speech-Applications(語音處理綜合應用)](#speech-applications)
+
 
 ## Speech-Processing
 **🗣️ Speech Processing (語音處理與對話式 AI)**
@@ -187,6 +189,7 @@ service_type: AI Consulting
 
 | 模型/工具名稱 | 開發團隊/生態 | 💡 核心優勢與解決痛點 | 🚀 推薦適用場景 & 規格標籤 |
 | :--- | :--- | :--- | :--- |
+| **Sherpa-onnx** | 🌐 **k2-fsa 團隊** | **全能型本地端語音部署神器**。基於 ONNX Runtime，解決了移動端需自行編寫大量 JNI 程式碼的痛點，單一 AAR 即可支援流式 ASR、VAD 與 TTS。 | 離線語音助理、Android/iOS 原生開發<br>`[本地部署]` `[流式識別]` |
 | **WhisperX** | 開源社群 | **精準時間戳**：強力對齊字級時間戳，解決原版糊在一起的問題。 | 會議紀錄、自動上字幕 |
 | **Distil-Whisper** | 開源社群 | **輕量極速**：模型縮小 49%，速度提升 6 倍，保留 99% 精準度。 | 本地伺服器、英文場景 |
 | **Insanely-Fast-Whisper** | 開源社群 | **天下武功唯快不破**：底層優化，推理速度達到令人髮指的地步。 | 海量音檔批次處理 |
@@ -197,6 +200,8 @@ service_type: AI Consulting
 | **MedASR** | **Google** | **醫療專精**：解決醫學專業術語難以辨識的痛點。 | 醫療院所、數位健康 |
 | **[MAI-Transcribe-1](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/)** `[2026-04]` 🔥 | **Microsoft AI** | **25 種語言性能全數超越 Whisper-large-v3**。解決了長音訊轉寫「越播越崩」的語意偏差，批量轉寫速度提升 2.5 倍，且價格僅每小時 0.36 美元，徹底瓦解高昂轉錄成本。 | 全球化會議逐字稿、多人 Podcast 轉錄、多語言客服系統<br>`[性價比之王]` `[超越Whisper]` |
 | **[MAI-Voice-1](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/)** `[2026-04]` | **Microsoft AI** | **1 秒生成 60 秒極致自然語音**。針對長時間敘事優化，完美保留音色一致性與豐富情感，並支援「秒級」小樣本語音克隆。 | 互動式虛擬助理、長篇有聲書製作、遊戲 NPC 語音<br>`[超低延遲]` `[高保真克隆]` |
+
+---
 
 #### 2. 亞洲頂尖開源 ASR 模型 (中文語境特化篇)
 *如果你處理的音訊包含大量複雜的中文方言、中英夾雜，或是極具挑戰性的長時段錄音，以下模型目前處於領先地位。（註：注重地緣資安合規的專案，請自行評估導入風險）*
@@ -308,7 +313,14 @@ service_type: AI Consulting
 (註：命令列模式亦支援直接輸出 JSON 格式：funaudio --model sensevoice-small --file test.wav --output-format json)
   </details>
 
+---
+
 #### 🌐 國際巨頭與創新架構 (Global Tech & Innovations)
+
+* **[[Voxtral Realtime (4.4B)]](https://arxiv.org/pdf/2602.11298)** `[2026-02-28]` 🔥
+    * **核心優勢**：**打破「低延遲與高精度」互斥魔咒的開源即時 ASR 霸主**。由 Mistral AI 採用 Apache 2.0 開源，創新導入全因果音訊編碼器 (Causal Audio Encoder) 與 Ada RMS-Norm 架構。在 **480ms 的亞秒級延遲下，辨識精準度直接打平 Whisper 離線模型**；更在工程端深度整合 `vLLM`，支援異構 KV 快取與 WebSocket 全雙工即時推理。
+    * **解決痛點 / 推薦場景**：**徹底解決傳統離線模型（如 Whisper 滑動窗口）硬改為流式推理時精準度暴跌的痛點，以及生產環境中長文本泛化能力弱的瓶頸**。單一模型即可動態切換延遲檔位（80ms\~2400ms），支援 13 種語言。是打造**高併發即時字幕**、**同聲傳譯 (AI 口譯)**、**低延遲全雙工語音助理**的工業級首選。<br>`[亞秒級延遲]` `[vLLM原生支援]` `[Apache 2.0 完全開源]`
+    * **資源**：[📄 官方論文](https://arxiv.org/pdf/2602.11298) | [🐙 GitHub (Mistral AI)](https://github.com/mistralai)
 
 * **[[Cohere Transcribe]](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)** `[2026-03-28]` 🔥
   * **核心優勢**：**20 億參數塞進瀏覽器，準確率正式碾壓 Whisper Large v3！** Cohere 釋出的 2B 參數 SOTA 語音模型 (cohere-transcribe-03-2026)，採用 Conformer 編碼器與輕量 Transformer 解碼器架構。它以 5.42% 的平均詞錯率 (WER) 登頂 HuggingFace Open ASR 排行榜，超越 OpenAI Whisper Large v3 (6.41%)。最震撼的是，透過 WebGPU 與 ONNX Runtime，它能直接在網頁瀏覽器內免安裝本地執行，1 小時的錄音僅需約 100 秒即可轉錄完畢 (約 36 倍即時倍率)。
@@ -341,7 +353,15 @@ service_type: AI Consulting
   - **說明**：快速交錯跨模態令牌生成。
   - **資源**：[📚 DeepWiki](https://deepwiki.com/VITA-MLLM/VITA-Audio) | [📄 AlphaXiv](https://www.alphaxiv.org/zh/overview/2505.03739)
 
+---
+
 #### ⏱️ Whisper 變體與串流應用工具 (Streaming & Tools)
+
+* **[[Sherpa-ONNX Android Agent]](https://github.com/coder-brzhang/funasr-agent)** `[2026-04-18]` 🔥
+  * **核心優勢**：**地表最強 Android 離線語音助手實作範例，整合流式 ASR 與 Silero VAD**。利用 `sherpa-onnx` 框架與 `Paraformer` 雙語模型，實現完全「純離線」的邊說邊出字體驗。僅需 15MB 的 AAR 核心庫與 int8 量化模型，即可在安卓中端設備達成 \<300ms 的極致響應，並具備模糊指令匹配能力。
+      * **解決痛點 / 推薦場景**：**解決了離線環境下語音助手「聽不懂」與「反應慢」的雙重挑戰**。透過 VAD 自動人聲檢測免除按鈕操作，是打造隱私優先、低功耗、免聯網 AI 語音助理（如智慧家居中樞、車載語音、Wear OS 設備）的教科書級參考。
+  * **資源**：[🐙 GitHub](https://github.com/coder-brzhang/funasr-agent) | [📝 深度實作教學](https://mp.weixin.qq.com/s/DOm_hg6DWA_OjcsLuUQ9Hw) | [📄 Paraformer 論文](https://arxiv.org/abs/2206.08317)
+
 - **[2025-08-29] WhisperLiveKit**
   - **說明**：讓即時語音轉寫絲滑得不像話的神器。
   - **資源**：[🐙 GitHub](http://github.com/QuentinFuxa/WhisperLiveKit) | [📝 中文解讀](https://zhuanlan.zhihu.com/p/1944712252512010607)
@@ -401,7 +421,17 @@ service_type: AI Consulting
 </ul>
 
 </details>
-<br><br>
+
+---
+
+### 🛠️ ASR 後處理與文本糾錯 (ASR Post-Processing & Correction)
+
+* **[[Generative-Annotation-NEC (SS+GL)]](https://github.com/L6-NLP/Generative-Annotation-NEC)** `[2026-04-18]` 🔥
+  * **核心優勢**：**華為開源的 ASR 命名實體糾錯 (NEC) 終極方案，徹底解決「音似形異」的轉寫災難**。捨棄傳統依賴「文字拼寫相似度」的編輯距離法，創新提出 SS+GL 架構：先透過「聲音指紋 (Speech-based Selection)」檢索正確實體，再利用大模型進行「生成式標註 (Generative Labeling)」。能精準將「米德仲尼」糾正為「Midjourney」、「01X」糾正為「靈耀X」。
+  * **解決痛點 / 推薦場景**：**完美解決通用 ASR（如 Whisper）或第三方雲端語音 API，在遇到專業術語、最新科技詞彙或中英夾雜時辨識崩壞的痛點**。採用「生成後糾正」的解耦架構，**隨插即用**，無須改動底層 ASR 引擎。是打造**高精度醫療/法律會議紀錄**、**企業私有領域語音知識庫**，以及**防過糾錯 (Anti-Overcorrection) 文本清洗管線**的工業級利器。
+  * **資源**：[🐙 GitHub (程式碼與資料集)](https://github.com/L6-NLP/Generative-Annotation-NEC) | [📄 官方論文](https://arxiv.org/pdf/2508.20700)
+
+---
 
 ## Speaker-Recognition
 **🗣️ Speaker Recognition (中文語者與聲紋識別)**
@@ -472,7 +502,8 @@ service_type: AI Consulting
 </ul>
 
 </details>
-<br><br>
+
+---
 
 ## Speech-Enhancement
 **🎧 Speech Enhancement (中文語音增強與去噪)**
@@ -513,7 +544,15 @@ service_type: AI Consulting
 </blockquote>
 
 </details>
-<br><br>
+
+### 🎧 音訊超解析與音質提升 (Audio Super-Resolution & Enhancement)
+
+* **[[NovaSR]](https://github.com/ysharma3501/NovaSR)** `[2026-04-18]` 🔥
+  * **核心優勢**：**打破大模型算力迷思的 TinyML 奇蹟！僅 52KB 的微型音訊超解析 (Super-Resolution) 模型**。能透過預測並補全高頻段，將 16kHz 的「電話級」沉悶音質，瞬間升頻為 48kHz 的高保真 (Hi-Fi) 全頻帶音訊。在 A100 上高達 3600 倍實時處理速度，即使在手機 CPU 上運行也幾乎零延遲。
+  * **解決痛點 / 推薦場景**：**完美解決傳統音訊增強模型動輒數百 MB，無法在邊緣設備離線運行的致命痛點**。極度輕量的體積使其能無縫嵌入 TWS 無線藍牙耳機晶片、手機 NPU 或微控制器 (MCU)。是打造 **VoIP 網路通話即時增強**、**千路直播語音端側優化**，以及 **TTS (文字轉語音) 輸出高音質後處理** 的工業級黑科技。
+  * **資源**：[🐙 GitHub](https://github.com/ysharma3501/NovaSR) | [🤗 線上 DEMO 與權重](https://huggingface.co/spaces/YatharthS/NovaSR)
+
+---
 
 ## Speaker-Separation
 **👥 Speaker Separation (中文語者分離)**
@@ -572,7 +611,8 @@ service_type: AI Consulting
 </blockquote>
 
 </details>
-<br><br>
+
+---
 
 ## Speech-Synthesis
 **🗣️ Chinese Speech Synthesis & TTS (中文語音合成與音色克隆)**
@@ -753,6 +793,35 @@ service_type: AI Consulting
 * **[Bridge2AI-Voice (2025-01)](https://physionet.org/content/b2ai-voice/1.1/)**：由 NIH 推進的醫療語音資料集，針對語音障礙、神經系統疾病及憂鬱症等進行收音 (需申請)。
 * **[VietMed](https://github.com/leduckhai/multimed)**：越南醫療語音資料集，涵蓋所有 ICD-10 疾病組及當地口音。
 * **[nEMO (2024-04)](https://huggingface.co/datasets/amu-cai/nEMO)**：3 小時波蘭語「情緒」語音資料集，包含憤怒、恐懼、快樂等 6 種極端情緒。
+
+---
+
+## Speech-Applications
+**🎙️ 語音處理綜合應用 (All-in-One Applications)**
+
+當單項技術（辨識、合成、分離）趨於成熟，2026 年的趨勢在於將多個模型串聯成解決特定生活痛點的「完整方案」。以下收錄具備高度整合性且支援本地部署的開源神作：
+
+### 🎼 音樂與歌聲處理 (Music & Singing)
+
+* **[[Nightingale]](https://github.com/rzru/nightingale)** `[2026-04-18]` 🔥
+  * **核心優勢**：**頂尖本地開源卡拉OK系統，整合 ASR 與音源分離技術的家庭 KTV 終極方案**。採用 Rust 核心開發，完整封裝了 `UVR Karaoke` (音軌分離)、`WhisperX` (詞級時間軸對齊) 與 `Pitch Scoring` (音調打分) 引擎。支援 Windows/macOS/Linux 全平台硬體加速（CUDA/MPS），能將任意本地 MP3/影片自動轉化為帶有同步歌詞、動態背景且可導唱的 K歌房等級體驗。
+  * **解決痛點 / 推薦場景**：**完美解決「冷門歌曲無伴奏、無動態歌詞」與「雲端軟體收費/版權限制」的痛點**。適合擁有大量無損音樂收藏的燒友，在客廳搭建完全隱私、免設定、支援手把操作的「純本地 AI 點歌台」。
+  * **資源**：[🐙 GitHub](https://github.com/rzru/nightingale) | [📄 WhisperX 引擎](https://github.com/m-bain/whisperX) | [📝 核心架構解析](https://github.com/rzru/nightingale#technical-details)
+
+* **[[AudioX]](https://github.com/ZeyueT/AudioX-ICLR)** `[2026-03-15]` 🔥
+  * **核心優勢**：**打破模型碎片化！單一模型實現「任意模態到音訊」的終極生成架構 (ICLR 2026 接收)**。由港科大團隊開發，基於 DiT (Diffusion Transformer) 與多模態自適應融合模組 (MAF)，**一個模型就能同時包辦文字生音效 (T2A)、文字生音樂 (T2M)、影片自動配音 (V2A) 以及音訊修復與續寫**。
+  * **解決痛點 / 推薦場景**：**完美解決過去影片配音與音效生成需要串接多個專用模型，且無法精準控制聲音發生時間軸的痛點**。支援細粒度的時間戳控制（例如：指定 1.6 秒到 4.4 秒出現沖水聲）與多樂器風格指定。是遊戲音效設計、自動化影視配樂、以及短影片動態配音的工業級全能底座。團隊更同步開源了高達 700 萬樣本的高品質標註資料集 IF-caps。
+  * **資源**：[🐙 GitHub](https://github.com/ZeyueT/AudioX-ICLR) | [📄 論文](https://arxiv.org/pdf/2503.10522) | [🤗 線上 DEMO](https://huggingface.co/spaces/HKUSTAudio/AudioX-Demo) | [📊 IF-caps 資料集](https://huggingface.co/datasets/HKUSTAudio/IF-caps)
+
+### 🗣️ 會議轉寫與多語者分離 (Meeting Transcription & Diarization)
+
+* **[[Whisper + CAM++ 離線轉寫管線]](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common)** `[2026-04-18]` 🔥
+  * **核心優勢**：**完美互補！將 Whisper 的超強語音辨識與阿里 CAM++ 的精準聲紋分離結合，打造零成本的純本地會議轉寫神器**。Whisper 本身無法區分說話人，透過導入 CAM++ 進行語音活動偵測 (VAD) 與聲紋聚類 (Speaker Clustering)，能精準自動標註「發言人1、發言人2」，徹底彌補了單一開源 ASR 模型無法辨識語者身分的缺陷。
+  * **解決痛點 / 推薦場景**：**解決了企業機密會議無法上傳雲端，以及長音訊（數小時）人工聽打極度耗時的痛點**。支援純 CPU 運行且全離線部署，確保資料絕對隱私。是企業內部會議紀錄自動化、自媒體/播客 (Podcast) 自動生成多語者字幕，以及高機密訪談整理的工業級落地首選。
+  * **資源**：[🐙 CAM++ 模型與技術文件](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common) | [📄 Whisper 論文](https://cdn.openai.com/papers/whisper.pdf) | [📝 實戰落地指南與程式碼](https://mp.weixin.qq.com/s/Kkzkcs85_kYTWMRQnpOXlA)
+
+
+---
 
 <script type="application/ld+json">
 {
