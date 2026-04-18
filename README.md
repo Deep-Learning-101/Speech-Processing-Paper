@@ -260,7 +260,8 @@ service_type: AI Consulting
     # 輸出結構化 JSON：含標點文本、毫秒級時間戳、語種、置信度、詞級切分
     result = asr_system.process("assets/hello_zh.wav")
     print(result)  
-  </details>
+
+</details>
 
 * **[[VibeVoice Family]](https://github.com/microsoft/VibeVoice)** `[2026-01-30]` 🔥 *(35k Stars)*
   * **核心優勢**：**開源語音界的「桌子翻轉者」，首創 7.5Hz 超低幀率語音 Tokenizer 技術！** 微軟出品的顛覆性系列模型，包含 ASR (7B)、TTS (1.5B) 與 Realtime (0.5B)。其核心突破在於將語音壓縮率提升 99%，在極低計算量下保留高品質聲學細節。Realtime 版本首音延遲僅 **300ms**，效能直接對標 GPT-4o 語音模式。
@@ -301,6 +302,7 @@ service_type: AI Consulting
 
   #### 🚀 Python 開箱即用 API (純 CPU 可跑)
   無需複雜配置，一行指令安裝 `pip install funaudio`，即可同時輸出文字與情感標籤：
+
   ```python
   from funaudio import SenseVoiceSmall
 
@@ -310,7 +312,9 @@ service_type: AI Consulting
 
   print(f"📝 轉錄文本: {result['text']}")
   print(f"🎭 情感標籤: {result.get('emotion', 'N/A')}")
+
 (註：命令列模式亦支援直接輸出 JSON 格式：funaudio --model sensevoice-small --file test.wav --output-format json)
+
   </details>
 
 ---
@@ -821,7 +825,6 @@ service_type: AI Consulting
   * **資源**：[🐙 CAM++ 模型與技術文件](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common) | [📄 Whisper 論文](https://cdn.openai.com/papers/whisper.pdf) | [📝 實戰落地指南與程式碼](https://mp.weixin.qq.com/s/Kkzkcs85_kYTWMRQnpOXlA)
 
 
----
 
 <script type="application/ld+json">
 {
