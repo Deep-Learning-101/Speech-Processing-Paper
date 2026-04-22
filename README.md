@@ -268,6 +268,12 @@ service_type: AI Consulting
   * **解決痛點 / 推薦場景**：**徹底瓦解商業語音 API 每百萬 Token 收費 64 美元的定價邏輯。** 完美解決了企業在導入語音 AI 時擔心的「資料外流」、「API 限速」與「昂貴成本」三大痛點。非常適合建構本地化的企業語音輸入法、7×24 小時無人語音客服，以及對延遲極度敏感的即時語音翻譯系統。
   * **資源**：[🐙 GitHub](https://github.com/microsoft/VibeVoice) | [📄 ASR 技術報告 (arXiv)](https://arxiv.org/pdf/2601.18184) | [🤗 HF Transformers 整合](https://huggingface.co/microsoft)
 
+- **[[Qwen3-ASR + vLLM 高併發部署]](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B)** `[2026-04]` 🔥 *(取代原本 2026-01-30 的舊版目)*
+  - **核心優勢**：**高併發直接拉滿的工業級語音辨識神作**。將開源頂規的 Qwen3-ASR (支援 52 種語言及閩南語、粵語等複雜中文方言) 結合 vLLM 推理引擎，實現極低延遲（20 字音訊僅需 ~300ms）與超高吞吐量，徹底解放 GPU 算力。
+  - **解決痛點 / 推薦場景**：完美解決傳統開源模型面對大量並發請求時容易卡死或延遲過高的痛點。官方提供標準化 Docker 映像檔 (`qwenllm/qwen3-asr`)，大幅降低環境配置門檻，是打造**高併發自動上字幕**、**企業級多語種客服**的絕對首選。
+  - **資源**：[🤖 ModelScope 下載](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B) | [📦 Docker 映像檔](https://hub.docker.com/r/qwenllm/qwen3-asr) | [📝 vLLM 部署指南參考](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B/summary)
+  <br>`[高併發首選]` `[極低延遲]` `[中文方言霸主]`
+
 - **[2026-01-30] Qwen3-ASR**
   - **說明**：支援52 種語言和方言，吊打 Whisper。
   - **資源**：[🤗 HuggingFace DEMO](https://huggingface.co/spaces/Qwen/Qwen3-ASR) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/-7gm2BstDVxTkJ6lD3Znmg)
