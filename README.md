@@ -201,6 +201,10 @@ service_type: AI Consulting
 | **[MAI-Transcribe-1](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/)** `[2026-04]` 🔥 | **Microsoft AI** | **25 種語言性能全數超越 Whisper-large-v3**。解決了長音訊轉寫「越播越崩」的語意偏差，批量轉寫速度提升 2.5 倍，且價格僅每小時 0.36 美元，徹底瓦解高昂轉錄成本。 | 全球化會議逐字稿、多人 Podcast 轉錄、多語言客服系統<br>`[性價比之王]` `[超越Whisper]` |
 | **[MAI-Voice-1](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/)** `[2026-04]` | **Microsoft AI** | **1 秒生成 60 秒極致自然語音**。針對長時間敘事優化，完美保留音色一致性與豐富情感，並支援「秒級」小樣本語音克隆。 | 互動式虛擬助理、長篇有聲書製作、遊戲 NPC 語音<br>`[超低延遲]` `[高保真克隆]` |
 
+* **[[Microsoft Foundry-Local Edge ASR (Nemotron-0.6B)]]** `[2026-04]` 🔥
+  * **核心優勢**：**打破流式識別準確率崩盤魔咒！670MB 體積極致壓縮，純 CPU 實現 6 倍即時超高速推理。** 微軟最新釋出的端側語音黑科技，基於 NVIDIA Nemotron-0.6B 的「快取感知 (cache-aware)」架構進行深度改造。它採用創新的 **int4-k-quant 混合精度量化**（依據權重重要性保留注意力機制的高精度，並大幅壓縮中間層），將模型體積暴砍 73% 的同時，詞錯率 (WER) 僅微幅退化 0.17 個百分點 (8.20%)。徹底解決了多數開源模型（如 Qwen3-ASR）在切換為流式切片處理時，因前後文斷裂導致錯誤率翻倍的致命缺陷。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統高精度 ASR（如 Whisper Large）「極度吃顯存、會卡頓」與雲端 API「延遲高、隱私外洩風險」的兩難痛點。** 演算法延遲低至無感的 0.56 秒，讓低階筆記型電腦或記憶體受限的邊緣設備 (Edge Devices) 也能流暢運行商用級別的即時語音識別。是打造**完全離線的隱私語音助手**、**本地高併發會議即時字幕**、以及**無網環境穿戴式裝置 (Wearables)** 的工業級端側首選。
+
 ---
 
 #### 2. 亞洲頂尖開源 ASR 模型 (中文語境特化篇)
@@ -218,6 +222,12 @@ service_type: AI Consulting
 ### 🔥 2025-2026 最新 ASR 模型資源庫 (完整收錄)
 
 #### 🇨🇳 亞洲與中文特化模型 (Chinese & Asian Languages)
+
+* **[[StepAudio 2.5 ASR]](https://platform.stepfun.com/docs/zh/guides/models/stepaudio-2.5-asr)** `[2026-04-24]` 🔥
+  * **核心優勢**：**導入 LLM MTP 並行預測技術的 ASR 效率革命，推理速度暴增 400%！** 階躍星辰 (StepFun) 發布的新一代語音大模型，採用 Audio Encoder + LLM + MTP-5 深度融合架構。它從底層打破了傳統 ASR 自回歸逐字生成的效率瓶頸，實時比 (RTF) 低至驚人的 0.0053（轉寫 1 小時音訊僅需約 19 秒），且 API 呼叫成本狂降 80% (僅約 0.15 RMB/小時)，展現出破壞性的極致性價比。
+  * **解決痛點 / 推薦場景**：**徹底解決長音檔「切片導致語意斷裂」與「商業大批量轉寫成本過高」的雙重痛點。** 復用大語言模型原生的 32K 上下文視窗，完美支援高達 30 分鐘連續音檔「一刀未剪」的端到端完整轉寫，解決了長文本識別常見的精度逐級衰減問題。極度適合用於**海量會議紀錄歸檔**、**長篇 Podcast/採訪逐字稿**、**企業客服錄音大數據質檢**，以及需要精準還原口語特徵與中英夾雜的複雜語境。（⚠️ **實戰避坑指南**：實測發現在「上傳音檔模式」處理非標準或特定音源時，偶有辨識不到清晰語音的穩定性波動，建議企業在正式上線前針對私有場景進行灰度測試）。
+  * **資源**：[🌐 線上體驗中心](https://www.stepfun.com/studio/audio?tab=speech-recognition) | [📖 API 整合文件](https://platform.stepfun.com/docs/zh/step-plan/integrations/audio-api) | [📊 Model Card](https://stepaudiollm.github.io/step-audio-2.5-asr/model-card/)
+
 * **[[FireRedASR2S]](https://github.com/FireRedTeam/FireRedASR2S)** `[2026-02-12]` 🔥
   * **核心優勢**：**小紅書開源的工業級「四合一」全能語音系統，SOTA 級的方言與歌聲辨識霸主。** 首創將 VAD (語音活動檢測)、LID (語種路由)、ASR (語音辨識) 與 Punc (標點預測) 完美整合的端到端管線，徹底消除傳統模組拼湊導致的前後級「誤差級聯」問題。
   * **解決痛點 / 推薦場景**：**直擊工業界「長音頻漏切」、「方言/中英夾雜」與「背景噪音干擾」三大痛點。** 憑藉近 20 萬小時高質量數據，精準拿捏 100+ 語言與 20+ 中國方言（粵/吳/閩/藏語等），甚至連高難度的「唱歌歌詞」都能極致還原。極度適合高併發的短影音自動字幕、Podcast 長音頻逐字稿、以及複雜環境下的客服質檢系統。
@@ -665,6 +675,11 @@ service_type: AI Consulting
 ---
 
 ### 🔥 2025-2026 前沿創新與特殊場景模型 (Special Cases)
+
+* **[[MAGIC-TTS]](https://yongaifadian1.github.io/MAGIC-TTS/)** `[2026-04-23]` 🔥
+  * **核心優勢**：**首創「毫秒級」Token 級局部時長與停頓顯式控制系統，賦予 AI 語音「導戲級」的節奏感**。華南理工大學團隊力作，打破了現代 TTS 模型僅能全局調速的「黑盒」限制。透過雙重時間建模與零值校正技術，開發者能精確指定每一個字的發音長度（如將「左」拉長 100ms）以及任意位置的停頓時長（如驗證碼中間精準停頓 260ms），且完全不影響整句的自然度。
+  * **解決痛點 / 推薦場景**：**徹底解決了傳統 TTS 在「高辨識需求」場景下語速失控或節奏不明的痛點。** 完美適配於**驗證碼/訂單號播報**（分組強調）、**車載導航指令**（轉向關鍵詞重音）、**語言教學與糾錯**（精確控制讀音細節）以及**戲劇化台詞生成**。它是目前市場上少數能同時滿足「聽得自然」與「說得精準」的工業級精細化控制方案。
+  * **資源**：[🐙 GitHub](https://github.com/yongaifadian1/MAGIC-TTS/) | [🤗 HuggingFace 權重](https://huggingface.co/maimai11/MAGIC-TTS) | [🌐 官方線上 Demo](https://yongaifadian1.github.io/MAGIC-TTS/)
 
 * **[[Fish Audio S2-Pro]](https://github.com/fishaudio/fish-speech)** `[2026-03-09]` 🔥
   * **核心優勢**：**全面超越閉源系統的 TTS 新霸主，首創「自然語言內聯控制」與 Dual-AR 架構！** 這款完全開源的模型（提供權重、訓練代碼與 SGLang 推論引擎）在中英文基準測試（如 Seed-TTS Eval）中，字錯誤率（WER）強勢擊敗了 Qwen3-TTS 與 Seed-TTS 等強敵。其最大突破是支援超過 15,000 種自然語言標籤（如 `[whisper in small voice]` 或 `[professional broadcast tone]`），讓開發者無需死記固定代碼，就能精準控制情感、語氣與節奏。
