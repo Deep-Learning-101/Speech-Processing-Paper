@@ -1,12 +1,13 @@
-name: Sync Speech Content and Assets
+name: Sync Speech-Processing
 
 on:
   push:
     branches: [ main ]
     paths:
-      - '**/*.md'
+      - 'README.md'
+      - '_includes/ai-share.html' # 監控 HTML 變動
       - '**/images/**'
-      - '.github/workflows/sync.yml' # 加上這行，改 YAML 時才會自動觸發補救同步
+      - '.github/workflows/sync.yml'
 
 jobs:
   sync:
@@ -16,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: sub-repo
+          fetch-depth: 0 # 為了偵測變動檔案，需要抓取歷史紀錄
 
       - name: Checkout Main Repo
         uses: actions/checkout@v4
@@ -25,44 +27,58 @@ jobs:
           path: main-repo
           fetch-depth: 0 
 
-      - name: Sync and Mirror Structure
+      # 使用 paths-filter 偵測哪個部分被改動了
+      - name: Check which files changed
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          base: ${{ github.event.before }}
+          filters: |
+            readme:
+              - 'README.md'
+            includes:
+              - '_includes/ai-share.html'
+            images:
+              - '**/images/**'
+
+      - name: Selective Sync
         run: |
-          # 1. 處理 Speech 核心檔案
-          cp sub-repo/README.md main-repo/Speech-Processing.md
-          
-          # 2. 全資源鏡像
-          cd sub-repo
-          find . -maxdepth 1 -type d ! -name "." ! -name ".github" ! -name ".git" | while read dir; do
-            mkdir -p "../main-repo/$dir"
-            cp -a "$dir/." "../main-repo/$dir/"
-          done
+          # 1. 只有 README 修改時才同步 README
+          if [ "${{ steps.filter.outputs.readme }}" == 'true' ]; then
+            echo "Syncing README..."
+            cp sub-repo/README.md main-repo/Speech-Processing.md
+          fi
+
+          # 2. 只有 ai-share.html 修改時才同步 _includes 資料夾
+          if [ "${{ steps.filter.outputs.includes }}" == 'true' ]; then
+            echo "Syncing _includes..."
+            mkdir -p main-repo/_includes
+            cp sub-repo/_includes/ai-share.html main-repo/_includes/ai-share.html
+          fi
+
+          # 3. 處理 images (依據原本邏輯)
+          if [ "${{ steps.filter.outputs.images }}" == 'true' ]; then
+            echo "Syncing images..."
+            # 這裡可以保留你原本的迴圈邏輯，但只針對 images
+            mkdir -p main-repo/images
+            cp -a sub-repo/images/. main-repo/images/
+          fi
 
       - name: Commit and Push
         run: |
           cd main-repo
-
-          # 1. 抓取資訊（增加預設值保險）
           ORIGINAL_MSG="${{ github.event.head_commit.message }}"
           AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
           AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
           SUB_SHA="${{ github.sha }}"
 
-          # 如果抓不到作者，就用機器人當備胎
           git config user.name "${AUTHOR_NAME:-github-actions[bot]}"
           git config user.email "${AUTHOR_EMAIL:-github-actions[bot]@users.noreply.github.com}"
 
-          # 2. 暫存搬移過來的內容
           git add .
-
-          # 3. 檢查是否有變動
           if ! git diff --quiet || ! git diff --staged --quiet; then
-            # 建立 Commit (Speech 專屬標籤)
-            git commit -m "Speech Sync: $ORIGINAL_MSG (From Sub: ${SUB_SHA:0:7})"
-
-            # 4. 關鍵補救：Rebase 遠端變更
+            git commit -m "Speech Selective Sync: $ORIGINAL_MSG (From Sub: ${SUB_SHA:0:7})"
             git pull --rebase origin main
-
-            # 5. 推送
             git push origin main
           else
             echo "No changes detected, skipping sync."
