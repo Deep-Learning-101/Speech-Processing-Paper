@@ -5,7 +5,7 @@ on:
     branches: [ main ]
     paths:
       - 'README.md'
-      - '_includes/ai-share.html' # 監控 HTML 變動
+      - '_includes/ai-share.html'
       - '**/images/**'
       - '.github/workflows/sync.yml'
 
@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: sub-repo
-          fetch-depth: 0 # 為了偵測變動檔案，需要抓取歷史紀錄
+          fetch-depth: 0
 
       - name: Checkout Main Repo
         uses: actions/checkout@v4
@@ -25,57 +25,54 @@ jobs:
           repository: Deep-Learning-101/deep-learning-101.github.io
           token: ${{ secrets.GH_PAT }}
           path: main-repo
-          fetch-depth: 0 
-
-      # 使用 paths-filter 偵測哪個部分被改動了
-      - name: Check which files changed
-        uses: dorny/paths-filter@v3
-        id: filter
-        with:
-          base: ${{ github.event.before || github.ref }}
-          filters: |
-            readme:
-              - 'README.md'
-            includes:
-              - '_includes/ai-share.html'
-            images:
-              - '**/images/**'
+          fetch-depth: 0
 
       - name: Selective Sync
+        working-directory: sub-repo
         run: |
-          # 1. 只有 README 修改時才同步 README
-          if [ "${{ steps.filter.outputs.readme }}" == 'true' ]; then
+          # 獲取前一個 commit 的 SHA
+          if [ "${{ github.event.before }}" != "0000000000000000000000000000000000000000" ] && [ ! -z "${{ github.event.before }}" ]; then
+            BASE_SHA="${{ github.event.before }}"
+          else
+            BASE_SHA="${{ github.sha }}~1"
+          fi
+          
+          # 獲取變更的文件列表
+          echo "Comparing: $BASE_SHA to ${{ github.sha }}"
+          CHANGED_FILES=$(git diff --name-only $BASE_SHA..${{ github.sha }} 2>/dev/null || git diff --name-only HEAD~1 2>/dev/null || echo "README.md")
+          
+          echo "Changed files: $CHANGED_FILES"
+          
+          if echo "$CHANGED_FILES" | grep -q "README.md"; then
             echo "Syncing README..."
-            cp sub-repo/README.md main-repo/Speech-Processing.md
+            cp README.md ../main-repo/Speech-Processing.md
           fi
-
-          # 2. 只有 ai-share.html 修改時才同步 _includes 資料夾
-          if [ "${{ steps.filter.outputs.includes }}" == 'true' ]; then
+          
+          if echo "$CHANGED_FILES" | grep -q "_includes/ai-share.html"; then
             echo "Syncing _includes..."
-            mkdir -p main-repo/_includes
-            cp sub-repo/_includes/ai-share.html main-repo/_includes/ai-share.html
+            mkdir -p ../main-repo/_includes
+            cp _includes/ai-share.html ../main-repo/_includes/ai-share.html
           fi
-
-          # 3. 處理 images (依據原本邏輯)
-          if [ "${{ steps.filter.outputs.images }}" == 'true' ]; then
+          
+          if echo "$CHANGED_FILES" | grep -q "images/"; then
             echo "Syncing images..."
-            # 這裡可以保留你原本的迴圈邏輯，但只針對 images
-            mkdir -p main-repo/images
-            cp -a sub-repo/images/. main-repo/images/
+            mkdir -p ../main-repo/images
+            cp -a images/. ../main-repo/images/
           fi
 
       - name: Commit and Push
+        working-directory: main-repo
         run: |
-          cd main-repo
           ORIGINAL_MSG="${{ github.event.head_commit.message }}"
           AUTHOR_NAME="${{ github.event.head_commit.author.name }}"
           AUTHOR_EMAIL="${{ github.event.head_commit.author.email }}"
           SUB_SHA="${{ github.sha }}"
-
+          
           git config user.name "${AUTHOR_NAME:-github-actions[bot]}"
           git config user.email "${AUTHOR_EMAIL:-github-actions[bot]@users.noreply.github.com}"
-
+          
           git add .
+          
           if ! git diff --quiet || ! git diff --staged --quiet; then
             git commit -m "Speech Selective Sync: $ORIGINAL_MSG (From Sub: ${SUB_SHA:0:7})"
             git pull --rebase origin main
