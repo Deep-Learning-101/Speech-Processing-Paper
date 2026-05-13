@@ -32,7 +32,7 @@ jobs:
         uses: dorny/paths-filter@v3
         id: filter
         with:
-          base: ${{ github.event.before }}
+          base: ${{ github.event.before || github.ref }}
           filters: |
             readme:
               - 'README.md'
