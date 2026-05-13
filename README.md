@@ -76,7 +76,7 @@ service_type: AI Consulting
   * **核心優勢**：專為即時對話式 AI (Real-time Conversational AI) 打造的強大框架。
   * **解決痛點**：解決了 AI 語音助理最難的「什麼時候該講話」與「什麼時候該閉嘴」的問題。其內建的 **[ten-vad](https://zread.ai/TEN-framework/ten-vad)** (語音活動偵測) 與 **[ten-turn-detection](https://zread.ai/TEN-framework/ten-turn-detection)** (語音輪替偵測)，是實現自然打斷 (Interruption) 與流暢對話的核心組件。
 
-* **[[LiveKit Agents]](https://github.com/livekit/agents)** `[持續更新]` 🔥 *(9.9k+ Stars)*
+* **[LiveKit Agents](https://github.com/livekit/agents)** `[持續更新]` 🔥 *(9.9k+ Stars)*
   * **核心優勢**：**基於 WebRTC 的頂規即時語音/視訊 AI Agent 框架！** 建構於 LiveKit SFU 伺服器之上，原生繼承 WebRTC 的抗弱網、自動重連與極低延遲特性。其最大亮點是內建基於 Transformer 的**「語義輪次檢測 (Semantic Turn Detection)」**與 ML 驅動的**「自適應打斷處理」**，能精準區分真實打斷與背景噪音（如咳嗽、嘆氣），在 500ms 重疊語音下實測精確率達 86%、召回率 100%。
   * **解決痛點 / 推薦場景**：**徹底解決傳統語音 Agent 依賴「固定靜音時長 (VAD)」導致的頻繁搶話與誤判問題。** 擁有極其豐富的生態，內建 64 個插件覆蓋所有主流 LLM、STT、TTS 與 Avatar。原生支援 MCP (Model Context Protocol) 協議與「多 Agent 狀態交接」。非常適合開發企業級全雙工語音客服、多模態視訊面試官、以及需要極低延遲的即時對話虛擬人。
   * **資源**：[🐙 GitHub](https://github.com/livekit/agents) | [🌐 LiveKit 官方網站](https://livekit.io/) | [📦 Plugins 官方目錄](https://github.com/livekit/agents/tree/main/livekit-plugins)
@@ -131,12 +131,12 @@ service_type: AI Consulting
   </details>
 
 
-* **[[Sherpa-ONNX]](https://github.com/k2-fsa/sherpa-onnx)** `[持續更新]` 🔥
+* **[Sherpa-ONNX](https://github.com/k2-fsa/sherpa-onnx)** `[持續更新]` 🔥
   * **核心優勢**：**端側語音神經網路高鐵！新一代 Kaldi (k2) 團隊打造的終極跨平台推論框架。** 提供 C++、Python、Go、Swift 等 12 種語言 API，並完美適配 iOS、Android、樹莓派、RISC-V 及國產 NPU（如瑞芯微、昇騰）。支援 ASR、TTS 與 VAD，無縫相容 Whisper、Zipformer 等主流模型。
   * **解決痛點 / 推薦場景**：**用工程極致換取部署下限，徹底解決「斷網/低算力」環境的語音 AI 落地難題。** 實現百毫秒級超低延遲流式推論。極度適合智能硬體/IoT（智慧音箱、掃地機器人、車機）、端側 App 離線開發，以及資料絕對不能上雲的隱私敏感場景（醫療病歷、金融會議）。
   * **資源**：[🐙 GitHub](https://github.com/k2-fsa/sherpa-onnx)
 
-* **[[Seeduplex]](https://seed.bytedance.com/seeduplex)** `[閉源商業標竿]` 💎
+* **[Seeduplex](https://seed.bytedance.com/seeduplex)** `[閉源商業標竿]` 💎
   * **核心優勢**：**定義「邊聽邊說」的即時互動新高度，字節跳動首發原生全雙工語音大模型！** 已全量部署於「豆包 App」。徹底拋棄依賴 VAD 機械切音的半雙工架構，融合聲學與語義特徵。其具備強大的「聲學專注力」與「動態判停」機制，將打斷響應延遲大幅縮短 300ms，誤回覆率與搶話比例驟降近一半。
   * **解決痛點 / 推薦場景**：**完美解決傳統語音助理「頻繁搶話」、「無法過濾背景噪音」與「不允許思考留白」的三大死穴。** 無論是在吵雜的咖啡廳閒聊、車內導航播報中下達指令，或是英文面試時因卡頓而產生停頓，Seeduplex 都能像真人一樣耐心等待或即刻響應。這是產業界開發高階語音 Agent、即時虛擬陪伴時，必須親自體驗的效能天花板。
   * **資源**：[🌐 官方專案主頁](https://seed.bytedance.com/seeduplex) | 📱 **體驗方式**：下載最新版豆包 App 使用「打電話」功能
@@ -201,7 +201,7 @@ service_type: AI Consulting
 | **[MAI-Transcribe-1](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/)** `[2026-04]` 🔥 | **Microsoft AI** | **25 種語言性能全數超越 Whisper-large-v3**。解決了長音訊轉寫「越播越崩」的語意偏差，批量轉寫速度提升 2.5 倍，且價格僅每小時 0.36 美元，徹底瓦解高昂轉錄成本。 | 全球化會議逐字稿、多人 Podcast 轉錄、多語言客服系統<br>`[性價比之王]` `[超越Whisper]` |
 | **[MAI-Voice-1](https://microsoft.ai/news/today-were-announcing-3-new-world-class-mai-models-available-in-foundry/)** `[2026-04]` | **Microsoft AI** | **1 秒生成 60 秒極致自然語音**。針對長時間敘事優化，完美保留音色一致性與豐富情感，並支援「秒級」小樣本語音克隆。 | 互動式虛擬助理、長篇有聲書製作、遊戲 NPC 語音<br>`[超低延遲]` `[高保真克隆]` |
 
-* **[[Microsoft Foundry-Local Edge ASR (Nemotron-0.6B)]]** `[2026-04]` 🔥
+* **[Microsoft Foundry-Local Edge ASR (Nemotron-0.6B)]]** `[2026-04]` 🔥
   * **核心優勢**：**打破流式識別準確率崩盤魔咒！670MB 體積極致壓縮，純 CPU 實現 6 倍即時超高速推理。** 微軟最新釋出的端側語音黑科技，基於 NVIDIA Nemotron-0.6B 的「快取感知 (cache-aware)」架構進行深度改造。它採用創新的 **int4-k-quant 混合精度量化**（依據權重重要性保留注意力機制的高精度，並大幅壓縮中間層），將模型體積暴砍 73% 的同時，詞錯率 (WER) 僅微幅退化 0.17 個百分點 (8.20%)。徹底解決了多數開源模型（如 Qwen3-ASR）在切換為流式切片處理時，因前後文斷裂導致錯誤率翻倍的致命缺陷。
   * **解決痛點 / 推薦場景**：**完美解決了傳統高精度 ASR（如 Whisper Large）「極度吃顯存、會卡頓」與雲端 API「延遲高、隱私外洩風險」的兩難痛點。** 演算法延遲低至無感的 0.56 秒，讓低階筆記型電腦或記憶體受限的邊緣設備 (Edge Devices) 也能流暢運行商用級別的即時語音識別。是打造**完全離線的隱私語音助手**、**本地高併發會議即時字幕**、以及**無網環境穿戴式裝置 (Wearables)** 的工業級端側首選。
 
@@ -223,12 +223,12 @@ service_type: AI Consulting
 
 #### 🇨🇳 亞洲與中文特化模型 (Chinese & Asian Languages)
 
-* **[[StepAudio 2.5 ASR]](https://platform.stepfun.com/docs/zh/guides/models/stepaudio-2.5-asr)** `[2026-04-24]` 🔥
+* **[StepAudio 2.5 ASR](https://platform.stepfun.com/docs/zh/guides/models/stepaudio-2.5-asr)** `[2026-04-24]` 🔥
   * **核心優勢**：**導入 LLM MTP 並行預測技術的 ASR 效率革命，推理速度暴增 400%！** 階躍星辰 (StepFun) 發布的新一代語音大模型，採用 Audio Encoder + LLM + MTP-5 深度融合架構。它從底層打破了傳統 ASR 自回歸逐字生成的效率瓶頸，實時比 (RTF) 低至驚人的 0.0053（轉寫 1 小時音訊僅需約 19 秒），且 API 呼叫成本狂降 80% (僅約 0.15 RMB/小時)，展現出破壞性的極致性價比。
   * **解決痛點 / 推薦場景**：**徹底解決長音檔「切片導致語意斷裂」與「商業大批量轉寫成本過高」的雙重痛點。** 復用大語言模型原生的 32K 上下文視窗，完美支援高達 30 分鐘連續音檔「一刀未剪」的端到端完整轉寫，解決了長文本識別常見的精度逐級衰減問題。極度適合用於**海量會議紀錄歸檔**、**長篇 Podcast/採訪逐字稿**、**企業客服錄音大數據質檢**，以及需要精準還原口語特徵與中英夾雜的複雜語境。（⚠️ **實戰避坑指南**：實測發現在「上傳音檔模式」處理非標準或特定音源時，偶有辨識不到清晰語音的穩定性波動，建議企業在正式上線前針對私有場景進行灰度測試）。
   * **資源**：[🌐 線上體驗中心](https://www.stepfun.com/studio/audio?tab=speech-recognition) | [📖 API 整合文件](https://platform.stepfun.com/docs/zh/step-plan/integrations/audio-api) | [📊 Model Card](https://stepaudiollm.github.io/step-audio-2.5-asr/model-card/)
 
-* **[[FireRedASR2S]](https://github.com/FireRedTeam/FireRedASR2S)** `[2026-02-12]` 🔥
+* **[FireRedASR2S](https://github.com/FireRedTeam/FireRedASR2S)** `[2026-02-12]` 🔥
   * **核心優勢**：**小紅書開源的工業級「四合一」全能語音系統，SOTA 級的方言與歌聲辨識霸主。** 首創將 VAD (語音活動檢測)、LID (語種路由)、ASR (語音辨識) 與 Punc (標點預測) 完美整合的端到端管線，徹底消除傳統模組拼湊導致的前後級「誤差級聯」問題。
   * **解決痛點 / 推薦場景**：**直擊工業界「長音頻漏切」、「方言/中英夾雜」與「背景噪音干擾」三大痛點。** 憑藉近 20 萬小時高質量數據，精準拿捏 100+ 語言與 20+ 中國方言（粵/吳/閩/藏語等），甚至連高難度的「唱歌歌詞」都能極致還原。極度適合高併發的短影音自動字幕、Podcast 長音頻逐字稿、以及複雜環境下的客服質檢系統。
   * **模組亮點**：
@@ -269,16 +269,17 @@ service_type: AI Consulting
 
     # 輸出結構化 JSON：含標點文本、毫秒級時間戳、語種、置信度、詞級切分
     result = asr_system.process("assets/hello_zh.wav")
-    print(result)  
+    print(result)
+    ```
 
 </details>
 
-* **[[VibeVoice Family]](https://github.com/microsoft/VibeVoice)** `[2026-01-30]` 🔥 *(35k Stars)*
+* **[VibeVoice Family](https://github.com/microsoft/VibeVoice)** `[2026-01-30]` 🔥 *(35k Stars)*
   * **核心優勢**：**開源語音界的「桌子翻轉者」，首創 7.5Hz 超低幀率語音 Tokenizer 技術！** 微軟出品的顛覆性系列模型，包含 ASR (7B)、TTS (1.5B) 與 Realtime (0.5B)。其核心突破在於將語音壓縮率提升 99%，在極低計算量下保留高品質聲學細節。Realtime 版本首音延遲僅 **300ms**，效能直接對標 GPT-4o 語音模式。
   * **解決痛點 / 推薦場景**：**徹底瓦解商業語音 API 每百萬 Token 收費 64 美元的定價邏輯。** 完美解決了企業在導入語音 AI 時擔心的「資料外流」、「API 限速」與「昂貴成本」三大痛點。非常適合建構本地化的企業語音輸入法、7×24 小時無人語音客服，以及對延遲極度敏感的即時語音翻譯系統。
   * **資源**：[🐙 GitHub](https://github.com/microsoft/VibeVoice) | [📄 ASR 技術報告 (arXiv)](https://arxiv.org/pdf/2601.18184) | [🤗 HF Transformers 整合](https://huggingface.co/microsoft)
 
-- **[[Qwen3-ASR + vLLM 高併發部署]](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B)** `[2026-04]` 🔥 *(取代原本 2026-01-30 的舊版目)*
+- **[Qwen3-ASR + vLLM 高併發部署](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B)** `[2026-04]` 🔥 *(取代原本 2026-01-30 的舊版目)*
   - **核心優勢**：**高併發直接拉滿的工業級語音辨識神作**。將開源頂規的 Qwen3-ASR (支援 52 種語言及閩南語、粵語等複雜中文方言) 結合 vLLM 推理引擎，實現極低延遲（20 字音訊僅需 ~300ms）與超高吞吐量，徹底解放 GPU 算力。
   - **解決痛點 / 推薦場景**：完美解決傳統開源模型面對大量並發請求時容易卡死或延遲過高的痛點。官方提供標準化 Docker 映像檔 (`qwenllm/qwen3-asr`)，大幅降低環境配置門檻，是打造**高併發自動上字幕**、**企業級多語種客服**的絕對首選。
   - **資源**：[🤖 ModelScope 下載](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B) | [📦 Docker 映像檔](https://hub.docker.com/r/qwenllm/qwen3-asr) | [📝 vLLM 部署指南參考](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B/summary)
@@ -300,7 +301,7 @@ service_type: AI Consulting
   - **說明**：Large-Scale ASR Model for Eastern Languages。
   - **資源**：[🐙 GitHub](https://github.com/DataoceanAI/Dolphin) | [📄 arXiv](https://arxiv.org/abs/2503.20212)
 
-* **[[SenseVoice]](https://github.com/FunAudioLLM/SenseVoice)** `[持續更新]` 🔥
+* **[SenseVoice](https://github.com/FunAudioLLM/SenseVoice)** `[持續更新]` 🔥
   * **核心優勢**：**Whisper 的最強本地端平替，ASR + 情感識別 + 音訊事件檢測「三合一」大模型！** 阿里通義實驗室推出的開源神作。推理速度比 Whisper-Large 快高達 15 倍（10 秒音訊僅需 70ms），支援 50+ 語言。不僅能精準轉錄文字，還能同步辨識說話者的情緒（開心、緊張等）與環境背景音（掌聲、音樂等）。
   * **解決痛點 / 推薦場景**：**徹底解決本地端語音模型「太慢」、「太吃硬體」以及「缺乏語境感知」的三大痛點。** 硬體門檻極低，Small 模型僅需 8GB 記憶體，純 CPU 也能流暢運行。極度適合開發完全離線的隱私語音輸入法（如 Mac 上的 Murmur）、低成本長照輔助設備，或是需要感知用戶情緒的虛擬 AI 伴侶。
   * **資源**：[🐙 GitHub](https://github.com/FunAudioLLM/SenseVoice) | [🌐 專案主頁](https://funaudiollm.github.io/) | [📝 深度解讀與實測](https://mp.weixin.qq.com/s/_bfFhuG8h_sPQ8L_MEKTJw)
@@ -337,19 +338,22 @@ service_type: AI Consulting
 
 #### 🌐 國際巨頭與創新架構 (Global Tech & Innovations)
 
-* **[[Voxtral Realtime (4.4B)]](https://arxiv.org/pdf/2602.11298)** `[2026-02-28]` 🔥
+* **[Voxtral Realtime (4.4B)](https://arxiv.org/pdf/2602.11298)** `[2026-02-28]` 🔥
     * **核心優勢**：**打破「低延遲與高精度」互斥魔咒的開源即時 ASR 霸主**。由 Mistral AI 採用 Apache 2.0 開源，創新導入全因果音訊編碼器 (Causal Audio Encoder) 與 Ada RMS-Norm 架構。在 **480ms 的亞秒級延遲下，辨識精準度直接打平 Whisper 離線模型**；更在工程端深度整合 `vLLM`，支援異構 KV 快取與 WebSocket 全雙工即時推理。
     * **解決痛點 / 推薦場景**：**徹底解決傳統離線模型（如 Whisper 滑動窗口）硬改為流式推理時精準度暴跌的痛點，以及生產環境中長文本泛化能力弱的瓶頸**。單一模型即可動態切換延遲檔位（80ms\~2400ms），支援 13 種語言。是打造**高併發即時字幕**、**同聲傳譯 (AI 口譯)**、**低延遲全雙工語音助理**的工業級首選。<br>`[亞秒級延遲]` `[vLLM原生支援]` `[Apache 2.0 完全開源]`
     * **資源**：[📄 官方論文](https://arxiv.org/pdf/2602.11298) | [🐙 GitHub (Mistral AI)](https://github.com/mistralai)
 
-* **[[Cohere Transcribe]](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)** `[2026-03-28]` 🔥
+* **[Cohere Transcribe](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026)** `[2026-03-28]` 🔥
   * **核心優勢**：**20 億參數塞進瀏覽器，準確率正式碾壓 Whisper Large v3！** Cohere 釋出的 2B 參數 SOTA 語音模型 (cohere-transcribe-03-2026)，採用 Conformer 編碼器與輕量 Transformer 解碼器架構。它以 5.42% 的平均詞錯率 (WER) 登頂 HuggingFace Open ASR 排行榜，超越 OpenAI Whisper Large v3 (6.41%)。最震撼的是，透過 WebGPU 與 ONNX Runtime，它能直接在網頁瀏覽器內免安裝本地執行，1 小時的錄音僅需約 100 秒即可轉錄完畢 (約 36 倍即時倍率)。
   * **解決痛點 / 推薦場景**：**徹底解決機密音檔「上傳雲端」的隱私疑慮與伺服器部署的高昂算力成本。** 由於完全在終端瀏覽器本地運行，音頻不上傳伺服器，是處理敏感採訪、內部會議等極機密資料的最佳開源方案 (Apache 2.0 可商用授權)。模型也在 vLLM 獲得首日支援與最佳化，語音推理吞吐量最高提升 2 倍，企業自託管部署同樣強悍。**⚠️ 避坑指南**：目前版本不支援時間戳與說話人分離，需手動指定語言，且在噪音環境下易產生幻聽，強烈建議搭配 VAD 前端處理使用。
   * **資源**：[🐙 官方模型](https://huggingface.co/CohereLabs/cohere-transcribe-03-2026) | [🌐 官方介紹](https://cohere.com/blog/transcribe) | [📦 ONNX 瀏覽器版本](https://huggingface.co/onnx-community/cohere-transcribe-03-2026-ONNX) | [⚙️ vLLM 優化 PR](https://github.com/vllm-project/vllm/pull/38120)
 
 - **[2026-02-04] Voxtral (Mistral)**
   - **說明**：Mistral 開源語音模型 Voxtral Mini 4B Realtime；在 480ms 延遲下英語短音頻 WER 為 8.47%，與離線 Whisper（8.39%）幾乎持平。GPT-4o mini Transcribe 均被歸類為"實時API"模型，同類流式模型 Nemotron Streaming 在 560ms 延遲下 WER 為 9.59%，差距明顯。支援的 13 種語言：英語、中文、西班牙語、法語、德語等。
-  - **資源**：[🤗 HuggingFace](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/5fG_xOrPIsXCs5sNiFidMQ) | *(2025-07-16 舊版：[Small 24B](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) / [Mini 3B](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507) / [📝 中文解讀](https://zhuanlan.zhihu.com/p/1928945056955471125))*
+  - **資源**：[📝 公眾號解讀](https://mp.weixin.qq.com/s/5fG_xOrPIsXCs5sNiFidMQ) | *(2025-07-16 舊版：[Small 24B](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) / [Mini 3B](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507) / [📝 中文解讀](https://zhuanlan.zhihu.com/p/1928945056955471125))* | [🌐 線上即時 Demo](https://huggingface.co/spaces/mistralai/Voxtral-Mini-Realtime) | [📖 Mistral 官方 API 控制台](https://console.mistral.ai/build/audio/speech-to-text)
+  * **[Voxtral-Mini-4B-Realtime 🤗 HuggingFace](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602)** `[2026-02]` 🔥 `[原生串流]` `[極低延遲]` `[端側部署]`
+  * **核心優勢**：**打破「低延遲與高精度」互斥魔咒的開源 ASR 霸主，4B 參數達成低於 500ms 的極致即時轉錄！** Mistral AI 發布的新一代語音模型，採用原生串流架構與自訂因果音訊編碼器。在僅 480 毫秒的延遲下，其辨識精準度直接媲美甚至超越領先的離線 Whisper 模型。完全 Apache-2.0 授權，且支援動態配置延遲範圍（240ms 至 2.4s），吞吐量高達 >12.5 tokens/s。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統離線模型（如 Whisper 滑動窗口）硬改為流式推理時「精準度崩盤」的痛點，並以極低硬體門檻瓦解雲端 API 的高昂成本。** 它能在一般的邊緣運算設備上流暢運行，極度適合企業打造**高併發即時會議/直播字幕**、**低延遲全雙工語音助理**、以及將機密音檔留在本地進行**高隱私即時轉寫**的工業級首選。
 
 - **[2025-12-23] MedASR**
   - **說明**：Google 發布醫學語音辨識模型。
@@ -377,7 +381,7 @@ service_type: AI Consulting
 
 #### ⏱️ Whisper 變體與串流應用工具 (Streaming & Tools)
 
-* **[[Sherpa-ONNX Android Agent]](https://github.com/coder-brzhang/funasr-agent)** `[2026-04-18]` 🔥
+* **[Sherpa-ONNX Android Agent](https://github.com/coder-brzhang/funasr-agent)** `[2026-04-18]` 🔥
   * **核心優勢**：**地表最強 Android 離線語音助手實作範例，整合流式 ASR 與 Silero VAD**。利用 `sherpa-onnx` 框架與 `Paraformer` 雙語模型，實現完全「純離線」的邊說邊出字體驗。僅需 15MB 的 AAR 核心庫與 int8 量化模型，即可在安卓中端設備達成 \<300ms 的極致響應，並具備模糊指令匹配能力。
       * **解決痛點 / 推薦場景**：**解決了離線環境下語音助手「聽不懂」與「反應慢」的雙重挑戰**。透過 VAD 自動人聲檢測免除按鈕操作，是打造隱私優先、低功耗、免聯網 AI 語音助理（如智慧家居中樞、車載語音、Wear OS 設備）的教科書級參考。
   * **資源**：[🐙 GitHub](https://github.com/coder-brzhang/funasr-agent) | [📝 深度實作教學](https://mp.weixin.qq.com/s/DOm_hg6DWA_OjcsLuUQ9Hw) | [📄 Paraformer 論文](https://arxiv.org/abs/2206.08317)
@@ -446,7 +450,7 @@ service_type: AI Consulting
 
 ### 🛠️ ASR 後處理與文本糾錯 (ASR Post-Processing & Correction)
 
-* **[[Generative-Annotation-NEC (SS+GL)]](https://github.com/L6-NLP/Generative-Annotation-NEC)** `[2026-04-18]` 🔥
+* **[Generative-Annotation-NEC (SS+GL)](https://github.com/L6-NLP/Generative-Annotation-NEC)** `[2026-04-18]` 🔥
   * **核心優勢**：**華為開源的 ASR 命名實體糾錯 (NEC) 終極方案，徹底解決「音似形異」的轉寫災難**。捨棄傳統依賴「文字拼寫相似度」的編輯距離法，創新提出 SS+GL 架構：先透過「聲音指紋 (Speech-based Selection)」檢索正確實體，再利用大模型進行「生成式標註 (Generative Labeling)」。能精準將「米德仲尼」糾正為「Midjourney」、「01X」糾正為「靈耀X」。
   * **解決痛點 / 推薦場景**：**完美解決通用 ASR（如 Whisper）或第三方雲端語音 API，在遇到專業術語、最新科技詞彙或中英夾雜時辨識崩壞的痛點**。採用「生成後糾正」的解耦架構，**隨插即用**，無須改動底層 ASR 引擎。是打造**高精度醫療/法律會議紀錄**、**企業私有領域語音知識庫**，以及**防過糾錯 (Anti-Overcorrection) 文本清洗管線**的工業級利器。
   * **資源**：[🐙 GitHub (程式碼與資料集)](https://github.com/L6-NLP/Generative-Annotation-NEC) | [📄 官方論文](https://arxiv.org/pdf/2508.20700)
@@ -462,8 +466,16 @@ service_type: AI Consulting
 > 👉 [🌐 更多資源：TWMAN 聲紋識別技術總結](https://www.twman.org/AI/ASR/SpeakerRecognition)
 
 ### 1. 主流開源框架與模型 (Open Source Frameworks)
+
 * **Wespeaker**：目前產業界極受歡迎的生產級聲紋辨識開源工具包。[📄 AlphaXiv 論文](https://www.alphaxiv.org/zh/overview/2210.17016v2) | [📝 v1.2.0 發布說明](https://zhuanlan.zhihu.com/p/645726183)
+
 * **SincNet**：一種直接處理原始音訊波形 (Raw Waveform) 的深度學習架構，能有效提取具備物理意義的聲學特徵。[📄 AlphaXiv 論文](https://www.alphaxiv.org/zh/overview/1808.00158v3)
+
+
+* **[SpeakerRPL V2](https://arxiv.org/abs/2604.13605)** `[2026-04]` 🔥 `[開放集聲紋]` `[少樣本微調]` `[極限低錯誤率]`
+  * **核心優勢**：**打破聲紋辨識「防君子不防小人」的開放集漏洞，將等錯誤率 (EER) 壓縮至千分之一量級的 SOTA 神作！** 透過獨創的「LogitNorm + RPL 混合損失」與「自適應錨點 (Adaptive Anchors)」技術，模型能動態學習未知說話人的特徵邊界。在極少數語音樣本微調下，不僅防過度自信，更在具挑戰性的 Vox1-O* 開放集測試中，將 EER 從 1.72% 暴力降至 0.24%（相對降幅高達 93%）。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統聲紋系統在「僅有極少註冊語音」時，無法果斷攔截/拒絕陌生人（未知說話人）的致命痛點。** 透過其特徵值方差的智慧模型融合策略，大幅提升了少樣本微調的穩定性。這是打造**金融級電話客服防偽**、**高安全性企業語音門禁 (零樣本/少樣本註冊)**，以及進階**說話人日誌 (Speaker Diarization)** 任務的工業級算法首選。
+  * **資源**：[📄 論文 (PDF)](https://arxiv.org/pdf/2604.13605v1.pdf) | *[🐙 官方程式碼即將開源]*
 
 ### 2. 實戰教學與開源資料集 (Tutorials & Datasets)
 * **實作與原理指南**：
@@ -567,7 +579,7 @@ service_type: AI Consulting
 
 ### 🎧 音訊超解析與音質提升 (Audio Super-Resolution & Enhancement)
 
-* **[[NovaSR]](https://github.com/ysharma3501/NovaSR)** `[2026-04-18]` 🔥
+* **[NovaSR](https://github.com/ysharma3501/NovaSR)** `[2026-04-18]` 🔥
   * **核心優勢**：**打破大模型算力迷思的 TinyML 奇蹟！僅 52KB 的微型音訊超解析 (Super-Resolution) 模型**。能透過預測並補全高頻段，將 16kHz 的「電話級」沉悶音質，瞬間升頻為 48kHz 的高保真 (Hi-Fi) 全頻帶音訊。在 A100 上高達 3600 倍實時處理速度，即使在手機 CPU 上運行也幾乎零延遲。
   * **解決痛點 / 推薦場景**：**完美解決傳統音訊增強模型動輒數百 MB，無法在邊緣設備離線運行的致命痛點**。極度輕量的體積使其能無縫嵌入 TWS 無線藍牙耳機晶片、手機 NPU 或微控制器 (MCU)。是打造 **VoIP 網路通話即時增強**、**千路直播語音端側優化**，以及 **TTS (文字轉語音) 輸出高音質後處理** 的工業級黑科技。
   * **資源**：[🐙 GitHub](https://github.com/ysharma3501/NovaSR) | [🤗 線上 DEMO 與權重](https://huggingface.co/spaces/YatharthS/NovaSR)
@@ -676,12 +688,12 @@ service_type: AI Consulting
 
 ### 🔥 2025-2026 前沿創新與特殊場景模型 (Special Cases)
 
-* **[[MAGIC-TTS]](https://yongaifadian1.github.io/MAGIC-TTS/)** `[2026-04-23]` 🔥
+* **[MAGIC-TTS](https://yongaifadian1.github.io/MAGIC-TTS/)** `[2026-04-23]` 🔥
   * **核心優勢**：**首創「毫秒級」Token 級局部時長與停頓顯式控制系統，賦予 AI 語音「導戲級」的節奏感**。華南理工大學團隊力作，打破了現代 TTS 模型僅能全局調速的「黑盒」限制。透過雙重時間建模與零值校正技術，開發者能精確指定每一個字的發音長度（如將「左」拉長 100ms）以及任意位置的停頓時長（如驗證碼中間精準停頓 260ms），且完全不影響整句的自然度。
   * **解決痛點 / 推薦場景**：**徹底解決了傳統 TTS 在「高辨識需求」場景下語速失控或節奏不明的痛點。** 完美適配於**驗證碼/訂單號播報**（分組強調）、**車載導航指令**（轉向關鍵詞重音）、**語言教學與糾錯**（精確控制讀音細節）以及**戲劇化台詞生成**。它是目前市場上少數能同時滿足「聽得自然」與「說得精準」的工業級精細化控制方案。
   * **資源**：[🐙 GitHub](https://github.com/yongaifadian1/MAGIC-TTS/) | [🤗 HuggingFace 權重](https://huggingface.co/maimai11/MAGIC-TTS) | [🌐 官方線上 Demo](https://yongaifadian1.github.io/MAGIC-TTS/)
 
-* **[[Fish Audio S2-Pro]](https://github.com/fishaudio/fish-speech)** `[2026-03-09]` 🔥
+* **[Fish Audio S2-Pro](https://github.com/fishaudio/fish-speech)** `[2026-03-09]` 🔥
   * **核心優勢**：**全面超越閉源系統的 TTS 新霸主，首創「自然語言內聯控制」與 Dual-AR 架構！** 這款完全開源的模型（提供權重、訓練代碼與 SGLang 推論引擎）在中英文基準測試（如 Seed-TTS Eval）中，字錯誤率（WER）強勢擊敗了 Qwen3-TTS 與 Seed-TTS 等強敵。其最大突破是支援超過 15,000 種自然語言標籤（如 `[whisper in small voice]` 或 `[professional broadcast tone]`），讓開發者無需死記固定代碼，就能精準控制情感、語氣與節奏。
   * **解決痛點 / 推薦場景**：**解決了傳統高保真 TTS 模型推論極慢、以及多說話人場景切換困難的致命痛點。** 透過 4B 慢速 AR 與 400M 快速 AR 的雙軌架構，搭配 GRPO 強化學習與 SGLang 引擎優化，單張 H200 即可達成 0.195 的極低即時因子（RTF）與約 100ms 的首音頻延遲。極度適合打造 10~30 秒極速零樣本音色克隆、單次生成多說話人的沈浸式廣播劇，以及高併發的即時多輪對話智能體。
   * **資源**：[🐙 GitHub](https://github.com/fishaudio/fish-speech) | [🤗 HuggingFace 權重](https://huggingface.co/fishaudio/s2-pro) | [🌐 官方網站](https://fish.audio/) | [📄 技術報告與部落格](https://fish.audio/blog/fish-audio-open-sources-s2/)
@@ -721,25 +733,30 @@ service_type: AI Consulting
   </details>
 
 
-* **[[Xiaomi Any2Speech]](https://Any2Speech.github.io/)** `[2026-04]` 🔥
+* **[Xiaomi Any2Speech](https://Any2Speech.github.io/)** `[2026-04]` 🔥
   * **核心優勢**：**定義「導戲級」控制力，首創 GST 分層協議實現長音頻情緒弧線。** 小米大模型團隊力作，將 TTS 從單句朗讀升級為「舞台級」演繹。透過 Global-Sentence-Token 三層架構與 CoT 思維鏈，能理解劇本邏輯並自動規劃長達 10 分鐘的情緒起伏、說話意圖與聲學場景，讓人聲、環境音與背景細節完美融合。
   * **解決痛點 / 推薦場景**：**徹底解決長篇音頻（如廣播劇、武俠評書）中角色狀態不連貫、環境音與人聲分離感重的「錄音棚感」。** 支援多角色複雜對白與長文自動轉譯。是打造沈浸式 AI 廣播劇、長篇播客自動生產、以及需要細膩情感遞進（如辯論、脫口秀）場景的工業級首選。
   * **資源**：[🌐 專案主頁](https://Any2Speech.github.io/) | [⚙️ OpenClaw 技能](https://clawhub.ai/whiteshirt0429/xiaomi-Xiaomi%20Any2Speech-beyondtts)
 
-* **[[Midasheng-audio-generate]](https://nieeim.github.io/Dasheng-AudioGen-Web/)** `[2026-04]` ✨
+* **[Midasheng-audio-generate](https://nieeim.github.io/Dasheng-AudioGen-Web/)** `[2026-04]` ✨
   * **核心優勢**：**「一句話造世界」，首個全能型沈浸式全場景音頻生成框架。** 採用 Flow Matching 框架與 Midasheng Tokenizer，實現人聲、音樂、環境音的「一體化生成」。只需自然語言描述（如「雨中偵探獨白」），模型即可自動配置對應的混響、背景氛圍與情緒語音，無需任何後期拼接。
   * **解決痛點 / 推薦場景**：**解決了音訊後期製作中，人聲與環境音混響不匹配、音效素材尋找困難的痛點。** 支援細粒度分層控制與智能體（Agent）工作流。適合快速生成具備高度場景感的短影音配音、遊戲 NPC 環境語音，以及需要「聲畫同頻」的沈浸式內容創作。
   * **資源**：[🎵 Demo 頁面](https://nieeim.github.io/Dasheng-AudioGen-Web/) | [⚙️ OpenClaw 技能](https://clawhub.ai/jimbozhang/midasheng-audio-generate)
 
-* **[[Woosh]](https://github.com/SonyResearch/Woosh)** `[持續更新]` 🔥
+* **[Woosh](https://github.com/SonyResearch/Woosh)** `[持續更新]` 🔥
   * **核心優勢**：**索尼 (Sony Research) 釋出的超級大禮，工業級 AI 動態音效 (Foley) 生成神器！** 補足了生成式 AI 在「擬音與環境音效」領域的空白。承襲索尼影業與 PlayStation 的深厚聲學底蘊，它生成的音效不再是粗糙的白噪音拼接，而是具備極強空間感與物理真實感的高保真音頻 (如物體劃破空氣的呼嘯聲、魔法技能音效)。
   * **解決痛點 / 推薦場景**：**徹底解決短影音後期、獨立遊戲 (Indie Games) 開發與廣播劇製作時「找不到合適音效」與「高昂素材版權費」的致命痛點。** 帶動了音效製作從「素材庫檢索」到「按需客製化生成」的典範轉移。只要輸入文本提示 (Prompt，如「跑車飛馳而過」)，就能讓缺乏專業錄音棚的零預算小團隊，輕鬆量產源源不絕的 3A 級聲音素材。
   * **資源**：[🐙 GitHub](https://github.com/SonyResearch/Woosh) | [📦 第三方一鍵整合包 (免代碼版)](https://pan.quark.cn/s/8228a6fd7384?pwd=1QxE)
 
-* **[[OmniVoice]](https://github.com/k2-fsa/OmniVoice)** `[2026-04-02]` 🔥
+* **[OmniVoice](https://github.com/k2-fsa/OmniVoice)** `[2026-04-02]` 🔥
       * **核心優勢**：**0.8B 極小參數達成 600+ 語言覆蓋，TTS 從「拚規模」轉向「拚效率」的劃時代作。** 小米 AI 實驗室（Daniel Povey 團隊）出品，不僅支援 12 種中國方言（如四川話、東北話），更實現了「零樣本音色克隆」與「情緒同步」的雙重突破。其極致輕量的架構，讓開發者能以極低硬體負擔實現「真人口吻」的細膩表達。
       * **解決痛點 / 推薦場景**：**徹底解決傳統模型因體積龐大難以落地邊緣設備，以及中英混說、方言朗讀具備「機械感」的通病。** 支援耳語、ASMR 與細粒度情緒控制，完美契合「短影音在地化旁白」、「車載語音助理」與「跨國產品出海」等場景。它將聲音轉化為「可複用數位資產」，讓中小團隊也能低門檻打造具備品牌 IP 感的虛擬員工聲音。
       * **資源**：[🐙 GitHub](https://github.com/k2-fsa/OmniVoice) | [📄 論文：OmniVoice (arXiv)](https://www.google.com/search?q=https://arxiv.org/abs/2604.XXXXX) | [🌐 官方技術解讀](https://uy6npdpeoi.feishu.cn/docx/EAWYdWWO7ormNPxUhyVcO3GSnUc)
+
+* **[ControlAudio](https://control-audio.github.io/Control-Audio)** `[2025-10]` 🔥 `[精確時間控制]` `[語音音效一體化]` `[漸進式擴散]`
+  * **核心優勢**：**打破文生音訊的「時序與語意」黑盒，首創能精確控制聲音發生時間與清晰人聲台詞的統一擴散框架！** ControlAudio 透過獨創的「漸進式擴散建模與引導採樣」策略，解決了傳統 AI 音訊生成無法精準卡點的問題。它將文字、時間標註與音素（Phoneme）資訊統一編碼，讓生成過程「由粗到細」（先決定場景時間結構，再精雕人聲內容），其詞錯誤率（WER）低至驚人的 6.84%，幾乎逼近真實語音水準。
+  * **解決痛點 / 推薦場景**：**完美解決了影視與短影音後期製作中「音效無法精準對齊畫面時間軸」與「人聲旁白與背景音混雜不清」的致命痛點。** 創作者無需再靠「盲測抽卡」來碰運氣，只需給予結構化指令（例如指定：2至5秒鳥叫，接著人聲說出特定台詞並伴隨雨聲），即可一次生成極具空間感與邏輯性的複合音軌。極度適合用於**自動化影視動態配音（Foley）**、**高沉浸感廣播劇/Podcast 生成**，以及需要聲畫精準同步的**遊戲場景與 NPC 語音構建**。
+  * **資源**：[📄 論文](https://arxiv.org/abs/2510.08878) | [🌐 官方 Demo 與試聽](https://control-audio.github.io/Control-Audio)
 
 - **[2026-02-22] Ming-flash-omni-2.0**
   - **說明**：透過簡單指令即可控制產生音訊的語速、音量、音調。
@@ -749,7 +766,7 @@ service_type: AI Consulting
   - **說明**：專為全雙工（Full-duplex）即時語音對話設計。150ms 超低延遲與隨時可打斷的特性，是開發虛擬陪伴或即時客服 Agent 的完美引擎。
   - **資源**：[🐙 GitHub](https://github.com/FlashLabs-AI-Corp/FlashLabs-Chroma) | [🤗 HF Model](https://huggingface.co/FlashLabs/Chroma-4B) | [📝 公眾號解讀](https://mp.weixin.qq.com/s/V9xctkJYAuoURqbREXHidQ)
 
-* **[[VoxCPM 2]](https://github.com/OpenBMB/VoxCPM)** `[2026-04]` 🔥
+* **[VoxCPM 2](https://github.com/OpenBMB/VoxCPM)** `[2026-04]` 🔥
   * **核心優勢**：**雲端聽覺藝術畫筆！OpenBMB 釋出的 2B 參數無分詞器 (Tokenizer-Free) 端到端 TTS 大模型。** 基於擴散自回歸架構，支援 30+ 語言與多種方言，能直接從 16kHz 參考音頻輸出 48kHz 高保真音訊。其「零樣本音色克隆」技術能精準模擬呼吸、語調等極致情緒細節。
   * **解決痛點 / 推薦場景**：**用算力換取擬真度上限，解決傳統 TTS 缺乏情感與自然度的痛點。** 配合 Nano-vLLM 引擎可在單張 RTX 4090 上實現低實時因子 (RTF)。是打造高階數位人/虛擬陪伴、有聲書與短影音情感配音，以及建構頂級雲端 TTS API 服務的最佳開源底座。
   * **資源**：[🐙 GitHub](https://github.com/OpenBMB/VoxCPM)
@@ -828,19 +845,19 @@ service_type: AI Consulting
 
 ### 🎼 音樂與歌聲處理 (Music & Singing)
 
-* **[[Nightingale]](https://github.com/rzru/nightingale)** `[2026-04-18]` 🔥
+* **[Nightingale](https://github.com/rzru/nightingale)** `[2026-04-18]` 🔥
   * **核心優勢**：**頂尖本地開源卡拉OK系統，整合 ASR 與音源分離技術的家庭 KTV 終極方案**。採用 Rust 核心開發，完整封裝了 `UVR Karaoke` (音軌分離)、`WhisperX` (詞級時間軸對齊) 與 `Pitch Scoring` (音調打分) 引擎。支援 Windows/macOS/Linux 全平台硬體加速（CUDA/MPS），能將任意本地 MP3/影片自動轉化為帶有同步歌詞、動態背景且可導唱的 K歌房等級體驗。
   * **解決痛點 / 推薦場景**：**完美解決「冷門歌曲無伴奏、無動態歌詞」與「雲端軟體收費/版權限制」的痛點**。適合擁有大量無損音樂收藏的燒友，在客廳搭建完全隱私、免設定、支援手把操作的「純本地 AI 點歌台」。
   * **資源**：[🐙 GitHub](https://github.com/rzru/nightingale) | [📄 WhisperX 引擎](https://github.com/m-bain/whisperX) | [📝 核心架構解析](https://github.com/rzru/nightingale#technical-details)
 
-* **[[AudioX]](https://github.com/ZeyueT/AudioX-ICLR)** `[2026-03-15]` 🔥
+* **[AudioX](https://github.com/ZeyueT/AudioX-ICLR)** `[2026-03-15]` 🔥
   * **核心優勢**：**打破模型碎片化！單一模型實現「任意模態到音訊」的終極生成架構 (ICLR 2026 接收)**。由港科大團隊開發，基於 DiT (Diffusion Transformer) 與多模態自適應融合模組 (MAF)，**一個模型就能同時包辦文字生音效 (T2A)、文字生音樂 (T2M)、影片自動配音 (V2A) 以及音訊修復與續寫**。
   * **解決痛點 / 推薦場景**：**完美解決過去影片配音與音效生成需要串接多個專用模型，且無法精準控制聲音發生時間軸的痛點**。支援細粒度的時間戳控制（例如：指定 1.6 秒到 4.4 秒出現沖水聲）與多樂器風格指定。是遊戲音效設計、自動化影視配樂、以及短影片動態配音的工業級全能底座。團隊更同步開源了高達 700 萬樣本的高品質標註資料集 IF-caps。
   * **資源**：[🐙 GitHub](https://github.com/ZeyueT/AudioX-ICLR) | [📄 論文](https://arxiv.org/pdf/2503.10522) | [🤗 線上 DEMO](https://huggingface.co/spaces/HKUSTAudio/AudioX-Demo) | [📊 IF-caps 資料集](https://huggingface.co/datasets/HKUSTAudio/IF-caps)
 
 ### 🗣️ 會議轉寫與多語者分離 (Meeting Transcription & Diarization)
 
-* **[[Whisper + CAM++ 離線轉寫管線]](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common)** `[2026-04-18]` 🔥
+* **[Whisper + CAM++ 離線轉寫管線](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common)** `[2026-04-18]` 🔥
   * **核心優勢**：**完美互補！將 Whisper 的超強語音辨識與阿里 CAM++ 的精準聲紋分離結合，打造零成本的純本地會議轉寫神器**。Whisper 本身無法區分說話人，透過導入 CAM++ 進行語音活動偵測 (VAD) 與聲紋聚類 (Speaker Clustering)，能精準自動標註「發言人1、發言人2」，徹底彌補了單一開源 ASR 模型無法辨識語者身分的缺陷。
   * **解決痛點 / 推薦場景**：**解決了企業機密會議無法上傳雲端，以及長音訊（數小時）人工聽打極度耗時的痛點**。支援純 CPU 運行且全離線部署，確保資料絕對隱私。是企業內部會議紀錄自動化、自媒體/播客 (Podcast) 自動生成多語者字幕，以及高機密訪談整理的工業級落地首選。
   * **資源**：[🐙 CAM++ 模型與技術文件](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common) | [📄 Whisper 論文](https://cdn.openai.com/papers/whisper.pdf) | [📝 實戰落地指南與程式碼](https://mp.weixin.qq.com/s/Kkzkcs85_kYTWMRQnpOXlA)
