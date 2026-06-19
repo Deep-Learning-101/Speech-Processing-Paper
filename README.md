@@ -343,6 +343,12 @@ service_type: AI Consulting
 
 #### 🌐 國際巨頭與創新架構 (Global Tech & Innovations)
 
+* **[Nemotron 3.5 ASR (0.6B 流式語音辨識)](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)** `[2026-06]` 🔥
+  * **核心優勢**：**打破串流延遲極限，單一權重吃透 40 國語言的流式語音高鐵！** NVIDIA 釋出的 0.6B 輕量級 ASR 模型，採用 Cache-Aware FastConformer-RNNT 架構，徹底捨棄重算負擔，將最低分塊延遲 (Chunk Delay) 壓縮至驚人的 80ms。更強大的是它自帶原生標點符號與大小寫輸出，並支援 `target_lang=auto` 進行即時多語種混合偵測。
+  * **解決痛點 / 推薦場景**：**完美解決了傳統 Whisper 串流「延遲過高無法即時對話」、「需要額外模型處理標點與語種」的致命痛點。** 由於不依賴多模型拼裝且資源消耗極低，極度適合企業開發者打造**全雙工語音 Agent (Voice Assistant)**、**高併發跨國呼叫中心 (Call Center)**、**車載即時語音助手**與**會議即時多語字幕系統**。
+  * **資源**：[🤗 Hugging Face 模型權重](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b) | [🌐 NVIDIA 開發者總入口](https://developer.nvidia.com/nemotron)
+  `[超低延遲]` `[流式ASR]` `[原生標點]` `[多語種支援]`
+
 * **[Voxtral Realtime (4.4B)](https://arxiv.org/pdf/2602.11298)** `[2026-02-28]` 🔥
     * **核心優勢**：**打破「低延遲與高精度」互斥魔咒的開源即時 ASR 霸主**。由 Mistral AI 採用 Apache 2.0 開源，創新導入全因果音訊編碼器 (Causal Audio Encoder) 與 Ada RMS-Norm 架構。在 **480ms 的亞秒級延遲下，辨識精準度直接打平 Whisper 離線模型**；更在工程端深度整合 `vLLM`，支援異構 KV 快取與 WebSocket 全雙工即時推理。
     * **解決痛點 / 推薦場景**：**徹底解決傳統離線模型（如 Whisper 滑動窗口）硬改為流式推理時精準度暴跌的痛點，以及生產環境中長文本泛化能力弱的瓶頸**。單一模型即可動態切換延遲檔位（80ms\~2400ms），支援 13 種語言。是打造**高併發即時字幕**、**同聲傳譯 (AI 口譯)**、**低延遲全雙工語音助理**的工業級首選。<br>`[亞秒級延遲]` `[vLLM原生支援]` `[Apache 2.0 完全開源]`
@@ -882,6 +888,14 @@ service_type: AI Consulting
 **🎙️ 語音處理綜合應用 (All-in-One Applications)**
 
 當單項技術（辨識、合成、分離）趨於成熟，2026 年的趨勢在於將多個模型串聯成解決特定生活痛點的「完整方案」。以下收錄具備高度整合性且支援本地部署的開源神作：
+
+* **[VideoChat](https://github.com/Henry-23/VideoChat)** `[2026-06]` 🔥
+  * **核心優勢**：**打破即時數位人高延遲與硬體高牆的開源神作！首創「多佇列並行管線」將端到端語音對話首包延遲壓至極致的 3 秒！** 巧妙整合了 FunASR、Qwen、GPT-SoVITS 與 MuseTalk 四大頂尖模型，透過異步處理 LLM 生成與 TTS 輸出，實現「邊想、邊說、邊對口型」的流暢體驗。在 `cascade_only` 級聯模式下，僅需 8GB 顯示記憶體 (VRAM) 即可在單張消費級顯示卡上流暢運行全鏈路。
+  * **解決痛點 / 推薦場景**：**完美解決傳統數位人「串行處理導致講話慢半拍」、「依賴雲端 API 造成機密外洩」以及「重訓形象與聲音成本過高」的致命痛點。** 支援極限少樣本學習，僅需 15-30 秒影片與 3-10 秒錄音，即可零樣本 (Zero-shot) 克隆專屬形象與音色。是中小企業打造 **7×24 直播帶貨虛擬主播**、**銀行/電信高隱私即時語音客服**，以及**高互動性 AI 虛擬教師**的工業級本地端首選。
+
+* **[Voice-Pro (v3.2)](https://github.com/abus-aikorea/voice-pro)** `[持續更新]` 🔥
+  * **核心優勢**：**打破 ElevenLabs 等高價 SaaS 壟斷的「一站式開源本地配音工廠」！** 透過 Gradio 介面無縫整合 yt-dlp (影音下載)、Demucs (音軌分離)、Whisper 家族 (高精度 ASR 與時間軸對齊) 以及 F5-TTS / CosyVoice (零樣本語音克隆)，在純本地端打造出「影片下載 → 語音辨識 → 多語翻譯 → 擬真配音 → 字幕混流輸出」的零成本全自動管線。
+  * **解決痛點 / 推薦場景**：**完美解決了自媒體創作者與內容團隊在進行影音在地化時「需來回串接多個 AI 軟體」、「訂閱費用高昂 (如 VEED, Maestra)」以及「機密音訊上傳雲端有外洩風險」的三大痛點。** 極度適合用於 **YouTuber 跨境頻道多語言配音**、**Podcast 播客自動雙語化**，以及**高隱私機密影片翻譯**。只要具備 Windows 系統與 NVIDIA GPU (建議 8GB+ 記憶體)，即可擁有不限時長、完全免費且支援 100+ 語言的個人化工業級影音生產中心。
 
 ### 🎼 音樂與歌聲處理 (Music & Singing)
 
