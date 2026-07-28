@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 語音處理資源懶人包 (Speech AI) | ASR, TTS & 聲紋辨識 | Deep Learning 101
-description: 2026 最新開源語音處理 (Speech AI) 資源與模型比較。涵蓋免切片語音辨識 (ASR)、極速人聲克隆 (TTS)、語音增強去噪等技術，收錄 Whisper 魔改版與 VibeVoice 等企業級落地解決方案。
+title: 2026 語音處理資源最新動態與資源彙整懶人包 (Speech AI) | ASR, TTS & 聲紋辨識 | ASR vs TTS 模型比較、Whisper 替代方案與落地成本 | Deep Learning 101
+description: 持續追蹤 2026 最新開源語音處理動態與資源彙整 (Speech AI) 資源與模型比較、最新發布、動態與進展。涵蓋免切片語音辨識 (ASR)、極速人聲克隆 (TTS)、語音增強去噪等技術，收錄 Whisper 魔改版與 VibeVoice 等企業級落地解決方案。
 permalink: /Speech-Processing
 lang: zh-Hant
 schema_type: service
@@ -12,11 +12,18 @@ service_type: AI Consulting
 
 # 🎤 語音處理 (Speech)・必讀資源總整理
 
+> **編者按：** 本頁面彙整目前最主流、持續追蹤 2026 語音處理 (Speech) 最新開源語音處理動態與資源彙整。
+
+> 如果您需要關注/追蹤更新/尋找更詳細的筆記，歡迎 ⭐ 及 Watch 我們的 **GitHub Repository**
+> 👉 [**GitHub: Speech-Processing-Paper**](https://github.com/Deep-Learning-101/Speech-Processing-Paper) 👈🏻
+
 > 📌 **技術速覽**
 > 現代語音 AI 正加速邁向全雙工即時對話與零樣本聲音克隆。**Deep Learning 101** 精選 LiveKit、Whisper 等開源技術，實測可將端到端語音延遲控制在 300ms 以內，解決會議逐字稿、高抗噪辨識與即時語音 Agent 的企業落地痛點。
 
-> 如果您想尋找更詳細的筆記，歡迎訪問 **GitHub Repository**：
-> 👉 [**GitHub: Speech-Processing-Paper**](https://github.com/Deep-Learning-101/Speech-Processing-Paper) (歡迎 Star ⭐)
+> ### 📅 [2026-07-25 更新快訊](https://deep-learning-101.github.io/UPDATE)
+>- **Nemotron-Labs-Audex (Audex-30B-A3B / Audex-2B)** `[2026-06-08]` 🔥 統一音訊文本模型、單一解碼器、文字稅零退步、開源通用音效生成
+>- **Vidu S1** `[2026-07-03]` 🔥 國內首款消費級顯卡可流暢運行的無限實時交互視頻大模型！
+>- **Wan-Streamer** `[2026-05]` 🔥 全球首款打破模塊拼接延遲、實現「看聽說做表情」五條件全滿的端到端全雙工音視訊交互大模型！
 
 ---
 
@@ -1001,7 +1008,9 @@ A: 推薦基於 WebRTC 協議的架構（如 TEN Framework 或 LiveKit），端�
         "@type": "Organization",
         "name": "Deep Learning 101, Taiwan",
         "url": "https://deep-learning-101.github.io/"
-      }
+      },
+      "datePublished": "2026-03-29",
+      "dateModified": "2026-07-28"
     },
     {
       "@type": "FAQPage",
