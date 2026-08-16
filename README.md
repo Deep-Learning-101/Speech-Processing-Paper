@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 2026 語音處理資源最新動態與資源彙整懶人包 (Speech AI) | ASR, TTS & 聲紋辨識 | ASR vs TTS 模型比較、Whisper 替代方案與落地成本 | Deep Learning 101
-description: 持續追蹤 2026 最新開源語音處理動態與資源彙整 (Speech AI) 資源與模型比較、最新發布、動態與進展。涵蓋免切片語音辨識 (ASR)、極速人聲克隆 (TTS)、語音增強去噪等技術，收錄 Whisper 魔改版與 VibeVoice 等企業級落地解決方案。
+title: 2026 語音 AI 完整指南：ASR、TTS 模型選型與 Whisper 替代方案比較
+description: Whisper 之外還有什麼選擇？深度比較 2026 最新開源語音模型，涵蓋免切片 ASR（FunASR、Paraformer）、極速 TTS（CosyVoice、F5-TTS）與聲紋辨識，附落地成本評估與 API串接指南。
 permalink: /Speech-Processing
 lang: zh-Hant
 schema_type: service
