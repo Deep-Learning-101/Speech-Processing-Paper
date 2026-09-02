@@ -6,6 +6,7 @@ permalink: /Speech-Processing
 lang: zh-Hant
 schema_type: service
 service_type: AI Consulting
+tags: ["語音處理", "ASR", "TTS"]
 ---
 
 {% include header.html %}
