@@ -4,7 +4,7 @@ title: 2026 語音 AI 完整指南：ASR、TTS 模型選型與 Whisper 替代方
 description: Whisper 之外還有什麼選擇？深度比較 2026 最新開源語音模型，涵蓋免切片 ASR（FunASR、Paraformer）、極速 TTS（CosyVoice、F5-TTS）與聲紋辨識，附落地成本評估與 API串接指南。
 permalink: /Speech-Processing
 lang: zh-Hant
-schema_type: service
+schema_type: article
 service_type: AI Consulting
 tags: ["語音處理", "ASR", "TTS"]
 ---
@@ -20,6 +20,7 @@ tags: ["語音處理", "ASR", "TTS"]
 
 > 📌 **技術速覽**
 > 現代語音 AI 正加速邁向全雙工即時對話與零樣本聲音克隆。**Deep Learning 101** 精選 LiveKit、Whisper 等開源技術，實測可將端到端語音延遲控制在 300ms 以內，解決會議逐字稿、高抗噪辨識與即時語音 Agent 的企業落地痛點。
+> 中文 ASR 即時轉寫首選 FunASR／Paraformer（中文優化、免切片）；純 CPU 極速轉寫選 VibeVoice-ASR-BitNet（1.58GB，官方稱跑贏 Whisper.cpp）；TTS 低延遲選 Luna-TTS（首包 41.6ms）；零樣本聲音克隆選 CosyVoice／F5-TTS；全雙工即時對話用 LiveKit＋Whisper（實測端到端 300ms 內）。
 
 > ### 📅 [2026-08-17 更新快訊](https://deep-learning-101.github.io/UPDATE)
 > * **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
