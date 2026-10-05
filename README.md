@@ -22,12 +22,12 @@ tags: ["語音處理", "ASR", "TTS"]
 > 現代語音 AI 正加速邁向全雙工即時對話與零樣本聲音克隆。**Deep Learning 101** 精選 LiveKit、Whisper 等開源技術，實測可將端到端語音延遲控制在 300ms 以內，解決會議逐字稿、高抗噪辨識與即時語音 Agent 的企業落地痛點。
 > 中文 ASR 即時轉寫首選 FunASR／Paraformer（中文優化、免切片）；純 CPU 極速轉寫選 VibeVoice-ASR-BitNet（1.58GB，官方稱跑贏 Whisper.cpp）；TTS 低延遲選 Luna-TTS（首包 41.6ms）；零樣本聲音克隆選 CosyVoice／F5-TTS；全雙工即時對話用 LiveKit＋Whisper（實測端到端 300ms 內）。
 
-> ### 📅 [2026-08-17 更新快訊](https://deep-learning-101.github.io/UPDATE)
-> * **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
-> * **[VibeVoice-ASR-BitNet](https://github.com/microsoft/VibeASR.cpp)** `[2026-07-23]` 🔥 [CPU極速即時轉寫] [BitNet三值量化] [1.58GB極致壓縮] [跑贏Whisper.cpp]
-> * **[Luna-TTS](https://vuilabs-ai.github.io/luna-tts)** `[2026-08]` 🔥 [擴散語言模型] [全並行TTS] [首包延遲41.6ms] [Seed-TTS-Eval四冠王]
+> ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
-> ### 📅 2026-07-25 更新快訊
+>- **[Meta Muse Voice Transcribe](https://ai.meta.com/blog/)** `[2026-09-01]` 🔥[即時串流ASR] [說話人分離] [端點檢測] [自適應延遲] [語碼切換] [上下文偏置]`
+>- **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
+>- **[VibeVoice-ASR-BitNet](https://github.com/microsoft/VibeASR.cpp)** `[2026-07-23]` 🔥 [CPU極速即時轉寫] [BitNet三值量化] [1.58GB極致壓縮] [跑贏Whisper.cpp]
+>- **[Luna-TTS](https://vuilabs-ai.github.io/luna-tts)** `[2026-08]` 🔥 [擴散語言模型] [全並行TTS] [首包延遲41.6ms] [Seed-TTS-Eval四冠王]
 >- **Nemotron-Labs-Audex (Audex-30B-A3B / Audex-2B)** `[2026-06-08]` 🔥 統一音訊文本模型、單一解碼器、文字稅零退步、開源通用音效生成
 >- **Vidu S1** `[2026-07-03]` 🔥 國內首款消費級顯卡可流暢運行的無限實時交互視頻大模型！
 >- **Wan-Streamer** `[2026-05]` 🔥 全球首款打破模塊拼接延遲、實現「看聽說做表情」五條件全滿的端到端全雙工音視訊交互大模型！
@@ -308,7 +308,6 @@ tags: ["語音處理", "ASR", "TTS"]
 </details>
 
 
-
 - **[Qwen3-ASR + vLLM 高併發部署](https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B)** `[2026-04]` 🔥 *(取代原本 2026-01-30 的舊版目)*
   - **核心優勢**：**高併發直接拉滿的工業級語音辨識神作**。將開源頂規的 Qwen3-ASR (支援 52 種語言及閩南語、粵語等複雜中文方言) 結合 vLLM 推理引擎，實現極低延遲（20 字音訊僅需 ~300ms）與超高吞吐量，徹底解放 GPU 算力。
   - **解決痛點 / 推薦場景**：完美解決傳統開源模型面對大量並發請求時容易卡死或延遲過高的痛點。官方提供標準化 Docker 映像檔 (`qwenllm/qwen3-asr`)，大幅降低環境配置門檻，是打造**高併發自動上字幕**、**企業級多語種客服**的絕對首選。
@@ -367,6 +366,14 @@ tags: ["語音處理", "ASR", "TTS"]
 ---
 
 #### 🌐 國際巨頭與創新架構 (Global Tech & Innovations)
+
+* **[Meta Muse Voice Transcribe](https://ai.meta.com/blog/)** `[2026-09-01]` 🔥
+  * **核心優勢**：**MSL 首款即時音訊感知模型，一個模型吃掉 ASR＋說話人分離＋端點檢測三條管線！** Meta Superintelligence Labs 2026-09-01 發布。單一自回歸模型以 80ms 為單位即時處理音訊，無需後處理。核心創新是 RL 訓練的「自適應延遲」：有信心的詞立刻輸出、有歧義的詞再多等幾十毫秒，在速度／準確率權衡上達到新 Pareto 前沿。實測 WER 3.1%、語音結束後 0.16 秒輸出最終稿，登頂 Artificial Analysis 流式語音辨識榜；公開說話人分離基準同樣第一名。支援 20+ 說話人即時分離、小時級長音訊不截斷、70+ 語言訓練（首發 25 個深度驗證）、語句內外語碼切換，以及語言／關鍵詞／上下文偏置提升專有名詞準確率。透過 Meta Model API（$0.18／小時音訊）、Meta AI for Mac 內建聽寫、Muse Code 三個渠道提供。
+  * **解決痛點 / 推薦場景**：**徹底終結傳統「ASR＋Diarization＋VAD 三模型串聯」的延遲疊加與錯誤傳遞。** 早期系統端點檢測誤判會導致 ASR 提前截斷或延遲，原生集成消除了這個誤差源；固定延遲窗口無法區分簡單詞與困難詞的困境也被 RL 自適應延遲解決。極度適合**多人會議即時轉寫**、**電話客服語音分析**、**訪談／播客逐字稿**、**智慧眼鏡即時字幕**等需要「邊說邊出字＋誰說的＋說完沒」的場景。（⚠️ API 服務、非開源；API 只回傳說話人回合級時間戳、不含逐詞信心分數與情緒偵測）
+  <br>`[即時串流ASR]` `[說話人分離]` `[端點檢測]` `[自適應延遲]` `[語碼切換]` `[上下文偏置]`
+  * **資源**：[📝 Meta AI Blog](https://ai.meta.com/blog/) | [🐦 Zuckerberg 原推](https://x.com/finkd) | [📖 Meta Model API](https://developer.meta.com/ai/)（model id：`muse-voice-transcribe-1.0`）
+  * **附註（原文觀點）**：原文將本模型與 Qwen3-ASR-1.7B 橫向對比：需要說話人分離＋端點檢測→選 Muse；需要本地部署＋數據隱私或中文方言→選 Qwen3-ASR。另原文寫「每個字都帶說話人標籤」，與官方文件「說話人回合級時間戳」有出入，條目採官方文件說法。
+
 
 * **[VibeVoice Family](https://github.com/microsoft/VibeVoice)** `[2026-01-30]` 🔥 *(35k Stars)*
   * **核心優勢**：**開源語音界的「桌子翻轉者」，首創 7.5Hz 超低幀率語音 Tokenizer 技術！** 微軟出品的顛覆性系列模型，包含 ASR (7B)、TTS (1.5B) 與 Realtime (0.5B)。其核心突破在於將語音壓縮率提升 99%，在極低計算量下保留高品質聲學細節。Realtime 版本首音延遲僅 **300ms**，效能直接對標 GPT-4o 語音模式。
