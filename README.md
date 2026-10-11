@@ -24,6 +24,7 @@ tags: ["語音處理", "ASR", "TTS"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[Xiaomi-CocktailASR-1](https://github.com/xiaomi-research/xiaomi-cocktailasr-1)** `[2026-09]` 🔥 `[目標說話人ASR]` `[雞尾酒會效應]` `[端到端]` `[CoT推理]`
 >- **[Meta Muse Voice Transcribe](https://ai.meta.com/blog/)** `[2026-09-01]` 🔥[即時串流ASR] [說話人分離] [端點檢測] [自適應延遲] [語碼切換] [上下文偏置]`
 >- **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
 >- **[VibeVoice-ASR-BitNet](https://github.com/microsoft/VibeASR.cpp)** `[2026-07-23]` 🔥 [CPU極速即時轉寫] [BitNet三值量化] [1.58GB極致壓縮] [跑贏Whisper.cpp]
@@ -250,6 +251,12 @@ tags: ["語音處理", "ASR", "TTS"]
 ### 🔥 2025-2026 最新 ASR 模型資源庫 (完整收錄)
 
 #### 🇨🇳 亞洲與中文特化模型 (Chinese & Asian Languages)
+
+* **[Xiaomi-CocktailASR-1](https://github.com/xiaomi-research/xiaomi-cocktailasr-1)** `[2026-09]` 🔥 `[目標說話人ASR]` `[雞尾酒會效應]` `[端到端]` `[負樣本拒識]` `[CoT推理]`
+* **核心優勢**：**參考語音即聲紋提示：免語音分離、端到端定向轉寫多人混合語音！** 0.6B 音訊編碼器＋線性 Adapter＋Qwen3-8B；輸入為「參考語音＋1 秒靜音＋待識別混合音訊」，參考語音直接作為目標說話人的條件提示，模型在混合音訊中尋找對應聲紋並轉寫。LibriMix 2mix WER 4.11%、LibriSpeechMix 2mix 2.90%、真實會議 AliMeeting-Far 20.63%（前 SOTA 27.5%）、AMI-SDM 21.81%，多項達 SOTA；單人場景 LibriSpeech 1.73%、AMI-IHM 8.89%、CommonVoice 中文 4.95%，與主流 ASR 相當。
+* **解決痛點 / 推薦場景**：**終結「分離→辨識」多級管線的誤差級聯。** 傳統 TS-ASR 需經 VAD、語音分離、說話人識別、ASR 多個環節，前級分離品質直接拖累後級轉寫；CocktailASR-1 以單一端到端模型完成，並以負樣本訓練學會「目標缺席時輸出空文本」（LibriSpeech 拒識率 79.59%、Aishell 75.35%，正樣本誤拒僅 0.36%），CoT 模式還可輸出說話人數、性別、聲紋相似度等中間推理（LibriMix 2mix 從 4.11% 降至 3.87%）。極度適合**多人會議定向轉寫**、**語音助手多講者抗干擾**、**車載／家庭多聲源語音控制**、**客服通話單方轉寫**。
+* **資源**：[🐙 GitHub 官方倉庫](https://github.com/xiaomi-research/xiaomi-cocktailasr-1) | [📄 論文](https://arxiv.org/abs/2609.11274) | [🤗 Hugging Face](https://huggingface.co/Ease3/Xiaomi-CocktailASR-1)
+
 
 * **[Mega-ASR](https://github.com/xzf-thu/Mega-ASR)** `[2026-05]` 🔥
   * **核心優勢**：**打破實驗室 1% 錯誤率的虛假繁榮，專為真實世界「複合聲學退化 (in-the-wild²)」打造的抗噪語音辨識霸主！** 面對遠場、混響、電子失真與傳輸丟包等多重疊加的嚴苛環境，Mega-ASR 透過 200 萬筆精準校準的野外合成數據進行訓練。它首創 A2S-SFT 漸進式訓練（先專注抓取聲學證據，再放開 LLM 語意先驗），並結合 DG-WGPO 雙粒度強化學習機制，動態達成「聽不清時先救句子骨架，聽得清再精修詞彙細節」。搭配內建的輕量化 Router 路由機制，在大幅提升抗噪能力的同時，完美保全了乾淨音訊的極高辨識率。
