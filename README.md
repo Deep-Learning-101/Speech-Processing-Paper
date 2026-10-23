@@ -24,6 +24,15 @@ tags: ["語音處理", "ASR", "TTS"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[Whistle (Cactus Compute)](https://cactuscompute.com/blog/whistle)** `[2026-10]` 🔥 `[端側ASR]` `[超輕量]` `[CPU推理]` `[語音工具調用]` `[量化]`
+>- **[S1-mini (Superwhisper)](https://huggingface.co/superwhisper/s1-mini)** `[2026-10]` 🔥 `[ASR後處理]` `[文本歸一化]` `[ITN]` `[端側部署]` `[Qwen3微調]`
+>- **[AnyEdit (免分離語音／歌聲局部編輯)](https://arxiv.org/abs/2610.15665)** `[2026-10]` 🔥 `[語音編輯]` `[歌聲編輯]` `[免聲源分離]` `[Flow Matching]` `[DPO]`
+>- **[VibeVoice-ASR-Streaming (Microsoft)](https://arxiv.org/abs/2609.02812)** `[2026-09]` 🔥 `[流式ASR]` `[說話人歸屬]` `[端到端]` `[Speech-LLM]` `[即時轉寫]`
+>- **[MOSS-TTS-Nano (OpenMOSS)](https://github.com/OpenMOSS/MOSS-TTS-Nano)** `[2026-04]` 🔥 `[0.1B極輕量]` `[單核CPU]` `[ONNX推理]` `[48kHz雙聲道]` `[零樣本克隆]`
+>- **[X2Streaming-TTS (X Square Robot)](https://arxiv.org/abs/2608.18661)** `[2026-08]` 🔥 `[真流式TTS]` `[逐token合成]` `[嚴格因果]` `[低延遲對話]` `[Qwen3-TTS]`
+>- **[MECT / AntSpeaker (螞蟻集團)](https://arxiv.org/abs/2609.24061)** `[2026-09]` 🔥 `[聲紋識別]` `[MoE架構]` `[流式推理]` `[身份核驗]` `[輕量模型]`
+>- **[TagSpeech (多人 ASR＋日誌聯合建模)](https://arxiv.org/abs/2601.06896)** `[2026-01]` 🔥 `[說話人日誌]` `[聯合建模]` `[時間戳對齊]` `[端到端]` `[參數高效訓練]`
+>- **[MAI-Transcribe-2 (Microsoft MAI)](https://microsoft.ai/)** `[2026-09]` 🔥 `[商業ASR API]` `[多語轉寫]` `[說話人分離]` `[批次轉寫]` `[性價比]`
 >- **[Xiaomi-CocktailASR-1](https://github.com/xiaomi-research/xiaomi-cocktailasr-1)** `[2026-09]` 🔥 `[目標說話人ASR]` `[雞尾酒會效應]` `[端到端]` `[CoT推理]`
 >- **[Meta Muse Voice Transcribe](https://ai.meta.com/blog/)** `[2026-09-01]` 🔥[即時串流ASR] [說話人分離] [端點檢測] [自適應延遲] [語碼切換] [上下文偏置]`
 >- **[Qwen-Audio-Agent](https://github.com/QwenAudio/qwen-audio-agent)** `[2026-07]` 🔥 [全雙工語音Harness] [非阻塞多任務] [ACP協議生態] [擇時結果回流]
@@ -374,6 +383,11 @@ tags: ["語音處理", "ASR", "TTS"]
 
 #### 🌐 國際巨頭與創新架構 (Global Tech & Innovations)
 
+* **[Whistle (Cactus Compute)](https://cactuscompute.com/blog/whistle)** `[2026-10]` 🔥 `[端側ASR]` `[超輕量]` `[CPU推理]` `[語音工具調用]` `[量化]`
+  * **核心優勢**：**16.9MB 單檔、純 CPU、零依賴：比 Whisper base 小 8.6 倍，首 token 快 6.6 倍、解碼快 5 倍。** Cactus Compute 開源（Apache 2.0），2–4 bit 量化壓進單一 .cact 檔；與自家工具調用小模型 Needle 共用同一個 C++ 引擎，一個二進制就能「語音直接變結構化工具調用」，不用第二套運行時。官方實測（M4 Pro、10 秒音訊）：首 token 11.1ms（Whisper base 73.2ms）、解碼 1319 tok/s（266）。17 個編譯目標含 RISC-V、MIPS、WebAssembly。
+  * **解決痛點 / 推薦場景**：**語音上雲，隱私和延遲兩頭堵；幾百 MB 的模型又塞不進手錶和單片機。** 架構取捨很聰明：編碼器 8 層全程跑滿（非因果、整段一起看），解碼器深度可裁（2 層起，載入時選），編碼器 K/V 只投影一次、5 路 beam 共用。一次做三件事：整句轉錄、詞級時間戳加概率、語音 embedding 輸出（每 80ms 一幀），還支援關鍵詞偏置。WER 對 Whisper base 三勝三負（LibriSpeech、SPGISpeech、Earnings-22、FLEURS 贏；TED-LIUM、AMI、MLS 輸），贏面主要在體積與速度。極度適合**穿戴／智慧家居／車載的端側語音控制**、**離線聽寫**、**語音直達工具調用**。⚠️ 全部數字為廠商自評、尚無第三方真機復測；單次最長 30 秒，長聽寫要自己切；延遲數字對應哪一檔解碼器深度官方未明說。
+  * **資源**：[🌐 官方模型頁](https://cactuscompute.com/blog/whistle)
+
 * **[Meta Muse Voice Transcribe](https://ai.meta.com/blog/)** `[2026-09-01]` 🔥
   * **核心優勢**：**MSL 首款即時音訊感知模型，一個模型吃掉 ASR＋說話人分離＋端點檢測三條管線！** Meta Superintelligence Labs 2026-09-01 發布。單一自回歸模型以 80ms 為單位即時處理音訊，無需後處理。核心創新是 RL 訓練的「自適應延遲」：有信心的詞立刻輸出、有歧義的詞再多等幾十毫秒，在速度／準確率權衡上達到新 Pareto 前沿。實測 WER 3.1%、語音結束後 0.16 秒輸出最終稿，登頂 Artificial Analysis 流式語音辨識榜；公開說話人分離基準同樣第一名。支援 20+ 說話人即時分離、小時級長音訊不截斷、70+ 語言訓練（首發 25 個深度驗證）、語句內外語碼切換，以及語言／關鍵詞／上下文偏置提升專有名詞準確率。透過 Meta Model API（$0.18／小時音訊）、Meta AI for Mac 內建聽寫、Muse Code 三個渠道提供。
   * **解決痛點 / 推薦場景**：**徹底終結傳統「ASR＋Diarization＋VAD 三模型串聯」的延遲疊加與錯誤傳遞。** 早期系統端點檢測誤判會導致 ASR 提前截斷或延遲，原生集成消除了這個誤差源；固定延遲窗口無法區分簡單詞與困難詞的困境也被 RL 自適應延遲解決。極度適合**多人會議即時轉寫**、**電話客服語音分析**、**訪談／播客逐字稿**、**智慧眼鏡即時字幕**等需要「邊說邊出字＋誰說的＋說完沒」的場景。（⚠️ API 服務、非開源；API 只回傳說話人回合級時間戳、不含逐詞信心分數與情緒偵測）
@@ -391,6 +405,16 @@ tags: ["語音處理", "ASR", "TTS"]
   * **核心優勢**：**打破語音大模型對 GPU 的硬體依賴，微軟研究院開源首個在普通 CPU 上以 3 個線程達成實時轉寫（RTF < 1）的端側語音識別神作！** 論文（arXiv:2607.21075）採用分開量化策略：針對 IO 密集型的 7.5Hz 連續 VAE Tokenizer 進行全流水線 INT8（I8_S）量化與算子融合；針對權重密集型的主體 Transformer 解碼器（基於 Qwen2.5-1.5B），透過 BitNet 將權重壓至三值 2-bit（I2_S），並在敏感的 Embedding 與 LM head 保留 Q6_K 混合精度。搭配漸進式量化感知訓練（Progressive QAT），將原 4.62GB 模型壓縮 2.9 倍至僅 **1.58GB**。在普通 x86/ARM CPU 上 3 線程即可實時出字（AMD EPYC 7V13 上 RTF=0.77，Apple M4 達 0.52），速度比同尺寸 Whisper.cpp 快 **1.6–2.3 倍**，且相對 7B 基線僅退化 1–4% 絕對 WER（MLC-EN 達 8.25%），DER 說話人分離錯誤率顯著優於 Gemini-2.5-Pro 與 Gemini-3-Pro。
   * **解決痛點 / 推薦場景**：完美解決了傳統語音轉寫「長音訊需切片導致上下文斷裂與語者混淆」、「雲端 API 具隱私合規與高昂成本門檻」，以及「本地大模型依賴昂貴 GPU、純 CPU 慢到無法使用」的三大落地痛點。 依托 64K 上下文窗口支援 60 分鐘長音訊端到端一次吞入，同步輸出「誰在什麼時候說了什麼（說話人、時間戳與文字內容）」。極度適合**不能聯網且預算敏感的法務庭審/醫療問診/採訪逐字稿本地歸檔**、**無 GPU 環境的邊緣設備/工控機與個人筆電離線會議轉錄**，以及**跨國多語言（英/中/法/義/韓/葡/越）長音訊離線批處理系統**。
   * **資源**：[🐙 GitHub 官方倉庫 (VibeASR.cpp)](https://github.com/microsoft/VibeASR.cpp) | [📄 arXiv 技術報告 (2607.21075)](https://arxiv.org/abs/2607.21075) | [🤗 HuggingFace 模型權重](https://huggingface.co/microsoft/VibeVoice-ASR-BitNet) | [🌐 在線 Demo](https://huggingface.co/spaces/microsoft/vibevoice-asr-bitnet-demo) | [📦 VibeVoice 家族主頁](https://github.com/microsoft/VibeVoice)
+
+* **[VibeVoice-ASR-Streaming (Microsoft)](https://arxiv.org/abs/2609.02812)** `[2026-09]` 🔥 `[流式ASR]` `[說話人歸屬]` `[端到端]` `[Speech-LLM]` `[即時轉寫]`
+  * **核心優勢**：**邊聽邊寫還邊標人：一個模型流式輸出「誰說了什麼」，不再需要獨立的 diarization 階段。** 微軟開源（MIT），在 VibeVoice-ASR 之上把語音塊與帶標籤文本交錯塞進同一條自回歸序列：2.9 秒一塊、固定 0.5 秒前瞻，歷史語音與轉寫全程留在上下文裡，幾分鐘前出現過的人再開口仍是同一個標籤。開源 1.5B 與 7B 權重（Qwen2.5 骨幹）。7B 在五組評測的純識別平均錯誤率 24.66，勝過 Gemini 3.5 Transcribe Live（25.23）與 GPT Realtime Whisper（39.31）；13 個說話人歸屬設定中 12 個最佳或並列最佳，歸屬延遲僅 2.00 秒（Azure 實測 8.21 秒、Google 首次標籤 9.12 秒且事後還會回改）。
+  * **解決痛點 / 推薦場景**：**傳統管線把 ASR 和說話人日誌拆成兩攤：離線統一模型要等整段錄音，雲端流式服務標籤給得晚又會事後修訂，下游 Agent 沒法即時反應。** 消融也講清了代價：流式化讓 cpWER/cpCER 退化 5 至 7 點；塊越大、模型越大，賺回的主要是說話人證據而非詞彙證據。極度適合**即時會議字幕與紀錄**、**多人語音 Agent**、**即時訪談轉寫**。⚠️ 開源權重僅 22-frame（2.9 秒）配置，首包延遲約 3.5 秒；單次 session 最長約 8 分鐘、僅 10 種語言（受對齊器限制）、長時間多人重疊說話會退化，且上下文不壓縮、成本隨時長線性增長。
+  * **資源**：[📄 技術報告 (arXiv:2609.02812)](https://arxiv.org/abs/2609.02812) | [🐙 GitHub (microsoft/VibeVoice)](https://github.com/microsoft/VibeVoice)
+
+* **[MAI-Transcribe-2 (Microsoft MAI)](https://microsoft.ai/)** `[2026-09]` 🔥 `[商業ASR API]` `[多語轉寫]` `[說話人分離]` `[批次轉寫]` `[性價比]`
+  * **核心優勢**：**閉源商業轉寫的新標竿：90 分鐘音頻連說話人分離約 15 秒轉完，每小時只要 0.1 美元。** 微軟自研 MAI 家族（非 OpenAI 線），2026-09-03 上架 Foundry。FLEURS 60 語平均 WER 5.2%，官方稱排第一（壓過 GPT-Transcribe、Gemini 3.5 Transcribe、Scribe v2、Whisper Large V3）；第三方 Artificial Analysis 實測 AA-WER 2.0%、總排名第二（僅次於阿里的免費預覽版），中位速度 410 倍即時，官方稱比 GPT-Transcribe 快 10 倍。功能全配：60 語自動偵測、中英夾雜 code-switching、說話人分離、詞級時間戳、整潔稿/逐字稿雙模式、關鍵詞偏置。10 月再推 Streaming 版（2.5% WER、$0.54/小時）。
+  * **解決痛點 / 推薦場景**：**大量錄音要轉寫時，人工速記一小時幾十到上百元、開源模型自架又要養 GPU 與管線。** MAI-Transcribe-2 用 API 把單價打到 $0.10/小時（2026 年底前優惠價），速度讓「轉寫等待」從流程裡消失。極度適合**Podcast 與課程批量轉寫**、**客服中心通話紀錄**、**多語會議歸檔**。⚠️ 閉源雲端 API，音頻必須上傳微軟雲，機密錄音先過合規；5.2% 是 60 語平均（上一代 43 語時為 3.7%，擴語種拉高了平均），單一語種表現要自己實測；$0.10 為限時優惠價、之後可能調整。
+  * **資源**：[🌐 微軟 AI 官網（Playground 免費試用）](https://microsoft.ai/) | [📰 eWeek 發布報導](https://www.eweek.com/news/microsoft-10-cent-ai-transcription-mai-transcribe-2/)
 
 * **[Nemotron 3.5 ASR (0.6B 流式語音辨識)](https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b)** `[2026-06]` 🔥
   * **核心優勢**：**打破串流延遲極限，單一權重吃透 40 國語言的流式語音高鐵！** NVIDIA 釋出的 0.6B 輕量級 ASR 模型，採用 Cache-Aware FastConformer-RNNT 架構，徹底捨棄重算負擔，將最低分塊延遲 (Chunk Delay) 壓縮至驚人的 80ms。更強大的是它自帶原生標點符號與大小寫輸出，並支援 `target_lang=auto` 進行即時多語種混合偵測。
@@ -534,6 +558,11 @@ tags: ["語音處理", "ASR", "TTS"]
 
 ### 🛠️ [ASR 後處理與文本糾錯 (ASR Post-Processing & Correction)](https://www.twman.org/AI/NLP/Correction.html)
 
+* **[S1-mini (Superwhisper)](https://huggingface.co/superwhisper/s1-mini)** `[2026-10]` 🔥 `[ASR後處理]` `[文本歸一化]` `[ITN]` `[端側部署]` `[Qwen3微調]`
+  * **核心優勢**：**ASR 的最後一公里：0.6B 專用小模型把「聽到什麼寫什麼」洗成「能直接貼出去的文字」。** Superwhisper 開源（Apache 2.0 加署名條款），基座 Qwen3-0.6B（596M 唯一參數）微調成單一轉換任務：刪填充詞、解口誤與自我糾正（friday no wait → Thursday）、補標點大寫、口語數字日期金額信箱轉書面式（twenty three thousand → $23,450）。7,519 個英語用例 94.8% token 準確率；Q4_K_M 量化僅 462 MiB，筆電 CPU 可跑。控制全靠輸入首行三軸控制線：語體四檔（casual 到 formal）×結構（prose/lists）×場景（general/email），任意組合都訓練過。
+  * **解決痛點 / 推薦場景**：**規則腳本蓋不住語言的複雜，大模型重寫又太重太慢。** 會議紀要滿屏口頭禪、字幕台詞沒法讀、聽寫落盤不規範，都是同一個缺口。S1-mini 只做歸一化這一件事：純填充詞輸入回空字串（下游可當無效內容處理）、列表至少三項才觸發、系統提示詞須逐字照抄。極度適合**聽寫 App**、**會議紀要工具**、**即時字幕**、**語音編輯器**的 ASR 後處理環節。⚠️ 整合第一大坑：必須設 `enable_thinking=False`，漏了只會吐空 think 塊、完全沒輸出；目前僅英文（v1），中文用不上。
+  * **資源**：[🤗 Hugging Face](https://huggingface.co/superwhisper/s1-mini) | [🤗 GGUF 版](https://huggingface.co/superwhisper/s1-mini-GGUF) | [🌐 官網](https://superwhisper.com)
+
 * **[Generative-Annotation-NEC (SS+GL)](https://github.com/L6-NLP/Generative-Annotation-NEC)** `[2026-04-18]` 🔥
   * **核心優勢**：**華為開源的 ASR 命名實體糾錯 (NEC) 終極方案，徹底解決「音似形異」的轉寫災難**。捨棄傳統依賴「文字拼寫相似度」的編輯距離法，創新提出 SS+GL 架構：先透過「聲音指紋 (Speech-based Selection)」檢索正確實體，再利用大模型進行「生成式標註 (Generative Labeling)」。能精準將「米德仲尼」糾正為「Midjourney」、「01X」糾正為「靈耀X」。
   * **解決痛點 / 推薦場景**：**完美解決通用 ASR（如 Whisper）或第三方雲端語音 API，在遇到專業術語、最新科技詞彙或中英夾雜時辨識崩壞的痛點**。採用「生成後糾正」的解耦架構，**隨插即用**，無須改動底層 ASR 引擎。是打造**高精度醫療/法律會議紀錄**、**企業私有領域語音知識庫**，以及**防過糾錯 (Anti-Overcorrection) 文本清洗管線**的工業級利器。
@@ -556,6 +585,11 @@ tags: ["語音處理", "ASR", "TTS"]
 
 * **SincNet**：一種直接處理原始音訊波形 (Raw Waveform) 的深度學習架構，能有效提取具備物理意義的聲學特徵。[📄 AlphaXiv 論文](https://www.alphaxiv.org/zh/overview/1808.00158v3)
 
+
+* **[MECT / AntSpeaker (螞蟻集團)](https://arxiv.org/abs/2609.24061)** `[2026-09]` 🔥 `[聲紋識別]` `[MoE架構]` `[流式推理]` `[身份核驗]` `[輕量模型]`
+  * **核心優勢**：**首次把 MoE 搬進全監督聲紋識別：僅 9.57M 參數，VoxCeleb 三個測試集 minDCF 0.012/0.026/0.048 刷新 SOTA，連 W2V-BERT 2.0 預訓練大方案都贏。** 螞蟻 AI 身份智能團隊開源，CNN-Transformer 骨幹（承 ReDimNet2 的 reshape 連接再改良）把 MoE 插進 Transformer 的線性層，系統比較幀級/語句級 × 稠密/稀疏四種變體，最佳的幀級 Dense MoE（4 專家）只多 0.17M 參數就換來 EER/minDCF 平均相對提升 4.7%/7.8%；淺層專家還無監督自發分工：擦音塞擦音歸一個、元音歸另一個。
+  * **解決痛點 / 推薦場景**：**聲紋核身要即時，但傳統模型整段音頻算完才出 embedding，短 chunk 流式一上精度就崩。** MECT 用因果化重訓練（左 padding、因果 mask、KV 與池化統計量雙緩存對齊離線結果）立起流式範式：chunk 砍到 100ms，Vox1-O/E/H 的 EER 仍守在 0.38%/0.60%/1.06%，而均值池化等土法同條件下崩到 7–12%。極度適合**支付級聲紋核身**、**智能眼鏡/車機/耳機的無感身份驗證**、**即時通話身分確認**。⚠️ SOTA 數字含 AS-Norm 與 QMF 後處理；已用於螞蟻聲紋核身支付為團隊宣稱。
+  * **資源**：[📄 論文 (arXiv:2609.24061)](https://arxiv.org/abs/2609.24061) | [🐙 GitHub (AntSpeaker)](https://github.com/ant-research/AntSpeaker) | [🤗 Hugging Face](https://huggingface.co/AntResearch/AntSpeaker)
 
 * **[SpeakerRPL V2](https://arxiv.org/abs/2604.13605)** `[2026-04]` 🔥 `[開放集聲紋]` `[少樣本微調]` `[極限低錯誤率]`
   * **核心優勢**：**打破聲紋辨識「防君子不防小人」的開放集漏洞，將等錯誤率 (EER) 壓縮至千分之一量級的 SOTA 神作！** 透過獨創的「LogitNorm + RPL 混合損失」與「自適應錨點 (Adaptive Anchors)」技術，模型能動態學習未知說話人的特徵邊界。在極少數語音樣本微調下，不僅防過度自信，更在具挑戰性的 Vox1-O* 開放集測試中，將 EER 從 1.72% 暴力降至 0.24%（相對降幅高達 93%）。
@@ -782,16 +816,31 @@ tags: ["語音處理", "ASR", "TTS"]
 
 ### 🔥 2025-2026 前沿創新與特殊場景模型 (Special Cases)
 
+* **[AnyEdit (免分離語音／歌聲局部編輯)](https://arxiv.org/abs/2610.15665)** `[2026-10]` 🔥 `[語音編輯]` `[歌聲編輯]` `[免聲源分離]` `[Flow Matching]` `[DPO]`
+  * **核心優勢**：**不用拆人聲，嘈雜錄音直接局部改詞：改對內容、保住音色、背景一點不動。** 兩階段解耦設計：先用指令引導的自回歸編輯器在「乾淨空間」改語義（噪聲魯棒韻律 tokenizer 以師生蒸餾，從帶噪錄音還原乾淨韻律 token），再用 Flow Matching 聲學渲染把編輯結果貼回原始聲場，噪音、混響、伴奏自然繼承。另有「未修改區感知監督」守住沒改的片段不漂移，並從流行歌重複段落挖出真人對真人的歌唱編輯對做 DPO 後訓練，不靠合成歌聲。
+  * **解決痛點 / 推薦場景**：**過去改真實錄音只能二選一：端到端改會把內容和環境攪在一起、背景崩壞；先分離再編輯，分離本身就傷音質、唱歌伴奏更拆不乾淨。** AnyEdit 全程跳過聲源分離，在自建 AnyEditBench（中英雙語，乾淨／模擬加噪／真實野外三種條件）上，內容準確度、主觀品質、背景一致性全面勝過基線。極度適合**播客口誤修正**、**改歌詞不重錄**、**短影音 UGC 二創**。⚠️ 需約 10 秒上下文才能還原完整環境、不支援即時編輯；能篡改人聲內容，部署時要搭配偽造檢測與浮水印。
+  * **資源**：[📄 論文 (arXiv:2610.15665)](https://arxiv.org/abs/2610.15665) | [🌐 專案主頁與 Demo](https://any-edit.github.io/)
+
 * **[Supertonic v3](https://github.com/supertone-inc/supertonic)** `[2026-09]` 🔥 `[99M極致輕量]` `[純CPU推論]` `[本地隱私]` `[ONNX/WebGPU]`
   * **核心優勢**：**打破 TTS 對 GPU 的算力壟斷，僅 99M 參數即可在瀏覽器與純 CPU 環境極速狂飆的語音引擎！** 韓國 NAVER 旗下團隊重磅開源，採用前沿的 Flow Matching 與 ConvNeXt 架構，直接跳過傳統梅爾頻譜層。體積僅為同類開源模型的 1/20，更新增 LARoPE 與 SPF 技術徹底消滅漏字與重複讀音。其內建的「複雜文本正規化」黑科技，能精準唸出帶有小數點的金錢、電話分機與特殊縮寫，實測準確率強勢輾壓 OpenAI TTS 與 ElevenLabs。
   * **解決痛點 / 推薦場景**：**完美解決傳統開源大模型 TTS「部署笨重、吃顯存」，以及雲端 API「網路延遲高、商業機密與隱私易外洩」的雙重致命痛點。** 支援 31 種語言，ONNX 模型僅約 350MB，甚至在樹莓派或電子書閱讀器上都能實現 0.3x RTF 的超越實時生成。極度適合部署於**無 GPU 的邊緣運算設備 (Edge AI)**、**極重視隱私的醫療/金融本地端朗讀系統**，以及開發**瀏覽器端零延遲 WebAI 語音助理**。
   * **資源**：[🐙 GitHub 官方開源](https://github.com/supertone-inc/supertonic) | [🤗 HuggingFace 權重 (v3)](https://huggingface.co/Supertone/supertonic-3) | [📄 基礎架構論文 (arXiv:2503.23108)](https://arxiv.org/abs/2503.23108) | [📄 LARoPE 對齊論文](https://arxiv.org/abs/2509.11084) | [📄 SPF 訓練論文](https://arxiv.org/abs/2509.19091)
+
+* **[X2Streaming-TTS (X Square Robot)](https://arxiv.org/abs/2608.18661)** `[2026-08]` 🔥 `[真流式TTS]` `[逐token合成]` `[嚴格因果]` `[低延遲對話]` `[Qwen3-TTS]`
+  * **核心優勢**：**真流式，不是攢夠一句再開工：文本 token 一到就出聲，首包延遲中位數僅 15.8 毫秒。** X Square Robot 開源，建在 Qwen3-TTS 之上、嚴格因果零前瞻。核心武器「因果承諾」：發音不確定的片段先掛起（「3」後面接 laps 讀 three、接 rd 讀 third），等後續 token 到達、發音確定才原子性釋出，一經播出永不修訂；再用容量自適應、標點感知的切分管住 KV cache 預算（利用率 76.93%、被迫硬切僅 0.54%）。第二招「語音狀態繼承」：Code2Wav 完整狀態跨段傳遞、Talker 只帶最近幾步歷史，段間邊界不連續度 0.1092（競品 0.1915）、說話人相似度 0.9511，拼接感近乎消失。品質與離線基線同級（最大退化 0.62 個百分點），128 路併發 TTFT 也才 260.8 毫秒。
+  * **解決痛點 / 推薦場景**：**市面「流式 TTS」多半是偽流式：等句界、切小段，本質還是在等；一等，對話的人味就沒了。** 更深的難題是資訊不完備下做不可逆決策：先讀錯了，播出去的聲音收不回來。X2Streaming-TTS 證明逐 token 消費不必犧牲正確率，連數字單位符號這類歧義重災區，完整正確讀法率 73.3%（最強競品 40%）。極度適合**即時語音對話系統**、**LLM 語音助手接話**、**即時翻譯播報**。⚠️ 能力上限綁 Qwen3-TTS 骨幹；僅評測中英兩語；Talker 歷史長度是固定超參數，未隨場景自適應。
+  * **資源**：[📄 論文 (arXiv:2608.18661)](https://arxiv.org/abs/2608.18661) | [🐙 GitHub](https://github.com/X-Square-Robot/X2Streaming-TTS)
 
 * **[X-Voice (30語系零樣本跨語言語音克隆)](https://arxiv.org/abs/2605.05611)** `[2026-05]` 🔥
   * **核心優勢**：**首創「免文字稿 (Transcript-free)」的非自回歸語音克隆黑科技，僅 0.4B 參數即完美實現 30 國語言零樣本聲音複製且「零口音外洩」！** 基於 Flow Matching 與自蒸餾的兩階段訓練範式，徹底拔除了傳統 TTS 依賴參考音檔文字稿的限制。透過獨創的「雙層語言注入」與 FiLM 特徵動態調制，精準分離說話人音色與目標語言發音，在 RTX 4090 上達成 RTF 0.073 的極速推論，效能強勢輾壓數十億參數的自回歸巨獸。
   * **解決痛點 / 推薦場景**：**完美解決了傳統客製化語音在真實自然口語中「缺乏精準逐字稿」，以及跨語言合成時產生「濃厚外國口音 (Accent Leakage)」的致命痛點。** 無需漫長的微調煉丹，只需幾秒鐘的參考音訊即可直接上陣。極度推薦用於打造**影視多語言在地化無縫配音**、**無文字系統的方言保存**，以及部署於算力極限**邊緣運算設備的多語系 AI 虛擬助理**，是高質量低延遲克隆的工業級開源首選。
   * **資源**：[🐙 GitHub 官方源碼](https://github.com/sunnyxrxrx/X-Voice) | [📄 論文](https://arxiv.org/abs/2605.05611) | [🤗 HF 模型權重](https://huggingface.co/XRXRX/X-Voice/tree/main) | [🌐 線上 Demo 體驗](https://sunnyxrxrx.github.io/X-Voice-Demo/)
   <br>`[零樣本語音克隆]` `[跨語言無口音]` `[免文字稿]` `[極低延遲]`
+
+* **[MOSS-TTS-Nano (OpenMOSS)](https://github.com/OpenMOSS/MOSS-TTS-Nano)** `[2026-04]` 🔥 `[0.1B極輕量]` `[單核CPU]` `[ONNX推理]` `[48kHz雙聲道]` `[零樣本克隆]`
+  * **核心優勢**：**把模型做小才是真功夫：總參數僅 0.1B，卻原生輸出 48kHz 雙聲道，還能在單核 CPU 上流式跑零樣本聲音克隆。** 復旦 NLP 實驗室與 OpenMOSS 團隊開源（Apache 2.0），關鍵在自研 Cat 音訊 tokenizer：純因果 Transformer、僅 20M 參數，把 48kHz 雙聲道壓到 12.5Hz token 流（16 層 RVQ、0.125–2 kbps 可變碼率），自回歸步數大減，0.1B 主模型才跑得動。推理走 ONNX 管線徹底脫離 PyTorch，官方實測 MacBook Air M4 單核流暢、效率約為原版 2 倍；支援 20 語（含中英日韓），長文本自動分段克隆防音色漂移。
+  * **解決痛點 / 推薦場景**：**端側 TTS 的老兩難：VITS/Piper 輕但只有 22kHz 單聲道機械音，ChatTTS/CosyVoice 好聽但吃 GPU 顯存、還要拖幾 GB 的 PyTorch 環境。** MOSS-TTS-Nano 用架構裁剪同時拿下音質規格與部署親和：ONNX 權重可直嵌 Python/C++/Rust/Android，另有瀏覽器朗讀擴充與 vLLM-Omni 服務端點。極度適合**車載系統**、**離線朗讀插件**、**嵌入式 AI 硬體**、**即時語音 Agent**。⚠️ 落地第一坑：pynini/WeTextProcessing 裝不上，先用 conda 裝預編譯版再裝其餘依賴；預設強制 CPU provider，上 GPU 要換 onnxruntime-gpu 並顯式指定 cuda。
+  * **資源**：[🐙 GitHub](https://github.com/OpenMOSS/MOSS-TTS-Nano) | [🤗 ONNX 權重](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Nano-100M-ONNX) | [📄 MOSS-TTS 技術報告 (arXiv:2603.18090)](https://arxiv.org/abs/2603.18090) | [📄 Tokenizer 論文 (arXiv:2602.10934)](https://arxiv.org/abs/2602.10934)
 
 * **[Supertonic 3](https://github.com/supertone-inc/supertonic)** `[2026-04-29]` 🔥
   * **核心優勢**：**終結雲端 API 依賴的邊緣運算霸主，僅約 99M 參數在純 CPU 上最高實現 0.006× 實時因子的極速 TTS！** 徹底脫離 PyTorch 執行時，完全基於模組化 ONNX 流水線運行，無需 GPU 即可在本地端實現支援 31 種語言的端到端語音合成。結合專屬 Voice Builder 工具，還能從真實樣本提取風格向量（JSON），達成永久本地所有權的個人化語音克隆。
@@ -986,6 +1035,11 @@ tags: ["語音處理", "ASR", "TTS"]
   * **解決痛點 / 推薦場景**：**完美解決了真實場景中「多人頻繁搶話、重疊語音、語權快速交替」導致傳統語音模型轉寫直接崩潰的致命痛點。** 實測在極度複雜的影視劇與真實會議基準（如 AISHELL-4、AliMeeting）中，其日誌化錯誤率 (DER) 與轉寫精度強勢輾壓 Gemini-2.5-Pro 與 VibeVoice。極度適合建構**高併發企業級會議紀錄自動化系統**、**長篇多人 Podcast 精準逐字稿**，以及**無劇本實境秀 / 影視劇自動字幕生成**的工業級落地首選。
   * **資源**：[🐙 GitHub 官方開源](https://github.com/ASLP-lab/Speaker-Reasoner)
 `[多輪時序推理]` `[端到端語者分離]` `[超長音訊處理]` `[超越Gemini]`
+
+* **[TagSpeech (多人 ASR＋日誌聯合建模)](https://arxiv.org/abs/2601.06896)** `[2026-01]` 🔥 `[說話人日誌]` `[聯合建模]` `[時間戳對齊]` `[端到端]` `[參數高效訓練]`
+  * **核心優勢**：**一次輸出「說了什麼＋誰說的＋什麼時候說的」：多數號稱聯合建模的模型只給前兩項，TagSpeech 把精確時間戳也做進端到端生成。** 雙流解耦架構：Semantic Encoder（Zipformer，經 SOT 序列化微調學 turn-taking 與重疊語音）和 Speaker Encoder（Auden-Voice 預訓練初始化）各走各的 Projector，不讓語義和身份互相污染；再於兩條流每隔約 8 幀插入同一個數字時間錨點（直接複用 LLM 原有數字 token、免擴詞表），同時當時間刻度與雙流同步訊號。訓練只動兩個 Projector，LLM 與雙 Encoder 全凍結，可訓練參數僅約 47.72M。AMI 與 AliMeeting 的 DER 全面勝過 Gemini、Qwen-Omni 等端到端大模型，AliMeeting 上甚至贏過 Pyannote＋Whisper 級聯。
+  * **解決痛點 / 推薦場景**：**傳統級聯 VAD→聚類→ASR→拼接，前面錯一步、後面全跟著錯；端到端大模型又有 linearity bias，把同時說話硬排成先後。** TagSpeech 用 XML 風格結構（<text>/<speaker>）讓 LLM 明確對齊內容、說話人與時間區間，時間錨點的 DER 收益主要來自降低漏檢：多人同時說話時不再只認出一個人。極度適合**會議紀錄自動化**、**多人 Podcast 逐字稿**、**訪談與字幕時間軸生成**。⚠️ 訓練數據規模小（AMI 約 65 小時、AliMeeting 約 103 小時），多語言與強噪聲泛化未驗；LLM 自回歸生成速度慢於優化過的級聯系統，不適合嚴格即時場景。
+  * **資源**：[📄 論文 (arXiv:2601.06896)](https://arxiv.org/abs/2601.06896)
 
 * **[Whisper + CAM++ 離線轉寫管線](https://modelscope.cn/models/iic/speech_campplus_speaker-diarization_common)** `[2026-04-18]` 🔥
   * **核心優勢**：**完美互補！將 Whisper 的超強語音辨識與阿里 CAM++ 的精準聲紋分離結合，打造零成本的純本地會議轉寫神器**。Whisper 本身無法區分說話人，透過導入 CAM++ 進行語音活動偵測 (VAD) 與聲紋聚類 (Speaker Clustering)，能精準自動標註「發言人1、發言人2」，徹底彌補了單一開源 ASR 模型無法辨識語者身分的缺陷。
