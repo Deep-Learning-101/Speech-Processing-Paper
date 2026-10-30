@@ -24,6 +24,7 @@ tags: ["語音處理", "ASR", "TTS"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[Nemotron 3.5 Transcribe（NVIDIA：40 語轉錄＋說話人標註＋翻譯＋錄音問答，單一檢查點）](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary)** `[2026-10-28]` 🔥 `[多語ASR]` `[說話人標註]` `[錄音問答]` `[MoE]` `[Granary-v2]` `[OpenMDW]`
 >- **[Whistle (Cactus Compute)](https://cactuscompute.com/blog/whistle)** `[2026-10]` 🔥 `[端側ASR]` `[超輕量]` `[CPU推理]` `[語音工具調用]` `[量化]`
 >- **[S1-mini (Superwhisper)](https://huggingface.co/superwhisper/s1-mini)** `[2026-10]` 🔥 `[ASR後處理]` `[文本歸一化]` `[ITN]` `[端側部署]` `[Qwen3微調]`
 >- **[AnyEdit (免分離語音／歌聲局部編輯)](https://arxiv.org/abs/2610.15665)** `[2026-10]` 🔥 `[語音編輯]` `[歌聲編輯]` `[免聲源分離]` `[Flow Matching]` `[DPO]`
@@ -382,6 +383,13 @@ tags: ["語音處理", "ASR", "TTS"]
 ---
 
 #### 🌐 國際巨頭與創新架構 (Global Tech & Innovations)
+
+* **[Nemotron 3.5 Transcribe（NVIDIA：40 語轉錄＋說話人標註＋翻譯＋錄音問答，單一檢查點）](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary)** `[2026-10-28]` 🔥 `[多語ASR]` `[說話人標註]` `[錄音問答]` `[MoE]` `[Granary-v2]` `[OpenMDW]`
+  * **核心優勢**：**錄音轉寫不必再串四個模型：轉錄、說話人標註、翻譯、錄音問答全部收進同一個可用自然語言指令操控的檢查點，而且單張 GPU 就跑得動。** 30B 參數的混合專家架構（語音編碼器＋混合 Mamba-Transformer 語言模型），每 token 僅啟用約 4B 參數；轉錄 40 語、31 語與英文互譯、13 語說話人標註，單檔最長 1 小時、最多標註 8 位說話人，支援詞級時間戳。同一段錄音換一句指令就換一種輸出：逐字稿、清理版、翻譯、會議決策問答皆可；還能先給術語表與格式慣例，讓醫療、金融、法律專有名詞一次拼對。部署支援 vLLM 與 SGLang-Omni，BF16／FP8／NVFP4 權重已上 HF 與 ModelScope，NeMo-Speech.cpp 本地版與量化版隨後到。
+  * **解決痛點 / 推薦場景**：**解決了「會議錄音要先轉寫、再跑說話人分離、再翻譯、再摘要，四段管線四處掉字、說話人對不上、術語拼錯」的痛點。** 舊方法：ASR、diarization、翻譯、摘要各一模型，串接誤差層層放大，重疊對話與插話最容易掉字；閉源語音 API 則有敏感錄音外流與長期成本問題。甜點區：企業會議與客服錄音的本地轉寫歸檔、醫療問診與法務訪談的術語敏感逐字稿、跨國團隊的多語會議紀錄；搭配同日釋出的 Granary v2（46 萬 3062 小時、48 語、16 語料來源的公開資料清單與可重用清洗管線，三種轉寫格式）與 NeMo Speech 微調流程，可把模型調成自家口音與術語。極度適合**錄音涉密、不想上雲，又要多語與說話人標註一次到位的團隊**。
+  * **量化基準（NVIDIA 官方公布，含第三方榜單引用）**：HF Open ASR Leaderboard 英文軌：開源模型第一，平均詞錯率 5.33%（API 模型排除在該排名外）；多語軌 7 語平均 4.62%、長格式軌 10.98%，皆為模型卡對照組中最低。Artificial Analysis 語音轉文字榜：AA-WER 2.8%，與 Mistral Voxtral Small 並列開源第一，但 active 參數僅約其六分之一（4B 對 24B）；AA-AgentTalk 保留集 1.8%（次佳開源 2.3%）。說話人標註：David AI DAI-ASR-I18N 21 語 diarization 軌錯誤率 18.26%，14 個系統中最低，微勝自家專用 Nemotron 3 Diarization 的 18.38%；VoiceArena Diarization-Bench 英文全場景 14 系統第一，cpWER 32.4%，漏字率僅 8.32%（中位數約 31%）。吞吐：官方稱單張 RTX PRO 6000 Blackwell Server Edition、NVFP4 精度、30 秒短檔高併發下，100 小時音訊不到 3 分鐘跑完。領域適應實證：Eka Care 印度醫療語音基準，僅改提示詞 WER 從 30.8% 降至 23.8%，微調後全集 11.8%；保留說話人切分的乾淨測試上，微調把最佳提示詞基線的 22.44% 壓到 12.17%（相對降 45.8%），約 14 GPU 小時（單張 GB300），代價是通用英文 LibriSpeech test-clean 從 1.54% 微升至 1.69%。
+  * **資源**：[🤗 NVIDIA 官方發布（Hugging Face 部落格）](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary) | [🤗 HF 模型卡](https://huggingface.co/nvidia/Nemotron-3.5-Transcribe) | [📰 發布報導（TechCrunch，2026-10-28）](https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/)
+  * **附註（未獨立查證）**：日期以 NVIDIA 官方 HF 部落格戳記 2026-10-28T14:58:17Z（台北 10-28 22:58）為準，落在本日窗口；TechCrunch 刊登為美國時間 10-28 上午 8 點 PDT（台北 23:00），兩者皆在窗口內，不要只看美國日期。關鍵限制誠實列出：只處理錄好的音檔，不支援即時串流，要即時字幕請用同家族的流式版或其他串流模型；音訊問答僅英文受訓；各任務的語言支援度不同，選型前務必查模型卡的任務×語言矩陣。數字出入提醒：總參數次級報導有 30B 與 34B 兩種說法，以官方部落格的 30B 為準；英文 WER 官方部落格的 5.33% 與模型卡對照表的 4.71%（9 個公開英文集平均）口徑不同，不可混為同一數字；Artificial Analysis 的 2.8% 為並列第一（Voxtral Small 同為 2.8%，次級整理有 2.81% 對 2.77% 的細分說法），「第一」應讀為並列。授權據次級整理為 OpenMDW-1.1（可商用），官方部落格本次查驗段落未明載授權全文，商用前以模型卡為準。Granary v2 的 463,062 小時是公開清單規模，音檔須依各語料原始授權另行下載，不等於一次下載 46 萬小時音檔；且官方明言該數字描述的是資料集發布，不是 Transcribe 的完整訓練混合比例。
 
 * **[Whistle (Cactus Compute)](https://cactuscompute.com/blog/whistle)** `[2026-10]` 🔥 `[端側ASR]` `[超輕量]` `[CPU推理]` `[語音工具調用]` `[量化]`
   * **核心優勢**：**16.9MB 單檔、純 CPU、零依賴：比 Whisper base 小 8.6 倍，首 token 快 6.6 倍、解碼快 5 倍。** Cactus Compute 開源（Apache 2.0），2–4 bit 量化壓進單一 .cact 檔；與自家工具調用小模型 Needle 共用同一個 C++ 引擎，一個二進制就能「語音直接變結構化工具調用」，不用第二套運行時。官方實測（M4 Pro、10 秒音訊）：首 token 11.1ms（Whisper base 73.2ms）、解碼 1319 tok/s（266）。17 個編譯目標含 RISC-V、MIPS、WebAssembly。
