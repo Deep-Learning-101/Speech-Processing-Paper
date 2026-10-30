@@ -24,6 +24,7 @@ tags: ["語音處理", "ASR", "TTS"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- * **[Qwen-Audio-Jev (Alibaba Token Foundry)](https://arxiv.org/abs/2610.21614)** `[2026-10]` 🔥 `[音訊決策]` `[Jev決策頭]` `[選擇判斷評分]` `[概率校準]` `[高吞吐]` `[未開源]`
 >- **[Nemotron 3.5 Transcribe（NVIDIA：40 語轉錄＋說話人標註＋翻譯＋錄音問答，單一檢查點）](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary)** `[2026-10-28]` 🔥 `[多語ASR]` `[說話人標註]` `[錄音問答]` `[MoE]` `[Granary-v2]` `[OpenMDW]`
 >- **[Whistle (Cactus Compute)](https://cactuscompute.com/blog/whistle)** `[2026-10]` 🔥 `[端側ASR]` `[超輕量]` `[CPU推理]` `[語音工具調用]` `[量化]`
 >- **[S1-mini (Superwhisper)](https://huggingface.co/superwhisper/s1-mini)** `[2026-10]` 🔥 `[ASR後處理]` `[文本歸一化]` `[ITN]` `[端側部署]` `[Qwen3微調]`
@@ -999,6 +1000,11 @@ tags: ["語音處理", "ASR", "TTS"]
 **🎙️ 語音與音頻綜合應用 (Speech & Audio Applications)**
 
 > **語音技術的價值取決於與大模型 (LLM) 的無縫整合能力。** 將即時語音轉文字 (STT) 結合 RAG 架構應用於智能客服，實測可將單筆客服通話的平均處理時間 (AHT) 縮短 40%，提升 60% 的首次解決率 (FCR)。當單項技術（辨識、合成、分離）趨於成熟，2026 年的趨勢在於將多個模型串聯成解決特定生活痛點的「完整方案」。以下收錄具備高度整合性且支援本地部署的開源神作：
+
+* **[Qwen-Audio-Jev (Alibaba Token Foundry)](https://arxiv.org/abs/2610.21614)** `[2026-10]` 🔥 `[音訊決策]` `[Jev決策頭]` `[選擇判斷評分]` `[概率校準]` `[高吞吐]` `[未開源]`
+  * **核心優勢**：**音訊大模型不必「作文」答題：答案空間有限的任務，直接從回答前一刻的隱狀態讀出概率。** 阿里 Token Foundry 在 Qwen-Audio-3.1-ASR-Flash-Next（MoE 解碼器：40 層、隱藏維度 2048、256 專家）的主幹上加一組 Jev 決策頭：取問題前綴最後一個 token 的隱狀態（因果注意力保證看不到答案），接三個線性投影：Choice（2048→64，2–64 個候選做遮罩 softmax，輸出位置無固定類別含義、語義由題目的答案規範賦予）、Noul（2048→1，sigmoid 輸出命題成立概率）、Score（2048→10，2–10 個有序等級的分布再取期望分數）。省掉整個自回歸生成與下游文字解析，一次前向就是一個能直接進業務規則的概率或分數。
+  * **解決痛點 / 推薦場景**：**每天要篩幾百萬段錄音時，讓生成式模型逐字寫答案再解析格式，是純粹的浪費。** 訓練用統一監督格式縫合標註不齊的異構資料：每條樣本只監督它有的標籤（情緒集只練 Choice、說話人集只練 Noul、音質集只練 Score），SFT 後再接一階 RLCD 式校準：每題從自身分布採樣 32 次、混 5% 均勻探索，用 Brier 誤差構造標籤獎勵做重要性加權策略梯度，逼模型「說 0.8 就要有八成對」。18 個評測配置（v2）：MMSU 83.14%、MMAU 78.40%；說話人驗證 VoxCeleb1-O 準確率 93.76%、EER 6.17%；NISQA 整體音質歸一化 MAE 0.1235、Pearson 0.7799。極度適合**大規模音訊篩選與資料清洗**、**說話人驗證**、**TTS 自動評測**、**語音 Agent 的快速決策層**。⚠️ 純論文、未釋出權重與程式碼，基座本身也是阿里內部 ASR 模型；當前逐題各跑一次前向，多問題不能共享；弱項明確：對話情緒（MELD）與複雜音訊問答（MMAR）墊底，In-the-Wild 深偽檢測在 0.5 閾值下漏報率 63.68%（區分能力 AUC 0.851 與閾值校準要分開看）；v1 宣稱的約 20 倍加速在 v2 已拿掉、且從未附測試條件。
+  * **資源**：[📄 論文 (arXiv:2610.21614)](https://arxiv.org/abs/2610.21614) | [📄 基座技術報告 (Qwen-Audio-3.1-ASR)](https://qwenaudio.github.io/qwen-audio-3.1-asr/report-assets/technical-report.pdf) | [📄 相關工作 AudioJev (arXiv:2610.01293)](https://arxiv.org/abs/2610.01293)
 
 * **[Voicebox](https://github.com/jamiepine/voicebox)** `[2026-05]` 🔥 `[ElevenLabs平替]` `[全端語音工作站]` `[零樣本克隆]` `[MCP協議]` `[本地部署]`
   * **核心優勢**：**打爆 ElevenLabs 與 WisprFlow 的開源全能語音工作室，單一桌面端徹底搞定極速音色克隆、全域語音輸入與 AI Agent 語音化！** 這款基於 Tauri (Rust) 打造的本地優先 (Local-first) 神器，記憶體佔用極低。它豪邁地整合了包含 Qwen3-TTS 在內的 7 款頂尖 TTS 引擎與 Whisper ASR 模型，只需幾秒音訊即可完成高保真零樣本克隆。最殺手級的功能是其內建的 MCP (Model Context Protocol) 伺服器，讓 Claude Code、Cursor 等 AI 代理能直接呼叫 `voicebox.speak`，用「你的專屬聲音」與你對話。
