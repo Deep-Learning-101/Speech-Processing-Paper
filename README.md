@@ -24,6 +24,7 @@ tags: ["語音處理", "ASR", "TTS"]
 
 > ### 📅 [更新快訊](https://deep-learning-101.github.io/UPDATE)
 
+>- **[WenetSpeech-Min (2026-09)](https://aslp-lab.github.io/WenetSpeech-Min-Repo/)**
 >- * **[Qwen-Audio-Jev (Alibaba Token Foundry)](https://arxiv.org/abs/2610.21614)** `[2026-10]` 🔥 `[音訊決策]` `[Jev決策頭]` `[選擇判斷評分]` `[概率校準]` `[高吞吐]` `[未開源]`
 >- **[Nemotron 3.5 Transcribe（NVIDIA：40 語轉錄＋說話人標註＋翻譯＋錄音問答，單一檢查點）](https://huggingface.co/blog/nvidia/nemotron-transcribe-granary)** `[2026-10-28]` 🔥 `[多語ASR]` `[說話人標註]` `[錄音問答]` `[MoE]` `[Granary-v2]` `[OpenMDW]`
 >- **[Whistle (Cactus Compute)](https://cactuscompute.com/blog/whistle)** `[2026-10]` 🔥 `[端側ASR]` `[超輕量]` `[CPU推理]` `[語音工具調用]` `[量化]`
@@ -983,6 +984,9 @@ tags: ["語音處理", "ASR", "TTS"]
 * **[Mozilla Common Voice Datasets (zh-TW 繁體中文)](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0/viewer/zh-TW)**：開源界最珍貴的「台灣口音繁體中文」語音資料集，是訓練在地化 ASR 的必備彈藥庫。
 * **[WenetSpeech-Yue (2025)](https://github.com/ASLP-lab/WenetSpeech-Yue)**：21,800 小時全球最大粵語語音資料集，涵蓋 10 大領域，支援中英混雜場景。
 * **[WenetSpeech-Chuan](https://github.com/ASLP-lab/WenetSpeech-Chuan)**：10,000 小時首個大規模川渝方言語料庫。
+* **[WenetSpeech-Min (2026-09)](https://aslp-lab.github.io/WenetSpeech-Min-Repo/)**：約 10,000 小時閩南語語音資料集，512 萬條語句每條都同時附閩南語漢字抄本與書面普通話抄本，是首個大規模「一音雙標」的閩南語語料 (先行資源裡，成對抄本只有 YT-THDC 的 30 小時，MinSpeech 數千小時則只有普通話抄本)。資料管線全自動：先以 1,600 小時人工核驗語料微調 Qwen3-ASR、FireRedASR2-AED、Fun-ASR-Nano 三個異構 ASR 模型，再以 ROVER 投票產出方言抄本；普通話抄本走雙軌，有字幕的用 WeSubtitle 做 OCR、沒字幕的用 600 小時平行語料 LoRA 微調的 Qwen3-8B 翻譯生成。SNR 與說話人數保留為欄位，下游可按場景取用 (ASR 取複雜場景練魯棒性、TTS 篩高音質單人)。[📄 論文 (arXiv:2609.36834)](https://arxiv.org/abs/2609.36834) | [🐙 GitHub](https://github.com/ASLP-lab/WenetSpeech-Min-Repo) | [🤗 HF 資料與模型合集](https://huggingface.co/collections/ASLP-lab/wenetspeech-min)
+  * **配套評測**：WS-Min-Eval-ASR (6 小時人工核驗，方言向看 D-CER、普通話向同時看 M-CER 與 M-BLEU，避免語意正確但用字不同的意譯被字面誤殺) 與 WS-Min-Eval-TTS (Easy 500 句日常 + Hard 250 句：161–270 字長文、5–7 次重複結構、繞口令，另有 23 位母語者盲測 I-MOS／S-MOS／A-MOS)。官方基線：單一 FireRedASR2-AED 以兩個任務嵌入在同一模型切換雙輸出 (D-CER 18.95%、平均 M-BLEU 53.73)；CosyVoice3 經 CPT → SFT (篩 1,000 小時高音質) → DPO 三階段適配，Easy 集 CER 從 63.69% 降至 20.26%，開源系統中主觀聽感最佳、但客觀聲紋相似度 SIM 輸給 FireRedTTS3。
+  * **⚠️ 注意**：領域高度集中 (有來源紀錄的 8,500 小時中，影視劇 54.7%、有聲書 19.8%、娛樂 13.9%，含大量 1990 年代至 2010 年代初老影視錄音，平均 SNR 21.3 dB)，與客服、醫療等日常場景的詞彙分布有落差；語料主體為中國閩南媒體，台灣台語的腔口與用詞有差異，用於台灣場景前需另行驗證；方言抄本採漢字、非台羅字或白話字。M-CER／M-BLEU 受各評測集意譯程度影響，跨評測集的絕對值不可直接比較 (論文明示)。HF 與 GitHub 頁面未標示授權條款，取用前先確認資料卡。
 * **[Easy-Turn-Trainset](https://www.modelscope.cn/datasets/ASLP-lab/Easy-Turn-Trainset)**：約 1100 小時對話輪次檢測資料集，用於全雙工對話系統（包含完整、回應、等待狀態）。
 * **[Chinese-LiPS (2025-05)](https://kiri0824.github.io/Chinese-LiPS/)**：100 小時中文「多模態」語音辨識資料集。首創結合「唇讀資訊 + 投影片語意」，多模態融合後 CER 降至 2.58%。
 * **[CS-Dialogue (2025-02)](https://huggingface.co/datasets/BAAI/CS-Dialogue)**：104 小時目前最大的公開自發式「中英切換」對話資料集，捕捉真實自然的語言切換現象。
